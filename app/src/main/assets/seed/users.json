@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "admin123",
+    "first_name": "Admin",
+    "last_name": "Bank Soal"
+  },
+  {
+    "id": 2,
+    "username": "seed1",
+    "password": "seed1",
+    "first_name": "seed1",
+    "last_name": "seed1"
+  },
+  {
+    "id": 3,
+    "username": "seed2",
+    "password": "seed2",
+    "first_name": "seed2",
+    "last_name": "seed2"
+  },
+  {
+    "id": 4,
+    "username": "seed3",
+    "password": "seed3",
+    "first_name": "seed3",
+    "last_name": "seed3"
+  }
+]

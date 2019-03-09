@@ -7,5 +7,7 @@ interface MainNavigator {
 
     fun showAboutFragment()
 
-    fun openQuizActivity()
+    fun showCourseFragment()
+
+    fun showMainFragment()
 }

@@ -36,4 +36,7 @@
     <string name="action_settings">Settings</string>
     <string name="quiz">Quiz</string>
     <string name="back">Back</string>
+    <string name="home">Home</string>
+    <string name="course">Course</string>
+    <string name="start">Mulai</string>
 </resources>

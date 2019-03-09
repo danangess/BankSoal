@@ -6,9 +6,9 @@ import android.arch.persistence.room.OnConflictStrategy
 import android.arch.persistence.room.Update
 
 interface BaseDao<TEntity> {
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(tEntity: TEntity)
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(tEntities: List<TEntity>)
 
     @Update

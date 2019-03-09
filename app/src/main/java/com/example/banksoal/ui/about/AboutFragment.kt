@@ -21,17 +21,14 @@ class AboutFragment : BaseFragment<FragmentAboutBinding, AboutViewModel>(), Abou
             return fragment
         }
     }
-    override fun getBindingVariable(): Int {
-        return BR.viewModel
-    }
+
+    override fun getBindingVariable(): Int = BR.viewModel
 
     override fun getLayoutId(): Int {
         return R.layout.fragment_about
     }
 
-    override fun getViewModel(): AboutViewModel {
-        return mAboutViewModel
-    }
+    override fun getViewModel(): AboutViewModel = mAboutViewModel
 
     override fun goBack() {
         activity?.onFragmentDetached(TAG)

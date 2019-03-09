@@ -6,7 +6,8 @@ import com.example.banksoal.data.model.*
 import io.reactivex.Observable
 import io.reactivex.Single
 
-interface DataManager : PreferencesHelper {
+interface DataManager {
+    val preferencesHelper: PreferencesHelper
     val userRepository: UserRepository
     val courseRepository: CourseRepository
     val questionRepository: QuestionRepository
@@ -15,6 +16,8 @@ interface DataManager : PreferencesHelper {
     fun getCourseData(): Observable<List<CourseData>>
 
     fun getQuestionData(courseId: Long): Observable<List<QuestionData>>
+
+    fun seedDatabaseUsers(): Observable<Boolean>
 
     fun seedDatabaseCourses(): Observable<Boolean>
 

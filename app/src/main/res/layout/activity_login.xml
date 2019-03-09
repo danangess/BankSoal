@@ -21,140 +21,140 @@
                 android:layout_height="match_parent"
                 android:fitsSystemWindows="true">
 
-        <android.support.design.widget.CoordinatorLayout
-                android:id="@+id/clRootView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:clipChildren="false">
-
-        <RelativeLayout
-
-                android:id="@+id/activityLogin"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/background">
-
-            <android.support.v7.widget.CardView
+            <android.support.design.widget.CoordinatorLayout
+                    android:id="@+id/clRootView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="80dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="80dp"
-                    app:cardCornerRadius="7dp"
-                    app:cardElevation="22dp">
+                    android:clipChildren="false">
 
-                <TextView
-                        style="@style/TextStyle.Heading"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|top"
-                        android:layout_marginTop="60dp"
-                        android:text="@string/login_title"
-                        android:textAllCaps="true"
-                        android:textSize="20sp" />
+                <RelativeLayout
 
-                <LinearLayout
+                        android:id="@+id/activityLogin"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="20dp"
-                        android:orientation="vertical">
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background">
 
-                    <android.support.design.widget.TextInputLayout
+                    <android.support.v7.widget.CardView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColorHint="@color/gray"
-                            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="80dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="80dp"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="22dp">
 
-                        <android.support.design.widget.TextInputEditText
-                                android:id="@+id/etUsername"
-                                style="@style/TextStyle"
+                        <TextView
+                                style="@style/TextStyle.Heading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="60dp"
+                                android:text="@string/login_title"
+                                android:textAllCaps="true"
+                                android:textSize="20sp" />
+
+                        <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginRight="20dp"
-                                android:background="@drawable/input_border_bottom"
-                                android:cursorVisible="true"
-                                android:gravity="center|left|bottom"
-                                android:hint="@string/username"
-                                android:inputType="textPhonetic"
-                                android:maxLength="50"
-                                android:paddingBottom="10dp"
-                                android:textColor="@color/black_effective"
-                                android:textSize="18sp" />
+                                android:layout_gravity="center"
+                                android:layout_margin="20dp"
+                                android:orientation="vertical">
 
-                    </android.support.design.widget.TextInputLayout>
+                            <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="@color/gray"
+                                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
 
-                    <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/password"
-                            android:textColorHint="@color/gray"
-                            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
-                            app:passwordToggleEnabled="true">
+                                <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/etUsername"
+                                        style="@style/TextStyle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginRight="20dp"
+                                        android:background="@drawable/input_border_bottom"
+                                        android:cursorVisible="true"
+                                        android:gravity="center|left|bottom"
+                                        android:hint="@string/username"
+                                        android:inputType="textPhonetic"
+                                        android:maxLength="50"
+                                        android:paddingBottom="10dp"
+                                        android:textColor="@color/black_effective"
+                                        android:textSize="18sp" />
 
-                        <android.support.design.widget.TextInputEditText
-                                android:id="@+id/etPassword"
-                                style="@style/TextStyle"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_marginTop="30dp"
-                                android:background="@drawable/input_border_bottom"
-                                android:cursorVisible="true"
-                                android:gravity="center|left|bottom"
-                                android:inputType="textPassword"
-                                android:maxLength="50"
-                                android:paddingBottom="10dp"
-                                android:textColor="@color/black_effective"
-                                android:textSize="18sp" />
+                            </android.support.design.widget.TextInputLayout>
 
-                    </android.support.design.widget.TextInputLayout>
+                            <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/password"
+                                    android:textColorHint="@color/gray"
+                                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                                    app:passwordToggleEnabled="true">
 
-                    <Button
-                            android:id="@+id/btnServerLogin"
-                            style="@style/Button.Primary"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_margin="15dp"
-                            android:onClick="@{() -> viewModel.onLoginClick()}"
-                            android:padding="10dp"
-                            android:text="@string/login"
-                            android:textSize="18dp" />
+                                <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/etPassword"
+                                        style="@style/TextStyle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginTop="30dp"
+                                        android:background="@drawable/input_border_bottom"
+                                        android:cursorVisible="true"
+                                        android:gravity="center|left|bottom"
+                                        android:inputType="textPassword"
+                                        android:maxLength="50"
+                                        android:paddingBottom="10dp"
+                                        android:textColor="@color/black_effective"
+                                        android:textSize="18sp" />
 
-                    <LinearLayout android:layout_width="match_parent"
-                                 android:layout_height="wrap_content"
-                                 android:gravity="center|left|bottom">
-                        <TextView
-                                android:text="@string/did_not_have_account"
-                                android:textSize="15sp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="30dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"/>
-                        <TextView
-                                android:id="@+id/tvRegister"
-                                android:text="@string/register"
-                                android:onClick="@{() -> viewModel.onSignUpClick()}"
-                                android:textStyle="bold"
-                                android:textFontWeight=""
-                                android:textSize="15sp"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginTop="30dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"/>
-                    </LinearLayout>
+                            </android.support.design.widget.TextInputLayout>
 
-                </LinearLayout>
+                            <Button
+                                    android:id="@+id/btnServerLogin"
+                                    style="@style/Button.Primary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="15dp"
+                                    android:onClick="@{() -> viewModel.onLoginClick()}"
+                                    android:padding="10dp"
+                                    android:text="@string/login"
+                                    android:textSize="18dp" />
 
-            </android.support.v7.widget.CardView>
+                            <LinearLayout android:layout_width="match_parent"
+                                         android:layout_height="wrap_content"
+                                         android:gravity="center|left|bottom">
+                                <TextView
+                                        android:text="@string/did_not_have_account"
+                                        android:textSize="15sp"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginTop="30dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+                                <TextView
+                                        android:id="@+id/tvRegister"
+                                        android:text="@string/register"
+                                        android:onClick="@{() -> viewModel.onSignUpClick()}"
+                                        android:textStyle="bold"
+                                        android:textFontWeight=""
+                                        android:textSize="15sp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="30dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+                            </LinearLayout>
 
-        </RelativeLayout>
+                        </LinearLayout>
 
-        </android.support.design.widget.CoordinatorLayout>
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
 
         </android.support.v4.widget.DrawerLayout>
 

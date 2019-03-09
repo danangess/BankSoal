@@ -69,7 +69,7 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
     }
 
     fun openActivityOnTokenExpire() {
-        startActivity(LoginActivity().newIntent(this))
+        startActivity(LoginActivity.newIntent(this))
         finish()
     }
 

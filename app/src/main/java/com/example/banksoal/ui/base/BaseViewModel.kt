@@ -23,9 +23,7 @@ abstract class BaseViewModel<N> (
         super.onCleared()
     }
 
-    fun getNavigator(): N {
-        return mNavigator.get()!!
-    }
+    fun getNavigator(): N = mNavigator.get()!!
 
     fun setNavigator(navigator: N) {
         this.mNavigator = WeakReference(navigator)

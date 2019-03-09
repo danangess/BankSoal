@@ -18,12 +18,12 @@ class SignupViewModel(dataManager: DataManager, schedulerProvider: SchedulerProv
 
         compositeDisposable.add(dataManager
             .doSignUp(firstName, lastName, username, password)
-            .doOnSuccess { success ->
-                if (success) {
-                    dataManager.doLogin(username, password)
-                    dataManager.setLoginMode(DataManager.LoggedInMode.LOGIN)
-                }
-            }
+//            .doOnSuccess { success ->
+//                if (success) {
+//                    dataManager.doLogin(username, password)
+//                    dataManager.setLoginMode(DataManager.LoggedInMode.LOGIN)
+//                }
+//            }
             .subscribeOn(schedulerProvider.io())
             .observeOn(schedulerProvider.ui())
             .subscribe({ success ->

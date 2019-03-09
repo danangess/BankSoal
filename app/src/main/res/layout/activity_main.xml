@@ -58,10 +58,13 @@
 
                     </android.support.design.widget.AppBarLayout>
 
-                    <com.mindorks.placeholderview.SwipePlaceHolderView
-                            android:id="@+id/cardsContainer"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"/>
+                    <FrameLayout android:id="@+id/contentFragment"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent" />
+                    <!--<com.mindorks.placeholderview.SwipePlaceHolderView-->
+                            <!--android:id="@+id/cardsContainer"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"/>-->
 
                 </LinearLayout>
             </android.support.design.widget.CoordinatorLayout>

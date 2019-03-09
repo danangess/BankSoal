@@ -9,24 +9,23 @@ import com.example.banksoal.utils.AppConstants
 import com.example.banksoal.utils.CommonUtils
 import com.google.gson.Gson
 import com.google.gson.internal.`$Gson$Types`
-import com.google.gson.reflect.TypeToken
 import io.reactivex.Observable
 import io.reactivex.Single
 import io.reactivex.functions.BiFunction
-import java.lang.reflect.Type
 import javax.inject.Inject
 import javax.inject.Singleton
+import com.example.banksoal.data.model.db.Question
 
 @Singleton
 class AppDataManager
 @Inject
 constructor(
     private val mContext: Context,
+    override val preferencesHelper: PreferencesHelper,
     override val courseRepository: CourseRepository,
     override val questionRepository: QuestionRepository,
     override val optionRepository: OptionRepository,
     override val userRepository: UserRepository,
-    private val mPreferencesHelper: PreferencesHelper,
     private val mGson: Gson
 ) : DataManager {
     override fun doSignUp(firstName: String, lastName: String, userName: String, password: String): Single<Boolean> {
@@ -40,7 +39,7 @@ constructor(
 
     override fun doLogout(): Single<Boolean> {
         return Single.fromCallable {
-            mPreferencesHelper.setLoginMode(DataManager.LoggedInMode.LOGOUT)
+            preferencesHelper.loginMode = DataManager.LoggedInMode.LOGOUT
             updateUserInfo(null)
             true
         }
@@ -50,14 +49,6 @@ constructor(
         return userRepository.validate(userName, password)
     }
 
-    override fun setLoginMode(loggedInMode: DataManager.LoggedInMode) {
-        mPreferencesHelper.setLoginMode(loggedInMode)
-    }
-
-    override fun getLoginMode(): DataManager.LoggedInMode {
-        return mPreferencesHelper.getLoginMode()
-    }
-
     override fun getCourseData(): Observable<List<CourseData>> {
         return courseRepository.getAll()
             .flatMap { courses -> Observable.fromIterable(courses) }
@@ -65,22 +56,10 @@ constructor(
                 Observable.zip(
                     questionRepository.getAllByCourseId(courseId = course.id),
                     Observable.just(course),
-                    BiFunction<List<Question>, Course, CourseData> { q, c -> CourseData(c, q) }
+                    BiFunction<List<Question>, Course, CourseData> { q, c -> CourseData(c) }
                 )
             }.toList()
             .toObservable()
-    }
-
-    override fun seedDatabaseCourses(): Observable<Boolean> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun getCurrentUserName(): String? {
-        return mPreferencesHelper.getCurrentUserName()
-    }
-
-    override fun setCurrentUserName(userName: String?) {
-        mPreferencesHelper.setCurrentUserName(userName)
     }
 
     override fun getQuestionData(courseId: Long): Observable<List<QuestionData>> {
@@ -96,47 +75,61 @@ constructor(
             .toObservable()
     }
 
-    override fun seedDatabaseOptions(): Observable<Boolean> {
-        return Observable.fromCallable {
-            optionRepository.getAll().isEmpty.blockingGet()
-        }.concatMap { isEmpty ->
-            if (isEmpty){
-                val type: Type = object : TypeToken<List<Option>>() {
+    override fun seedDatabaseUsers(): Observable<Boolean> {
+        val type = `$Gson$Types`.newParameterizedTypeWithOwner(null, List::class.java, User::class.java)
+        val users = CommonUtils.loadJSONFromAsset(mContext, AppConstants.SEED_DATABASE_USERS)
+        val userList = mGson.fromJson<List<User>>(users, type)
 
-                }.type
-                val optionList = mGson.fromJson<List<Option>>(
-                    CommonUtils.loadJSONFromAsset(mContext, AppConstants.SEED_DATABASE_OPTIONS),
-                    type
-                )
-                optionRepository.add(optionList)
-                Observable.just(true)
-            }
-            Observable.just(false)
+        return Observable.fromCallable {
+            userRepository.dao.insert(userList)
+            true
+        }
+    }
+
+    override fun seedDatabaseCourses(): Observable<Boolean> {
+        val type = `$Gson$Types`.newParameterizedTypeWithOwner(null, List::class.java, Course::class.java)
+        val courses = CommonUtils.loadJSONFromAsset(mContext, AppConstants.SEED_DATABASE_COURSES)
+        val courseList = mGson.fromJson<List<Course>>(courses, type)
+
+        return Observable.fromCallable {
+            courseRepository.dao.insert(courseList)
+            true
         }
     }
 
     override fun seedDatabaseQuestions(): Observable<Boolean> {
+        val type = `$Gson$Types`.newParameterizedTypeWithOwner(null, List::class.java, Question::class.java)
+        val questions = CommonUtils.loadJSONFromAsset(mContext, AppConstants.SEED_DATABASE_QUESTIONS)
+        val questionList = mGson.fromJson<List<Question>>(questions, type)
+
         return Observable.fromCallable {
-            questionRepository.getAll().isEmpty.blockingGet()
-        }.concatMap { isEmpty ->
-            if (isEmpty){
-                val type =
-                    `$Gson$Types`.newParameterizedTypeWithOwner(null, List::class.java, Question::class.java)
-                val questionList = mGson
-                    .fromJson<List<Question>>(CommonUtils.loadJSONFromAsset(mContext, AppConstants.SEED_DATABASE_QUESTIONS), type)
-                questionRepository.add(questionList)
-                Observable.just(true)
-            }
-            Observable.just(false)
+            questionRepository.dao.insert(questionList)
+            true
+        }
+    }
+
+    override fun seedDatabaseOptions(): Observable<Boolean> {
+        val options = CommonUtils.loadJSONFromAsset(mContext, AppConstants.SEED_DATABASE_OPTIONS)
+        val type = `$Gson$Types`.newParameterizedTypeWithOwner(null, List::class.java, Option::class.java)
+        val optionList = mGson.fromJson<List<Option>>(options, type)
+
+        return Observable.fromCallable {
+            optionRepository.dao.insert(optionList)
+            true
         }
     }
 
     override fun setUserAsLoggedOut() {
-        setLoginMode(DataManager.LoggedInMode.LOGOUT)
-        setCurrentUserName(null)
+        preferencesHelper.loginMode = DataManager.LoggedInMode.LOGOUT
+        preferencesHelper.currentUserName = null
     }
 
     override fun updateUserInfo(userName: String?) {
-        setCurrentUserName(userName)
+        preferencesHelper.currentUserName = userName
+        if (userName != null){
+            val user = userRepository.dao.findByUsername(userName)
+            val fullName = user!!.firstName + " " + user.lastName
+            preferencesHelper.currentFullName = fullName
+        }
     }
 }

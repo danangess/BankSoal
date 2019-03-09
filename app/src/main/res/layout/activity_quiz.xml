@@ -3,7 +3,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        tools:context=".ui.main.MainActivity">
+        tools:context=".ui.quiz.QuizActivity">
 
     <data>
 
@@ -11,7 +11,7 @@
 
         <variable
                 name="viewModel"
-                type="com.example.banksoal.ui.main.MainViewModel" />
+                type="com.example.banksoal.ui.quiz.QuizViewModel" />
     </data>
 
 
@@ -58,35 +58,29 @@
 
                     </android.support.design.widget.AppBarLayout>
 
-                    <com.mindorks.placeholderview.SwipePlaceHolderView
-                            android:id="@+id/cardsContainer"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"/>
+                    <LinearLayout android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent">
+
+                        <com.mindorks.placeholderview.SwipePlaceHolderView
+                                android:id="@+id/quizContainer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        <TextView android:id="@+id/tvResult"
+                                  android:textStyle="bold"
+                                  android:textAlignment="center"
+                                  android:textSize="20sp"
+                                  android:layout_marginStart="10dp"
+                                  android:text="@{viewModel.result}"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
+
             </android.support.design.widget.CoordinatorLayout>
-
-            <android.support.design.widget.NavigationView
-                    android:id="@+id/navigationView"
-                    style="@style/Widget.Design.NavigationView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="start"
-                    android:background="@color/white"
-                    app:itemBackground="@color/white"
-                    app:itemIconTint="@color/black_effective"
-                    app:itemTextColor="@color/black_effective"
-                    app:menu="@menu/drawer">
-
-                <TextView
-                        android:id="@+id/tvAppVersion"
-                        style="@style/TextStyle.Title.Sub"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|end"
-                        android:padding="5dp"
-                        android:text="@{viewModel.appVersion}" />
-            </android.support.design.widget.NavigationView>
 
         </android.support.v4.widget.DrawerLayout>
 

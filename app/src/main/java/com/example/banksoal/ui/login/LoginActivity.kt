@@ -20,6 +20,13 @@ import dagger.android.support.HasSupportFragmentInjector
 import javax.inject.Inject
 
 class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel>(), LoginNavigator, HasSupportFragmentInjector {
+
+    companion object {
+        fun newIntent(context: Context): Intent {
+            return Intent(context, LoginActivity::class.java)
+        }
+    }
+
     @Inject
     lateinit var fragmentDispatchingAndroidInjector: DispatchingAndroidInjector<Fragment>
     @Inject
@@ -30,17 +37,11 @@ class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel>(), Logi
 
 //    private val mDrawer: DrawerLayout? = null
 
-    fun newIntent(context: Context): Intent {
-        return Intent(context, LoginActivity::class.java)
-    }
-
     override fun supportFragmentInjector(): AndroidInjector<Fragment> {
         return fragmentDispatchingAndroidInjector
     }
 
-    override fun getBindingVariable(): Int {
-        return BR.viewModel
-    }
+    override fun getBindingVariable(): Int = BR.viewModel
 
     override fun getLayoutId(): Int {
         return R.layout.activity_login
@@ -68,7 +69,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel>(), Logi
     }
 
     override fun openMainActivity() {
-        val intent = MainActivity().newIntent(this@LoginActivity)
+        val intent = MainActivity.newIntent(this@LoginActivity)
         startActivity(intent)
         finish()
     }
