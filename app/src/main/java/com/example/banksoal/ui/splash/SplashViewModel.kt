@@ -6,18 +6,21 @@ import com.example.banksoal.utils.rx.SchedulerProvider
 
 class SplashViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvider) :
     BaseViewModel<SplashNavigator>(dataManager, schedulerProvider) {
+
     fun startSeeding() {
-//        getCompositeDisposable().add(getDataManager()
-//            .seedDatabaseQuestions()
-//            .flatMap<Any> { getDataManager().seedDatabaseOptions() }
-//            .subscribeOn(getSchedulerProvider().io())
-//            .observeOn(getSchedulerProvider().ui())
-//            .subscribe({ decideNextActivity() }, { decideNextActivity() })
-//        )
+        compositeDisposable.add(
+            dataManager
+                .seedDatabaseCourses()
+                .flatMap<Any> { dataManager.seedDatabaseQuestions() }
+                .flatMap<Any> { dataManager.seedDatabaseOptions() }
+                .subscribeOn(schedulerProvider.io())
+                .observeOn(schedulerProvider.ui())
+                .subscribe({  }, { t -> getNavigator().handleError(t) })
+        )
     }
 
     fun decideNextActivity() {
-        if (dataManager.getLoginMode() == DataManager.LoggedInMode.LOGOUT) {
+        if (dataManager.preferencesHelper.loginMode == DataManager.LoggedInMode.LOGOUT) {
             getNavigator().openLoginActivity()
         } else {
             getNavigator().openMainActivity()

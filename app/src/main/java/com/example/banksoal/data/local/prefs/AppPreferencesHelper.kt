@@ -11,29 +11,27 @@ class AppPreferencesHelper
 constructor(context: Context, @PreferenceInfo prefFileName: String) : PreferencesHelper {
     private var mPrefs: SharedPreferences = context.getSharedPreferences(prefFileName, Context.MODE_PRIVATE)
 
-    override fun getCurrentUserName(): String? {
-        return mPrefs.getString(PREF_KEY_CURRENT_USER_NAME, null)
-    }
+    override var currentFullName: String? = mPrefs.getString(PREF_KEY_CURRENT_FULL_NAME, null)
 
-    override fun setCurrentUserName(userName: String?) {
-        mPrefs.edit().putString(PREF_KEY_CURRENT_USER_NAME, userName).apply()
-    }
+    override var currentUserName: String? = mPrefs.getString(PREF_KEY_CURRENT_USER_NAME, null)
 
-    override fun setLoginMode(loggedInMode: DataManager.LoggedInMode) {
-        val isLogin = loggedInMode == DataManager.LoggedInMode.LOGIN
-        mPrefs.edit().putBoolean(PREF_KEY_LOGGED_IN, isLogin).apply()
-    }
-
-    override fun getLoginMode(): DataManager.LoggedInMode {
-        val isLogin = mPrefs.getBoolean(PREF_KEY_LOGGED_IN, false)
-        return if (isLogin)
-            DataManager.LoggedInMode.LOGIN
-        else
-            DataManager.LoggedInMode.LOGOUT
-    }
+    override var loginMode: DataManager.LoggedInMode
+        get() {
+            val isLogin = mPrefs.getBoolean(PREF_KEY_LOGGED_IN, false)
+            return if (isLogin)
+                DataManager.LoggedInMode.LOGIN
+            else
+                DataManager.LoggedInMode.LOGOUT
+        }
+        set(value) {
+            val isLogin = value == DataManager.LoggedInMode.LOGIN
+            mPrefs.edit().putBoolean(PREF_KEY_LOGGED_IN, isLogin).apply()
+        }
 
     companion object {
         private const val PREF_KEY_CURRENT_USER_NAME = "PREF_KEY_CURRENT_USER_NAME"
+
+        private const val PREF_KEY_CURRENT_FULL_NAME = "PREF_KEY_CURRENT_FULL_NAME"
 
         private const val PREF_KEY_LOGGED_IN = "PREF_KEY_LOGGED_IN"
     }

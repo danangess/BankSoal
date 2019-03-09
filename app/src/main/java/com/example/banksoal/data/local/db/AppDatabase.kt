@@ -7,16 +7,17 @@ import com.example.banksoal.data.local.db.dao.*
 
 @Database(
     entities = [
-        User::class,
         Course::class,
         Question::class,
-        Option::class],
+        Option::class,
+        User::class
+    ],
     version = 2,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
-    abstract fun courseDao(): CourseDao
-    abstract fun questionDao(): QuestionDao
-    abstract fun optionDao(): OptionDao
-    abstract fun userDao(): UserDao
+    abstract val courseDao: CourseDao
+    abstract val questionDao: QuestionDao
+    abstract val optionDao: OptionDao
+    abstract val userDao: UserDao
 }

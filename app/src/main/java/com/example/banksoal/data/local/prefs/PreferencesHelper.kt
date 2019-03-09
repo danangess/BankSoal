@@ -3,11 +3,9 @@ package com.example.banksoal.data.local.prefs
 import com.example.banksoal.data.DataManager
 
 interface PreferencesHelper {
-    fun getCurrentUserName(): String?
+    var currentFullName: String?
 
-    fun setCurrentUserName(userName: String?)
+    var currentUserName: String?
 
-    fun setLoginMode(loggedInMode: DataManager.LoggedInMode)
-
-    fun getLoginMode(): DataManager.LoggedInMode
+    var loginMode: DataManager.LoggedInMode
 }

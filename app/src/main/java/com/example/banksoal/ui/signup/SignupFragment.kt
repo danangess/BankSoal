@@ -30,17 +30,11 @@ class SignupFragment : BaseFragment<FragmentSignupBinding, SignupViewModel>(), S
         mSignupViewModel.setNavigator(this)
     }
 
-    override fun getBindingVariable(): Int {
-        return BR.viewModel
-    }
+    override fun getBindingVariable(): Int = BR.viewModel
 
-    override fun getLayoutId(): Int {
-        return R.layout.fragment_signup
-    }
+    override fun getLayoutId(): Int = R.layout.fragment_signup
 
-    override fun getViewModel(): SignupViewModel {
-        return mSignupViewModel
-    }
+    override fun getViewModel(): SignupViewModel = mSignupViewModel
 
     override fun signUp() {
         val firstName = viewDataBinding.etFirstName.text.toString()
@@ -52,7 +46,7 @@ class SignupFragment : BaseFragment<FragmentSignupBinding, SignupViewModel>(), S
     }
 
     override fun openMainActivity() {
-        val intent = MainActivity().newIntent(this.requireContext())
+        val intent = MainActivity.newIntent(this.requireContext())
         startActivity(intent)
     }
 

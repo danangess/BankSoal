@@ -4,8 +4,10 @@ import com.example.banksoal.data.local.db.dao.BaseDao
 import io.reactivex.Observable
 import io.reactivex.Single
 
-abstract class AppBaseRepository<TEntity, TKey>
-constructor(val baseDao: BaseDao<TEntity>): BaseRepository<TEntity, TKey> {
+abstract class AppBaseRepository<TDao, TEntity, TKey>
+constructor(val baseDao: BaseDao<TEntity>): BaseRepository<TDao, TEntity, TKey> {
+    override val dao: TDao = baseDao as TDao
+
     override fun getAll(): Observable<List<TEntity>> {
         return Observable.fromCallable { baseDao.loadAll() }
     }

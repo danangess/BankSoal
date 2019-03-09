@@ -22,9 +22,17 @@ import com.example.banksoal.BR
 import com.example.banksoal.R
 import com.example.banksoal.databinding.NavHeaderMainBinding
 import com.example.banksoal.ui.about.AboutFragment
-
+import com.example.banksoal.ui.course.CourseFragment
+import com.example.banksoal.ui.main.fragment.MainFragment
 
 class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNavigator, HasSupportFragmentInjector {
+
+    companion object {
+        fun newIntent(context: Context): Intent {
+            return Intent(context, MainActivity::class.java)
+        }
+    }
+
     @Inject
     lateinit var fragmentDispatchingAndroidInjector: DispatchingAndroidInjector<Fragment>
 
@@ -34,16 +42,11 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
     private lateinit var mMainViewModel: MainViewModel
     private var doubleBackToExitPressedOnce = false
 
-//    private lateinit var mActivityMainBinding: ActivityMainBinding
-
-    fun newIntent(context: Context): Intent {
-        return Intent(context, MainActivity::class.java)
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        mActivityMainBinding = getViewDataBinding()
         mMainViewModel.setNavigator(this)
+        mMainViewModel.loadUserData()
+        showMainFragment()
         setupNavMenu()
     }
 
@@ -57,7 +60,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
             }
             doubleBackToExitPressedOnce = true
             Toast.makeText(this, "Back again to exit", Toast.LENGTH_SHORT).show()
-            Handler().postDelayed(Runnable { doubleBackToExitPressedOnce = false }, 2000)
+            Handler().postDelayed({ doubleBackToExitPressedOnce = false }, 2000)
         } else {
             onFragmentDetached(AboutFragment.TAG)
         }
@@ -77,13 +80,9 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
         }
     }
 
-    override fun getBindingVariable(): Int {
-        return BR.viewModel
-    }
+    override fun getBindingVariable(): Int = BR.viewModel
 
-    override fun getLayoutId(): Int {
-        return R.layout.activity_main
-    }
+    override fun getLayoutId(): Int = R.layout.activity_main
 
     override fun getViewModel(): MainViewModel {
         mMainViewModel = ViewModelProviders.of(this, mViewModelFactory).get(MainViewModel::class.java)
@@ -95,14 +94,12 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
     }
 
     override fun openLoginActivity() {
-        val intent = LoginActivity().newIntent(this@MainActivity)
+        val intent = LoginActivity.newIntent(this@MainActivity)
         startActivity(intent)
         finish()
     }
 
-    override fun supportFragmentInjector(): AndroidInjector<Fragment> {
-        return fragmentDispatchingAndroidInjector
-    }
+    override fun supportFragmentInjector(): AndroidInjector<Fragment> = fragmentDispatchingAndroidInjector
 
     private fun setupNavMenu() {
         val navHeaderMainBinding = DataBindingUtil.inflate<NavHeaderMainBinding>(
@@ -115,8 +112,12 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
         viewDataBinding.navigationView.setNavigationItemSelectedListener { item ->
             viewDataBinding.drawerView.closeDrawer(GravityCompat.START)
             when (item.itemId) {
-                R.id.navItemQuiz -> {
-                    openQuizActivity()
+                R.id.navItemMain -> {
+                    showMainFragment()
+                    true
+                }
+                R.id.navItemCourse -> {
+                    showCourseFragment()
                     true
                 }
                 R.id.navItemAbout -> {
@@ -134,6 +135,24 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
         }
     }
 
+    override fun showMainFragment() {
+        unlockDrawer()
+        supportFragmentManager
+            .beginTransaction()
+            .disallowAddToBackStack()
+            .replace(R.id.contentFragment, MainFragment.newFragment(), MainFragment.TAG)
+            .commit()
+    }
+
+    override fun showCourseFragment() {
+        unlockDrawer()
+        supportFragmentManager
+            .beginTransaction()
+            .disallowAddToBackStack()
+            .replace(R.id.contentFragment, CourseFragment.newFragment(), CourseFragment.TAG)
+            .commit()
+    }
+
     override fun showAboutFragment() {
         lockDrawer()
         supportFragmentManager
@@ -142,13 +161,6 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
             .setCustomAnimations(R.anim.slide_left, R.anim.slide_right)
             .add(R.id.clRootView, AboutFragment.newFragment(), AboutFragment.TAG)
             .commit()
-    }
-
-    override fun openQuizActivity() {
-//        val intent = QuizActivity().newIntent(this@MainActivity)
-//        startActivity(intent)
-//        finish()
-        Toast.makeText(this, "Quizes", Toast.LENGTH_SHORT).show()
     }
 
     private fun lockDrawer() {

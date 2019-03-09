@@ -28,7 +28,7 @@ class LoginViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvi
                 if (success)
                 {
                     dataManager.updateUserInfo(username)
-                    dataManager.setLoginMode(DataManager.LoggedInMode.LOGIN)
+                    dataManager.preferencesHelper.loginMode = DataManager.LoggedInMode.LOGIN
                 }
             }
             .subscribeOn(schedulerProvider.io())

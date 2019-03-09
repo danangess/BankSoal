@@ -2,10 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
         <item
-                android:id="@+id/navItemQuiz"
+                android:id="@+id/navItemMain"
+                android:checked="true"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="@string/home" />
+        <item
+                android:id="@+id/navItemCourse"
                 android:checked="true"
                 android:icon="@drawable/ic_star"
-                android:title="@string/quiz" />
+                android:title="@string/course" />
         <item
                 android:id="@+id/navItemAbout"
                 android:checked="true"
