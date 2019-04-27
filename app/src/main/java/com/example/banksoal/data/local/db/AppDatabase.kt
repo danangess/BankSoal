@@ -12,7 +12,7 @@ import com.example.banksoal.data.local.db.dao.*
         Option::class,
         User::class
     ],
-    version = 2,
+    version = 3,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {

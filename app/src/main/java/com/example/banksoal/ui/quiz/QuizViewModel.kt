@@ -23,11 +23,11 @@ class QuizViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvid
 
     var result = ObservableField<String>("Loading...")
 
-    fun loadQuizData(courseId: Long){
+    fun loadQuizData(courseId: Long, group: String){
         correctCount = 0
         inCorrectCount = 0
         compositeDisposable.add(dataManager
-            .getQuestionData(courseId)
+            .getQuestionData(courseId, group)
             .subscribeOn(schedulerProvider.io())
             .observeOn(schedulerProvider.ui())
             .subscribe({ questionList ->
