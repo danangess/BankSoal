@@ -16,6 +16,7 @@ class QuizActivity: BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNavi
 
     companion object {
         const val COURSE_ID: String = "Quiz/CourseId"
+        const val QUESTION_GROUP_ID: String = "Quiz/QuestionGroup"
 
         fun newIntent(context: Context): Intent {
             return Intent(context, QuizActivity::class.java)
@@ -61,10 +62,11 @@ class QuizActivity: BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNavi
 
     private fun setupQuiz(){
         val wrongCourseId: Long = 0
-        val courseId: Long = intent.getLongExtra(QuizActivity.COURSE_ID, wrongCourseId)
+        val courseId: Long = intent.getLongExtra(COURSE_ID, wrongCourseId)
+        val questionGroup: String = intent.getStringExtra(QUESTION_GROUP_ID)
         if (courseId != wrongCourseId) {
             Toast.makeText(this, "Course ID: $courseId loaded", Toast.LENGTH_SHORT).show()
-            mQuizViewModel.loadQuizData(courseId)
+            mQuizViewModel.loadQuizData(courseId, questionGroup)
         } else {
             Toast.makeText(this, "Course ID: $courseId not found", Toast.LENGTH_SHORT).show()
         }

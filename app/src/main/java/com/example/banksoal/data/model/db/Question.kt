@@ -23,6 +23,11 @@ class Question {
     var id: Long = 0
 
     @Expose
+    @SerializedName("group")
+    @ColumnInfo(name = "group")
+    lateinit var Group: String
+
+    @Expose
     @SerializedName("img_url")
     @ColumnInfo(name = "img_url")
     var imgUrl: String? = null

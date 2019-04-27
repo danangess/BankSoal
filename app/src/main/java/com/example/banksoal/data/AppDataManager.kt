@@ -62,9 +62,19 @@ constructor(
             .toObservable()
     }
 
-    override fun getQuestionData(courseId: Long): Observable<List<QuestionData>> {
+    override fun getQuestionGroupData(courseId: Long): Observable<List<String>> {
+        return questionRepository.getAllByCourseId(courseId)
+            .flatMap { t: List<Question> -> Observable.fromIterable(t) }
+            .map { t: Question -> t.Group }
+            .distinct()
+            .toList()
+            .toObservable()
+    }
+
+    override fun getQuestionData(courseId: Long, group: String): Observable<List<QuestionData>> {
         return questionRepository.getAllByCourseId(courseId = courseId)
             .flatMap { questions -> Observable.fromIterable(questions) }
+            .filter { t: Question -> t.Group == group }
             .flatMap { question ->
                 Observable.zip(
                     optionRepository.getAllByQuestionId(questionId = question.id),

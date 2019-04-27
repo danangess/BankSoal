@@ -1,30 +1,35 @@
 [
   {
     "id": 1,
+    "group": "One",
     "text": "What?",
     "img_url": null,
     "course_id": 1
   },
   {
     "id": 2,
+    "group": "One",
     "text": "Which?",
     "img_url": null,
     "course_id": 1
   },
   {
     "id": 3,
+    "group": "Two",
     "text": "Why",
     "img_url": null,
     "course_id": 1
   },
   {
     "id": 4,
+    "group": "Two",
     "text": "Who?",
     "img_url": "https://avatars3.githubusercontent.com/u/1024025",
     "course_id": 1
   },
   {
     "id": 5,
+    "group": "Three",
     "text": "When?",
     "img_url": "https://janishar.github.io/images/mindorks-logo-small.png",
     "course_id": 1
