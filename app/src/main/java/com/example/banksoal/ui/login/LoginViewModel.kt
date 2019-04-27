@@ -3,7 +3,7 @@ package com.example.banksoal.ui.login
 import com.example.banksoal.ui.base.BaseViewModel
 import com.example.banksoal.data.DataManager
 import android.text.TextUtils
-import com.example.banksoal.utils.CommonUtils
+import com.example.banksoal.ext.isUsername
 import com.example.banksoal.utils.rx.SchedulerProvider
 
 class LoginViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvider) :
@@ -14,7 +14,7 @@ class LoginViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvi
         if (TextUtils.isEmpty(username)) {
             return false
         }
-        if (!CommonUtils.isUsernameValid(username)) {
+        if (!username.isUsername()) {
             return false
         }
         return !TextUtils.isEmpty(password)

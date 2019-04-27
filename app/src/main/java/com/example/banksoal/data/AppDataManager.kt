@@ -6,7 +6,6 @@ import com.example.banksoal.data.local.prefs.PreferencesHelper
 import com.example.banksoal.data.model.*
 import com.example.banksoal.data.model.db.*
 import com.example.banksoal.utils.AppConstants
-import com.example.banksoal.utils.CommonUtils
 import com.google.gson.Gson
 import com.google.gson.internal.`$Gson$Types`
 import io.reactivex.Observable
@@ -15,6 +14,7 @@ import io.reactivex.functions.BiFunction
 import javax.inject.Inject
 import javax.inject.Singleton
 import com.example.banksoal.data.model.db.Question
+import com.example.banksoal.ext.loadJSONFromAsset
 
 @Singleton
 class AppDataManager
@@ -56,7 +56,7 @@ constructor(
                 Observable.zip(
                     questionRepository.getAllByCourseId(courseId = course.id),
                     Observable.just(course),
-                    BiFunction<List<Question>, Course, CourseData> { q, c -> CourseData(c) }
+                    BiFunction<List<Question>, Course, CourseData> { _, c -> CourseData(c) }
                 )
             }.toList()
             .toObservable()
@@ -77,7 +77,7 @@ constructor(
 
     override fun seedDatabaseUsers(): Observable<Boolean> {
         val type = `$Gson$Types`.newParameterizedTypeWithOwner(null, List::class.java, User::class.java)
-        val users = CommonUtils.loadJSONFromAsset(mContext, AppConstants.SEED_DATABASE_USERS)
+        val users = mContext.loadJSONFromAsset(AppConstants.SEED_DATABASE_USERS)
         val userList = mGson.fromJson<List<User>>(users, type)
 
         return Observable.fromCallable {
@@ -88,7 +88,7 @@ constructor(
 
     override fun seedDatabaseCourses(): Observable<Boolean> {
         val type = `$Gson$Types`.newParameterizedTypeWithOwner(null, List::class.java, Course::class.java)
-        val courses = CommonUtils.loadJSONFromAsset(mContext, AppConstants.SEED_DATABASE_COURSES)
+        val courses = mContext.loadJSONFromAsset(AppConstants.SEED_DATABASE_COURSES)
         val courseList = mGson.fromJson<List<Course>>(courses, type)
 
         return Observable.fromCallable {
@@ -99,7 +99,7 @@ constructor(
 
     override fun seedDatabaseQuestions(): Observable<Boolean> {
         val type = `$Gson$Types`.newParameterizedTypeWithOwner(null, List::class.java, Question::class.java)
-        val questions = CommonUtils.loadJSONFromAsset(mContext, AppConstants.SEED_DATABASE_QUESTIONS)
+        val questions = mContext.loadJSONFromAsset(AppConstants.SEED_DATABASE_QUESTIONS)
         val questionList = mGson.fromJson<List<Question>>(questions, type)
 
         return Observable.fromCallable {
@@ -109,7 +109,7 @@ constructor(
     }
 
     override fun seedDatabaseOptions(): Observable<Boolean> {
-        val options = CommonUtils.loadJSONFromAsset(mContext, AppConstants.SEED_DATABASE_OPTIONS)
+        val options = mContext.loadJSONFromAsset(AppConstants.SEED_DATABASE_OPTIONS)
         val type = `$Gson$Types`.newParameterizedTypeWithOwner(null, List::class.java, Option::class.java)
         val optionList = mGson.fromJson<List<Option>>(options, type)
 

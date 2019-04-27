@@ -12,8 +12,8 @@ import android.support.annotation.LayoutRes
 import android.app.ProgressDialog
 import android.content.Context
 import android.view.inputmethod.InputMethodManager
+import com.example.banksoal.ext.showLoadingDialog
 import com.example.banksoal.ui.login.LoginActivity
-import com.example.banksoal.utils.CommonUtils
 import com.example.banksoal.utils.NetworkUtils
 
 abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppCompatActivity(), BaseFragment.Callback {
@@ -86,7 +86,7 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
 
     fun showLoading() {
         hideLoading()
-        mProgressDialog = CommonUtils.showLoadingDialog(this)
+        mProgressDialog = this.showLoadingDialog()
     }
 
     private fun performDataBinding() {

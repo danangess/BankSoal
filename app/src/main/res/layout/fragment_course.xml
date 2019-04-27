@@ -16,7 +16,10 @@
         <Spinner android:id="@+id/spinnerCourse"
                  android:entries="@{viewModel.courseDataList}"
                  android:layout_width="match_parent"
-                 android:layout_height="wrap_content">
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_margin="15dp"
+                 android:padding="10dp">
 
         </Spinner>
 
@@ -30,6 +33,6 @@
                 android:onClick="@{() -> viewModel.onCourseClick()}"
                 android:padding="10dp"
                 android:text="@string/start"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
     </LinearLayout>
 </layout>
