@@ -6,6 +6,7 @@ import io.reactivex.Single
 
 abstract class AppBaseRepository<TDao, TEntity, TKey>
 constructor(val baseDao: BaseDao<TEntity>): BaseRepository<TDao, TEntity, TKey> {
+    @Suppress("UNCHECKED_CAST")
     override val dao: TDao = baseDao as TDao
 
     override fun getAll(): Observable<List<TEntity>> {

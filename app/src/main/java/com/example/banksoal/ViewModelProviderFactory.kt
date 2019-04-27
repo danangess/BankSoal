@@ -7,6 +7,7 @@ class ViewModelProviderFactory<V>(private val viewModel: ViewModel) : ViewModelP
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(viewModel.javaClass)) {
+            @Suppress("UNCHECKED_CAST")
             return viewModel as T
         }
         throw IllegalArgumentException("Unknown class name")
