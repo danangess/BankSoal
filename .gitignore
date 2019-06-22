@@ -75,3 +75,6 @@ fastlane/readme.md
 /build
 /captures
 .externalNativeBuild
+
+# upload .apk
+!/app/build/outputs/apk/debug/
