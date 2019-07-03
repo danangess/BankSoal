@@ -21,7 +21,7 @@ class QuizViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvid
     private val questionCardData: MutableLiveData<List<QuestionData>> = MutableLiveData()
     private val questionDataList = ObservableArrayList<QuestionData>()
 
-    var result = ObservableField<String>("Loading...")
+    var result = ObservableField<String>("0")
 
     fun loadQuizData(courseId: Long, group: String){
         correctCount = 0
@@ -39,6 +39,10 @@ class QuizViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvid
                 getNavigator().handleError(t)
             })
         )
+    }
+
+    fun answer() {
+        getNavigator().answer()
     }
 
     fun getQuestionCardData(): LiveData<List<QuestionData>>  {
@@ -59,9 +63,9 @@ class QuizViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvid
         if (questionCardData.value != null) {
             val correct = correctCount
             val n = questionCardData.value!!.count()
-            var result = 0
+            var result = 0.00f
             if (n > 0) {
-                result = correct / n
+                result = (correct.toFloat() / n.toFloat())
             }
             this.result.set("$correct / $n = $result")
         }
