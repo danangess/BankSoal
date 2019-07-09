@@ -41,4 +41,5 @@
     <string name="start">Mulai</string>
     <string name="choose">Pilih</string>
     <string name="answer">Jawab</string>
+    <string name="finish">Selesai</string>
 </resources>

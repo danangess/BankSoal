@@ -91,8 +91,7 @@ class QuestionCard(var questionData: QuestionData) {
             }
         }
 
-        if (correctCount == myCorrect) QuizViewModel.correctCount++
-        else QuizViewModel.inCorrectCount++
+        QuizViewModel.answer[questionData.question.id] = correctCount == myCorrect
     }
 
     private fun setButtonColor(button: Button?) {

@@ -11,6 +11,7 @@ import com.example.banksoal.databinding.ActivityQuizBinding
 import com.example.banksoal.ui.base.BaseActivity
 import com.example.banksoal.ui.main.MainActivity
 import com.mindorks.placeholderview.SwipePlaceHolderView
+import com.mindorks.placeholderview.listeners.ItemRemovedListener
 import javax.inject.Inject
 
 class QuizActivity : BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNavigator {
