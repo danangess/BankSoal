@@ -3,6 +3,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <import type="android.view.View" />
         <variable
                 name="viewModel"
                 type="com.example.banksoal.ui.course.CourseViewModel" />
@@ -24,20 +25,9 @@
 
         </Spinner>
 
-        <Spinner android:id="@+id/spinnerQuestionGroup"
-                 android:entries="@{viewModel.questionGroupDataList}"
-                 android:onItemSelected="@{() -> viewModel.onGroupChanged()}"
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:layout_gravity="center"
-                 android:layout_margin="15dp"
-                 android:padding="10dp">
-
-        </Spinner>
-
         <Button
                 android:id="@+id/btnCourseClick"
-                android:enabled="false"
+                android:enabled="true"
                 style="@style/Button.Primary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,7 +35,7 @@
                 android:layout_margin="15dp"
                 android:onClick="@{() -> viewModel.onCourseClick()}"
                 android:padding="10dp"
-                android:text="@string/start"
+                android:text="@string/choose"
                 android:textSize="18sp" />
     </LinearLayout>
 </layout>

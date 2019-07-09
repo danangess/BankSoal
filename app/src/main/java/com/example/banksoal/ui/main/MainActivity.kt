@@ -22,6 +22,7 @@ import com.example.banksoal.BR
 import com.example.banksoal.R
 import com.example.banksoal.databinding.NavHeaderMainBinding
 import com.example.banksoal.ui.about.AboutFragment
+import com.example.banksoal.ui.competences.CompetencesFragment
 import com.example.banksoal.ui.course.CourseFragment
 import com.example.banksoal.ui.main.fragment.MainFragment
 
@@ -54,7 +55,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
         val fragmentManager = supportFragmentManager
         val fragment = fragmentManager.findFragmentByTag(AboutFragment.TAG)
         if (fragment == null) {
-            if (doubleBackToExitPressedOnce){
+            if (doubleBackToExitPressedOnce) {
                 super.onBackPressed()
                 return
             }
@@ -152,6 +153,16 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
             .replace(R.id.contentFragment, CourseFragment.newFragment(), CourseFragment.TAG)
             .commit()
     }
+
+//    override fun showCompetencesFragment() {
+//        unlockDrawer()
+//        supportFragmentManager
+//            .beginTransaction()
+//            .disallowAddToBackStack()
+//            .setCustomAnimations(R.anim.slide_left, R.anim.slide_right)
+//            .add(R.id.clRootView, CompetencesFragment.newFragment(), CompetencesFragment.TAG)
+//            .commit()
+//    }
 
     override fun showAboutFragment() {
         lockDrawer()

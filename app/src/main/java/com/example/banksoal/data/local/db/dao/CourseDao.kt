@@ -4,10 +4,13 @@ import android.arch.persistence.room.*
 import com.example.banksoal.data.model.db.Course
 
 @Dao
-interface CourseDao: BaseDao<Course> {
+interface CourseDao : BaseDao<Course> {
     @Query("SELECT * FROM courses")
     override fun loadAll(): List<Course>
 
     @Query("DELETE FROM courses WHERE id = :id")
     fun delete(id: Long)
+
+    @Query("SELECT * FROM courses WHERE id = :id")
+    fun get(id: Long): Course
 }

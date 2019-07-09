@@ -15,7 +15,11 @@ interface DataManager {
 
     fun getCourseData(): Observable<List<CourseData>>
 
+    fun getCourse(courseId: Long): Single<CourseData>
+
     fun getQuestionGroupData(courseId: Long): Observable<List<String>>
+
+    fun getQuestionData(courseId: Long): Observable<List<QuestionData>>
 
     fun getQuestionData(courseId: Long, group: String): Observable<List<QuestionData>>
 
@@ -37,7 +41,7 @@ interface DataManager {
 
     fun doSignUp(firstName: String, lastName: String, userName: String, password: String): Single<Boolean>
 
-    enum class LoggedInMode{
+    enum class LoggedInMode {
         LOGOUT,
         LOGIN,
     }

@@ -9,5 +9,7 @@ interface MainNavigator {
 
     fun showCourseFragment()
 
+//    fun showCompetencesFragment()
+
     fun showMainFragment()
 }

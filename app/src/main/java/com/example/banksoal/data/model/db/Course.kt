@@ -20,5 +20,10 @@ class Course {
     @Expose
     @SerializedName("description")
     @ColumnInfo(name = "description")
-    var description: String?  = null
+    var description: String? = null
+
+    @Expose
+    @SerializedName("competences")
+    @ColumnInfo(name = "competences")
+    lateinit var competences: String
 }
