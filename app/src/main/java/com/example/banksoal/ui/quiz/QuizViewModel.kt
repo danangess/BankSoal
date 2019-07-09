@@ -23,29 +23,30 @@ class QuizViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvid
 
     var result = ObservableField<String>("Loading...")
 
-    fun loadQuizData(courseId: Long, group: String){
+    fun loadQuizData(courseId: Long) {
         correctCount = 0
         inCorrectCount = 0
-        compositeDisposable.add(dataManager
-            .getQuestionData(courseId, group)
-            .subscribeOn(schedulerProvider.io())
-            .observeOn(schedulerProvider.ui())
-            .subscribe({ questionList ->
-                if (questionList != null) {
-                    questionCardData.value = questionList
-                    getNavigator().loadQuizData()
-                }
-            }, {t ->
-                getNavigator().handleError(t)
-            })
+        compositeDisposable.add(
+            dataManager
+                .getQuestionData(courseId)
+                .subscribeOn(schedulerProvider.io())
+                .observeOn(schedulerProvider.ui())
+                .subscribe({ questionList ->
+                    if (questionList != null) {
+                        questionCardData.value = questionList
+                        getNavigator().loadQuizData()
+                    }
+                }, { t ->
+                    getNavigator().handleError(t)
+                })
         )
     }
 
-    fun getQuestionCardData(): LiveData<List<QuestionData>>  {
+    fun getQuestionCardData(): LiveData<List<QuestionData>> {
         return questionCardData
     }
 
-    fun getQuestionDataList(): ObservableList<QuestionData>  {
+    fun getQuestionDataList(): ObservableList<QuestionData> {
         return questionDataList
     }
 

@@ -52,7 +52,7 @@ constructor(
     override fun getCourseData(): Observable<List<CourseData>> {
         return courseRepository.getAll()
             .flatMap { courses -> Observable.fromIterable(courses) }
-            .flatMap { course  ->
+            .flatMap { course ->
                 Observable.zip(
                     questionRepository.getAllByCourseId(courseId = course.id),
                     Observable.just(course),
@@ -62,12 +62,33 @@ constructor(
             .toObservable()
     }
 
+    override fun getCourse(courseId: Long): Single<CourseData> {
+        return Single.fromCallable {
+            var course = courseRepository.get(courseId)
+            CourseData(course = course.blockingGet())
+        }
+    }
+
     override fun getQuestionGroupData(courseId: Long): Observable<List<String>> {
         return questionRepository.getAllByCourseId(courseId)
             .flatMap { t: List<Question> -> Observable.fromIterable(t) }
             .map { t: Question -> t.Group }
             .distinct()
             .toList()
+            .toObservable()
+    }
+
+    override fun getQuestionData(courseId: Long): Observable<List<QuestionData>> {
+        return questionRepository.getAllByCourseId(courseId = courseId)
+            .flatMap { questions -> Observable.fromIterable(questions) }
+//            .filter { t: Question -> t.Group == group }
+            .flatMap { question ->
+                Observable.zip(
+                    optionRepository.getAllByQuestionId(questionId = question.id),
+                    Observable.just(question),
+                    BiFunction<List<Option>, Question, QuestionData> { o, q -> QuestionData(q, o) }
+                )
+            }.toList()
             .toObservable()
     }
 
@@ -136,7 +157,7 @@ constructor(
 
     override fun updateUserInfo(userName: String?) {
         preferencesHelper.currentUserName = userName
-        if (userName != null){
+        if (userName != null) {
             val user = userRepository.dao.findByUsername(userName)
             val fullName = user!!.firstName + " " + user.lastName
             preferencesHelper.currentFullName = fullName

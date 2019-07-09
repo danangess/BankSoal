@@ -12,7 +12,7 @@ import com.example.banksoal.ui.main.MainActivity
 import com.mindorks.placeholderview.SwipePlaceHolderView
 import javax.inject.Inject
 
-class QuizActivity: BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNavigator {
+class QuizActivity : BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNavigator {
 
     companion object {
         const val COURSE_ID: String = "Quiz/CourseId"
@@ -38,10 +38,16 @@ class QuizActivity: BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNavi
 
     override fun loadQuizData() {
         val swipePlaceHolderView = findViewById<SwipePlaceHolderView>(R.id.quizContainer)
-        swipePlaceHolderView.addItemRemoveListener{
+        swipePlaceHolderView.addItemRemoveListener {
             mQuizViewModel.updateResult()
         }
-        mQuizViewModel.getQuestionCardData().value!!.forEach { question -> swipePlaceHolderView.addView(QuestionCard(question)) }
+        mQuizViewModel.getQuestionCardData().value!!.forEach { question ->
+            swipePlaceHolderView.addView(
+                QuestionCard(
+                    question
+                )
+            )
+        }
     }
 
     override fun onFinish() {
@@ -60,13 +66,13 @@ class QuizActivity: BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNavi
         onFinish()
     }
 
-    private fun setupQuiz(){
+    private fun setupQuiz() {
         val wrongCourseId: Long = 0
         val courseId: Long = intent.getLongExtra(COURSE_ID, wrongCourseId)
-        val questionGroup: String = intent.getStringExtra(QUESTION_GROUP_ID)
+//        val questionGroup: String = intent.getStringExtra(QUESTION_GROUP_ID)
         if (courseId != wrongCourseId) {
             Toast.makeText(this, "Course ID: $courseId loaded", Toast.LENGTH_SHORT).show()
-            mQuizViewModel.loadQuizData(courseId, questionGroup)
+            mQuizViewModel.loadQuizData(courseId)
         } else {
             Toast.makeText(this, "Course ID: $courseId not found", Toast.LENGTH_SHORT).show()
         }

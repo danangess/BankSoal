@@ -2,16 +2,19 @@
   {
     "id": 1,
     "name": "Course 1",
+    "competences": "[\"Satu\", \"Dua\", \"Tiga\"]",
     "description": "Course One"
   },
   {
     "id": 2,
     "name": "Course 2",
+    "competences": "[\"One\", \"Two\", \"Three\"]",
     "description": "Course Two"
   },
   {
     "id": 3,
     "name": "Course 3",
+    "competences": "[\"Setunggal\", \"Kali\", \"Tigo\"]",
     "description": "Course Three"
   }
 ]

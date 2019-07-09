@@ -48,6 +48,7 @@ class SignupFragment : BaseFragment<FragmentSignupBinding, SignupViewModel>(), S
     override fun openMainActivity() {
         val intent = MainActivity.newIntent(this.requireContext())
         startActivity(intent)
+        activity!!.finish()
     }
 
     override fun goBack() {

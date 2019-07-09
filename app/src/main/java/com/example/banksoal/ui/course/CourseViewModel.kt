@@ -1,6 +1,7 @@
 package com.example.banksoal.ui.course
 
 import android.databinding.ObservableArrayList
+import android.databinding.ObservableField
 import android.databinding.ObservableList
 import com.example.banksoal.data.DataManager
 import com.example.banksoal.data.model.CourseData
@@ -12,9 +13,11 @@ class CourseViewModel(dataManager: DataManager, schedulerProvider: SchedulerProv
 
     private var mCourseDataList: ObservableList<CourseData> = ObservableArrayList<CourseData>()
     private var mQuestionGroupDataList: ObservableList<String> = ObservableArrayList<String>()
+    private var mIsActive: ObservableField<Boolean> = ObservableField(true)
 
     fun onCourseClick() {
-        getNavigator().openQuizActivity()
+//        getNavigator().openQuizActivity()
+        getNavigator().openCompetencesFragment()
     }
 
     fun onCourseChanged() {
@@ -33,6 +36,14 @@ class CourseViewModel(dataManager: DataManager, schedulerProvider: SchedulerProv
         return mQuestionGroupDataList
     }
 
+    fun setIsActive(isActive: Boolean) {
+        mIsActive.set(isActive)
+    }
+
+    fun getIsActive(): ObservableField<Boolean> {
+        return mIsActive
+    }
+
     fun loadCourseDataList() {
         mCourseDataList.clear()
         compositeDisposable
@@ -41,7 +52,7 @@ class CourseViewModel(dataManager: DataManager, schedulerProvider: SchedulerProv
                 .subscribeOn(schedulerProvider.io())
                 .observeOn(schedulerProvider.ui())
                 .subscribe { t: List<CourseData>? ->
-                    if (t != null){
+                    if (t != null) {
                         mCourseDataList.addAll(t)
                     }
                 })
@@ -54,7 +65,7 @@ class CourseViewModel(dataManager: DataManager, schedulerProvider: SchedulerProv
                 .getQuestionGroupData(courseId)
                 .subscribeOn(schedulerProvider.io())
                 .observeOn(schedulerProvider.ui())
-                .subscribe {t: List<String>? ->
+                .subscribe { t: List<String>? ->
                     if (t != null) {
                         mQuestionGroupDataList.addAll(t)
                     }

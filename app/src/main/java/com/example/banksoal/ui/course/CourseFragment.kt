@@ -1,18 +1,17 @@
 package com.example.banksoal.ui.course
 
 import android.os.Bundle
-import android.view.View
-import android.widget.*
-import android.widget.AdapterView.OnItemSelectedListener
+import android.widget.Spinner
+import android.widget.Toast
 import com.example.banksoal.BR
 import com.example.banksoal.R
 import com.example.banksoal.data.model.CourseData
 import com.example.banksoal.databinding.FragmentCourseBinding
 import com.example.banksoal.ui.base.BaseFragment
-import com.example.banksoal.ui.quiz.QuizActivity
+import com.example.banksoal.ui.competences.CompetencesFragment
 import javax.inject.Inject
 
-class CourseFragment: BaseFragment<FragmentCourseBinding, CourseViewModel>(), CourseNavigator {
+class CourseFragment : BaseFragment<FragmentCourseBinding, CourseViewModel>(), CourseNavigator {
 
     companion object {
         const val TAG: String = "Main/Course"
@@ -45,31 +44,31 @@ class CourseFragment: BaseFragment<FragmentCourseBinding, CourseViewModel>(), Co
     }
 
     override fun openQuizActivity() {
-        val spinner = activity!!.findViewById<Spinner>(R.id.spinnerCourse)
-        val selectedCourse = spinner.selectedItem as CourseData
-        Toast.makeText(activity, "$selectedCourse selected", Toast.LENGTH_SHORT).show()
 
-        val spinnerGroup = activity!!.findViewById<Spinner>(R.id.spinnerQuestionGroup)
-        val selectedGroup = spinnerGroup.selectedItem as String
-        Toast.makeText(activity, "$selectedGroup selected", Toast.LENGTH_SHORT).show()
-
-        val intent = QuizActivity.newIntent(activity!!.applicationContext)
-        intent.putExtra(QuizActivity.COURSE_ID, selectedCourse.course.id)
-        intent.putExtra(QuizActivity.QUESTION_GROUP_ID, selectedGroup)
-        startActivity(intent)
-        activity!!.finish()
     }
 
-
-    override fun onCourseSelected(){
+    override fun openCompetencesFragment() {
+//        unlockDrawer()
+        mCourseViewModel.setIsActive(false)
         val spinner = activity!!.findViewById<Spinner>(R.id.spinnerCourse)
         val selectedCourse = spinner.selectedItem as CourseData
-        Toast.makeText(activity, "$selectedCourse selected", Toast.LENGTH_SHORT).show()
-        mCourseViewModel.loadQuestionGroupDataList(selectedCourse.course.id)
+        activity!!.supportFragmentManager
+            .beginTransaction()
+            .disallowAddToBackStack()
+//            .setCustomAnimations(R.anim.slide_left, R.anim.slide_right)
+            .add(
+                R.id.clRootView,
+                CompetencesFragment.newFragment(selectedCourse.course.id),
+                CompetencesFragment.TAG
+            )
+            .commit()
     }
 
-    override fun onQuestionGroupSelected(){
-        var startBtn = activity!!.findViewById<Button>(R.id.btnCourseClick)
-        startBtn.isEnabled = true
+    override fun onCourseSelected() {
+
+    }
+
+    override fun onQuestionGroupSelected() {
+
     }
 }
