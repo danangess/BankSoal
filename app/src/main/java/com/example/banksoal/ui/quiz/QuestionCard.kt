@@ -30,16 +30,19 @@ class QuestionCard(var questionData: QuestionData) {
 
     @Click(R.id.btnOption1)
     fun onOption1Click() {
+        setButtonColor(mOption1Button)
         showCorrectOptions(0)
     }
 
     @Click(R.id.btnOption2)
     fun onOption2Click() {
+        setButtonColor(mOption2Button)
         showCorrectOptions(1)
     }
 
     @Click(R.id.btnOption3)
     fun onOption3Click() {
+        setButtonColor(mOption3Button)
         showCorrectOptions(2)
     }
 
@@ -69,7 +72,7 @@ class QuestionCard(var questionData: QuestionData) {
     private fun showCorrectOptions(opt: Int) {
         var myCorrect = 0
         val correctCount = questionData.options.count { option: Option -> option.isCorrect }
-        questionData.showCorrectOption = true
+        questionData.showCorrectOption = false
         for (i in 0..2) {
             val option = questionData.options[i]
             var button: Button? = null
@@ -81,14 +84,22 @@ class QuestionCard(var questionData: QuestionData) {
             if (button != null) {
                 if (option.isCorrect) {
                     if (opt == i) myCorrect++
-                    button.setBackgroundColor(Color.GREEN)
+                    if (questionData.showCorrectOption) button.setBackgroundColor(Color.GREEN)
                 } else {
-                    button.setBackgroundColor(Color.RED)
+                    if (questionData.showCorrectOption) button.setBackgroundColor(Color.RED)
                 }
             }
         }
 
         if (correctCount == myCorrect) QuizViewModel.correctCount++
         else QuizViewModel.inCorrectCount++
+    }
+
+    private fun setButtonColor(button: Button?) {
+        var color = button!!.context.resources.getColor(R.color.light_gray)
+        mOption1Button?.setBackgroundColor(color)
+        mOption2Button?.setBackgroundColor(color)
+        mOption3Button?.setBackgroundColor(color)
+        button?.setBackgroundColor(Color.LTGRAY)
     }
 }

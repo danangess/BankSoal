@@ -3,6 +3,7 @@ package com.example.banksoal.ui.quiz
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import com.example.banksoal.BR
 import com.example.banksoal.R
@@ -38,6 +39,7 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNav
 
     override fun loadQuizData() {
         val swipePlaceHolderView = findViewById<SwipePlaceHolderView>(R.id.quizContainer)
+        swipePlaceHolderView.disableTouchSwipe()
         swipePlaceHolderView.addItemRemoveListener {
             mQuizViewModel.updateResult()
         }
@@ -48,6 +50,12 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNav
                 )
             )
         }
+    }
+
+    override fun answer() {
+        val swipePlaceHolderView = findViewById<SwipePlaceHolderView>(R.id.quizContainer)
+        swipePlaceHolderView.doSwipe(true)
+        mQuizViewModel.updateResult()
     }
 
     override fun onFinish() {
