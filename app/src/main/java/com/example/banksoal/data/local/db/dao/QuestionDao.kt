@@ -5,7 +5,7 @@ import android.arch.persistence.room.Query
 import com.example.banksoal.data.model.db.Question
 
 @Dao
-interface QuestionDao: BaseDao<Question> {
+interface QuestionDao : BaseDao<Question> {
     @Query("SELECT * FROM questions")
     override fun loadAll(): List<Question>
 
@@ -14,4 +14,7 @@ interface QuestionDao: BaseDao<Question> {
 
     @Query("DELETE FROM questions WHERE id = :id")
     fun delete(id: Long)
+
+    @Query("DELETE FROM questions")
+    override fun truncate()
 }

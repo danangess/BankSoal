@@ -5,7 +5,7 @@ import io.reactivex.Observable
 import io.reactivex.Single
 
 abstract class AppBaseRepository<TDao, TEntity, TKey>
-constructor(val baseDao: BaseDao<TEntity>): BaseRepository<TDao, TEntity, TKey> {
+constructor(val baseDao: BaseDao<TEntity>) : BaseRepository<TDao, TEntity, TKey> {
     @Suppress("UNCHECKED_CAST")
     override val dao: TDao = baseDao as TDao
 
@@ -30,6 +30,13 @@ constructor(val baseDao: BaseDao<TEntity>): BaseRepository<TDao, TEntity, TKey> 
     override fun edit(entity: TEntity): Single<Boolean> {
         return Single.fromCallable {
             baseDao.update(entity)
+            true
+        }
+    }
+
+    override fun truncate(): Single<Boolean> {
+        return Single.fromCallable {
+            baseDao.truncate()
             true
         }
     }

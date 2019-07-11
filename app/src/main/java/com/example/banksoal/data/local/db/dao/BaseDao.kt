@@ -8,18 +8,22 @@ import android.arch.persistence.room.Update
 interface BaseDao<TEntity> {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(tEntity: TEntity)
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(tEntities: List<TEntity>)
 
     @Update
     fun update(tEntity: TEntity)
+
     @Update
     fun update(tEntities: List<TEntity>)
 
     @Delete
     fun delete(tEntity: TEntity)
+
     @Delete
     fun delete(tEntities: List<TEntity>)
 
     fun loadAll(): List<TEntity>
+    fun truncate()
 }

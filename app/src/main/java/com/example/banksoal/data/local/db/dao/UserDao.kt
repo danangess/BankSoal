@@ -4,7 +4,7 @@ import android.arch.persistence.room.*
 import com.example.banksoal.data.model.db.User
 
 @Dao
-interface UserDao: BaseDao<User> {
+interface UserDao : BaseDao<User> {
     @Query("DELETE FROM users WHERE username = :username")
     fun delete(username: String)
 
@@ -22,4 +22,7 @@ interface UserDao: BaseDao<User> {
 
     @Query("SELECT * FROM users WHERE id IN (:userIds)")
     fun loadAllByIds(userIds: List<Int>): List<User>
+
+    @Query("DELETE FROM users")
+    override fun truncate()
 }

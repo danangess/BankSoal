@@ -10,4 +10,5 @@ interface BaseRepository<TDao, TEntity, TKey> {
     fun add(entities: List<TEntity>): Observable<Boolean>
     fun edit(entity: TEntity): Single<Boolean>
     fun remove(tKey: TKey): Single<Boolean>
+    fun truncate(): Single<Boolean>
 }

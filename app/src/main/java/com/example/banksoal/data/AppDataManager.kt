@@ -46,7 +46,11 @@ constructor(
     }
 
     override fun doLogin(userName: String, password: String): Single<Boolean> {
-        return userRepository.validate(userName, password)
+        val isValid = userRepository.validate(userName, password)
+        if (isValid.blockingGet()) {
+            preferencesHelper.loginMode = DataManager.LoggedInMode.LOGIN
+        }
+        return isValid
     }
 
     override fun getCourseData(): Observable<List<CourseData>> {
@@ -64,7 +68,7 @@ constructor(
 
     override fun getCourse(courseId: Long): Single<CourseData> {
         return Single.fromCallable {
-            var course = courseRepository.get(courseId)
+            val course = courseRepository.get(courseId)
             CourseData(course = course.blockingGet())
         }
     }
@@ -92,19 +96,19 @@ constructor(
             .toObservable()
     }
 
-    override fun getQuestionData(courseId: Long, group: String): Observable<List<QuestionData>> {
-        return questionRepository.getAllByCourseId(courseId = courseId)
-            .flatMap { questions -> Observable.fromIterable(questions) }
-            .filter { t: Question -> t.Group == group }
-            .flatMap { question ->
-                Observable.zip(
-                    optionRepository.getAllByQuestionId(questionId = question.id),
-                    Observable.just(question),
-                    BiFunction<List<Option>, Question, QuestionData> { o, q -> QuestionData(q, o) }
-                )
-            }.toList()
-            .toObservable()
-    }
+//    override fun getQuestionData(courseId: Long, group: String): Observable<List<QuestionData>> {
+//        return questionRepository.getAllByCourseId(courseId = courseId)
+//            .flatMap { questions -> Observable.fromIterable(questions) }
+//            .filter { t: Question -> t.Group == group }
+//            .flatMap { question ->
+//                Observable.zip(
+//                    optionRepository.getAllByQuestionId(questionId = question.id),
+//                    Observable.just(question),
+//                    BiFunction<List<Option>, Question, QuestionData> { o, q -> QuestionData(q, o) }
+//                )
+//            }.toList()
+//            .toObservable()
+//    }
 
     override fun seedDatabaseUsers(): Observable<Boolean> {
         val type = `$Gson$Types`.newParameterizedTypeWithOwner(null, List::class.java, User::class.java)
@@ -148,6 +152,18 @@ constructor(
             optionRepository.dao.insert(optionList)
             true
         }
+    }
+
+    override fun truncateDatabaseCourses(): Observable<Boolean> {
+        return courseRepository.truncate().toObservable()
+    }
+
+    override fun truncateDatabaseQuestions(): Observable<Boolean> {
+        return questionRepository.truncate().toObservable()
+    }
+
+    override fun truncateDatabaseOptions(): Observable<Boolean> {
+        return optionRepository.truncate().toObservable()
     }
 
     override fun setUserAsLoggedOut() {

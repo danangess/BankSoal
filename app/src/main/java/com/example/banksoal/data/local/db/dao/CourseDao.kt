@@ -13,4 +13,7 @@ interface CourseDao : BaseDao<Course> {
 
     @Query("SELECT * FROM courses WHERE id = :id")
     fun get(id: Long): Course
+
+    @Query("DELETE FROM courses")
+    override fun truncate()
 }

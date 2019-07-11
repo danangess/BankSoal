@@ -21,7 +21,7 @@ interface DataManager {
 
     fun getQuestionData(courseId: Long): Observable<List<QuestionData>>
 
-    fun getQuestionData(courseId: Long, group: String): Observable<List<QuestionData>>
+//    fun getQuestionData(courseId: Long, group: String): Observable<List<QuestionData>>
 
     fun seedDatabaseUsers(): Observable<Boolean>
 
@@ -30,6 +30,12 @@ interface DataManager {
     fun seedDatabaseQuestions(): Observable<Boolean>
 
     fun seedDatabaseOptions(): Observable<Boolean>
+
+    fun truncateDatabaseCourses(): Observable<Boolean>
+
+    fun truncateDatabaseQuestions(): Observable<Boolean>
+
+    fun truncateDatabaseOptions(): Observable<Boolean>
 
     fun setUserAsLoggedOut()
 

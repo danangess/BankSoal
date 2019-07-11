@@ -10,12 +10,16 @@ class SplashViewModel(dataManager: DataManager, schedulerProvider: SchedulerProv
     fun startSeeding() {
         compositeDisposable.add(
             dataManager
-                .seedDatabaseCourses()
+                .truncateDatabaseOptions()
+                .flatMap<Any> { dataManager.truncateDatabaseQuestions() }
+                .flatMap<Any> { dataManager.truncateDatabaseCourses() }
+                .flatMap<Any> { dataManager.seedDatabaseCourses() }
+//                .seedDatabaseCourses()
                 .flatMap<Any> { dataManager.seedDatabaseQuestions() }
                 .flatMap<Any> { dataManager.seedDatabaseOptions() }
                 .subscribeOn(schedulerProvider.io())
                 .observeOn(schedulerProvider.ui())
-                .subscribe({  }, { t -> getNavigator().handleError(t) })
+                .subscribe({ }, { t -> getNavigator().handleError(t) })
         )
     }
 
