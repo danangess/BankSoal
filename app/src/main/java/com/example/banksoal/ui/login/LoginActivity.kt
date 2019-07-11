@@ -89,6 +89,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel>(), Logi
 //        mActivityLoginBinding = getViewDataBinding()
         mLoginViewModel.setNavigator(this)
 //        setupNavMenu()
+        mLoginViewModel.isLoading.set(false)
     }
 
     override fun onBackPressed() {

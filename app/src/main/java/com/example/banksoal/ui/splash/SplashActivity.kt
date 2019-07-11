@@ -13,7 +13,7 @@ import com.example.banksoal.databinding.ActivitySplashBinding
 import com.example.banksoal.ui.main.MainActivity
 import javax.inject.Inject
 
-class SplashActivity: BaseActivity<ActivitySplashBinding, SplashViewModel>(), SplashNavigator {
+class SplashActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>(), SplashNavigator {
 
     @Inject
     lateinit var mSplashViewModel: SplashViewModel
@@ -42,6 +42,7 @@ class SplashActivity: BaseActivity<ActivitySplashBinding, SplashViewModel>(), Sp
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        mSplashViewModel.isLoading.set(false)
         mSplashViewModel.setNavigator(this)
         startApp()
         mSplashViewModel.startSeeding()

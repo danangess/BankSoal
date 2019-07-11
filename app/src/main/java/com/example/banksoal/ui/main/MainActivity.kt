@@ -49,6 +49,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
         mMainViewModel.loadUserData()
         showMainFragment()
         setupNavMenu()
+        mMainViewModel.isLoading.set(false)
     }
 
     override fun onBackPressed() {

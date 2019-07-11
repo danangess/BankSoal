@@ -7,12 +7,12 @@ import com.example.banksoal.utils.rx.SchedulerProvider
 import io.reactivex.disposables.CompositeDisposable
 import java.lang.ref.WeakReference
 
-abstract class BaseViewModel<N> (
+abstract class BaseViewModel<N>(
     val dataManager: DataManager,
     val schedulerProvider: SchedulerProvider
 ) : ViewModel() {
 
-    val isLoading = ObservableBoolean(false)
+    val isLoading = ObservableBoolean(true)
 
     val compositeDisposable: CompositeDisposable = CompositeDisposable()
 

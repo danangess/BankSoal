@@ -31,6 +31,7 @@ class CourseFragment : BaseFragment<FragmentCourseBinding, CourseViewModel>(), C
         super.onCreate(savedInstanceState)
         mCourseViewModel.setNavigator(this)
         mCourseViewModel.loadCourseDataList()
+        mCourseViewModel.isLoading.set(false)
     }
 
     override fun getBindingVariable(): Int = BR.viewModel

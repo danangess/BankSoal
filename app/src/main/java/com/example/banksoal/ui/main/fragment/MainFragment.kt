@@ -7,7 +7,7 @@ import com.example.banksoal.databinding.FragmentMainBinding
 import com.example.banksoal.ui.base.BaseFragment
 import javax.inject.Inject
 
-class MainFragment: BaseFragment<FragmentMainBinding, MainFragmentViewModel>(), MainFragmentNavigator {
+class MainFragment : BaseFragment<FragmentMainBinding, MainFragmentViewModel>(), MainFragmentNavigator {
 
     companion object {
         val TAG: String = "Main/Main"
@@ -32,5 +32,7 @@ class MainFragment: BaseFragment<FragmentMainBinding, MainFragmentViewModel>(), 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mMainFragmentViewModel.setNavigator(this)
+
+        mMainFragmentViewModel.isLoading.set(false)
     }
 }

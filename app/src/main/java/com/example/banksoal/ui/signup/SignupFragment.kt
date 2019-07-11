@@ -28,6 +28,7 @@ class SignupFragment : BaseFragment<FragmentSignupBinding, SignupViewModel>(), S
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mSignupViewModel.setNavigator(this)
+        mSignupViewModel.isLoading.set(false)
     }
 
     override fun getBindingVariable(): Int = BR.viewModel

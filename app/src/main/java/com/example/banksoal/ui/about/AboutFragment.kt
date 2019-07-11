@@ -37,5 +37,6 @@ class AboutFragment : BaseFragment<FragmentAboutBinding, AboutViewModel>(), Abou
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mAboutViewModel.setNavigator(this)
+        mAboutViewModel.isLoading.set(false)
     }
 }

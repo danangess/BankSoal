@@ -56,7 +56,9 @@ class CompetencesFragment : BaseFragment<FragmentCompetencesBinding, Competences
         mCompetencesViewModel.setNavigator(this)
         val courseId: Long = _getCourseId()
         mCompetencesViewModel.loadCompetences(courseId)
-        Toast.makeText(activity, mCompetencesViewModel.getCompetencesStringify().get(), Toast.LENGTH_SHORT).show()
+//        Toast.makeText(activity, mCompetencesViewModel.getCompetencesStringify().get(), Toast.LENGTH_SHORT).show()
+
+        mCompetencesViewModel.isLoading.set(false)
     }
 
     private fun _getCourseId(): Long {
