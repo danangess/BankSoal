@@ -7,7 +7,7 @@
     </data>
 
     <LinearLayout android:orientation="vertical"
-                  android:background="@color/light_gray"
+                  android:background="@drawable/background"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent">
 

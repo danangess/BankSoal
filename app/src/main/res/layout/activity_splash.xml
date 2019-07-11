@@ -5,23 +5,25 @@
 
     <data>
         <variable name="viewModel"
-                  type="com.example.banksoal.ui.splash.SplashViewModel"/>
+                  type="com.example.banksoal.ui.splash.SplashViewModel" />
     </data>
 
     <RelativeLayout android:id="@+id/activity_login"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@color/white"
                     android:paddingBottom="@dimen/activity_vertical_margin"
                     android:paddingTop="@dimen/activity_vertical_margin"
                     android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:paddingRight="@dimen/activity_horizontal_margin">
 
         <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:id="@+id/iVSplash"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
                 android:layout_centerInParent="true"
-                android:contentDescription="@string/app_name"
-                android:src="@mipmap/ic_launcher_round"/>
+                android:layout_margin="15dp"
+                android:contentDescription="@string/app_name" />
 
     </RelativeLayout>
 </layout>

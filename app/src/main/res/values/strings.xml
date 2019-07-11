@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Bank Soal</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Halaman Utama</string>
+    <string name="title_dashboard">Halaman Utama</string>
     <string name="title_notifications">Notifications</string>
 
-    <string name="login_title">Login</string>
-    <string name="login">Login</string>
+    <string name="login_title">Masuk</string>
+    <string name="login">Masuk</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
 
@@ -14,33 +14,34 @@
     <string name="last_name">Last Name</string>
 
     <!--Login Validation-->
-    <string name="invalid_username_password">Please provide a valid username and password.</string>
+    <string name="invalid_username_password">Username dan password salah</string>
 
-    <string name="about">About</string>
-    <string name="logout">Logout</string>
+    <string name="about">Tentang</string>
+    <string name="logout">Keluar</string>
     <string name="feed">My Feed</string>
     <string name="rate_us">Rate Us</string>
 
-    <string name="signUp_title">Register</string>
-    <string name="signUp">Register</string>
-    <string name="did_not_have_account">Did not have an account?</string>
+    <string name="signUp_title">Daftar</string>
+    <string name="signUp">Daftar</string>
+    <string name="did_not_have_account">Belom punya akun?</string>
     <string name="register">
         <u>Register</u>
     </string>
-    <string name="title_activity_home">Home</string>
+    <string name="title_activity_home">Halaman Utama</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="quiz">Quiz</string>
-    <string name="back">Back</string>
-    <string name="home">Home</string>
-    <string name="course">Course</string>
+    <string name="quiz">Kuis</string>
+    <string name="back">Kembali</string>
+    <string name="home">Halaman Utama</string>
+    <string name="course">Kompetensi Dasar</string>
     <string name="start">Mulai</string>
     <string name="choose">Pilih</string>
     <string name="answer">Jawab</string>
     <string name="finish">Selesai</string>
     <string name="app_title">Bank Soal Produksi Pengolahan Hasil Nabati</string>
+    <string name="quiz_pict">Gambar Soal</string>
 </resources>

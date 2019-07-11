@@ -2,9 +2,12 @@ package com.example.banksoal.ui.splash
 
 import android.animation.Animator
 import android.animation.ValueAnimator
+import android.graphics.drawable.Drawable
 import com.example.banksoal.ui.base.BaseActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.animation.BounceInterpolator
+import android.widget.ImageView
 import android.widget.Toast
 import com.example.banksoal.BR
 import com.example.banksoal.ui.login.LoginActivity
@@ -14,6 +17,10 @@ import com.example.banksoal.ui.main.MainActivity
 import javax.inject.Inject
 
 class SplashActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>(), SplashNavigator {
+
+    companion object {
+        const val TAG = "Splash"
+    }
 
     @Inject
     lateinit var mSplashViewModel: SplashViewModel
@@ -44,8 +51,24 @@ class SplashActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>(), S
         super.onCreate(savedInstanceState)
         mSplashViewModel.isLoading.set(false)
         mSplashViewModel.setNavigator(this)
+        loadLoader()
         startApp()
         mSplashViewModel.startSeeding()
+    }
+
+    private fun loadLoader() {
+        try {
+            val ppImageView = findViewById<ImageView>(R.id.iVSplash)
+            ppImageView.visibility = android.view.View.VISIBLE
+            val baseImageLocation = "images/"
+            val fileName = "iconloading.jpg"
+            val location = baseImageLocation + fileName
+            val ims = this.assets.open(location)
+            val drawable = Drawable.createFromStream(ims, null)
+            ppImageView.setImageDrawable(drawable)
+        } catch (ex: Exception) {
+            Log.e(TAG, ex.message)
+        }
     }
 
     private fun startApp() {

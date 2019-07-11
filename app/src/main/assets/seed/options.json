@@ -524,7 +524,7 @@
   {
     "id": 88,
     "text": "C. Pembentuk warna sari buah",
-    "question_id": 14,
+    "question_id": 18,
     "is_correct": false
   },
   {
@@ -842,7 +842,7 @@
   {
     "id": 141,
     "text": "A. menangkal radikal bebas ",
-    "question_id": 21,
+    "question_id": 29,
     "is_correct": false
   },
   {
@@ -1195,7 +1195,7 @@
   },
   {
     "id": 200,
-    "text": "E. rempah-rempah�",
+    "text": "E. rempah-rempah",
     "question_id": 40,
     "is_correct": false
   },
@@ -1225,8 +1225,8 @@
   },
   {
     "id": 205,
-    "text": "E. mengurangi rendemen�",
-    "question_id": 40,
+    "text": "E. mengurangi rendemen",
+    "question_id": 41,
     "is_correct": false
   },
   {
@@ -1255,7 +1255,7 @@
   },
   {
     "id": 210,
-    "text": "E. konveksi�",
+    "text": "E. konveksi",
     "question_id": 42,
     "is_correct": false
   },
@@ -1285,7 +1285,7 @@
   },
   {
     "id": 215,
-    "text": "E. garam, asam dan gula�",
+    "text": "E. garam, asam dan gula",
     "question_id": 43,
     "is_correct": false
   },
@@ -1315,8 +1315,8 @@
   },
   {
     "id": 220,
-    "text": "E. pickle�",
-    "question_id": 40,
+    "text": "E. pickle",
+    "question_id": 44,
     "is_correct": true
   },
   {
@@ -1345,7 +1345,7 @@
   },
   {
     "id": 225,
-    "text": "E. kalium�",
+    "text": "E. kalium",
     "question_id": 45,
     "is_correct": false
   },
@@ -1375,7 +1375,7 @@
   },
   {
     "id": 230,
-    "text": "E. gambar 3,4 dan 5�",
+    "text": "E. gambar 3,4 dan 5",
     "question_id": 46,
     "is_correct": false
   },
@@ -1405,7 +1405,7 @@
   },
   {
     "id": 235,
-    "text": "E. kencur�",
+    "text": "E. kencur",
     "question_id": 47,
     "is_correct": false
   },
@@ -1435,8 +1435,8 @@
   },
   {
     "id": 240,
-    "text": "E. kimpul�",
-    "question_id": 40,
+    "text": "E. kimpul",
+    "question_id": 48,
     "is_correct": false
   },
   {
@@ -1465,7 +1465,7 @@
   },
   {
     "id": 245,
-    "text": "E. kentang dan talas�",
+    "text": "E. kentang dan talas",
     "question_id": 49,
     "is_correct": false
   },
@@ -1495,7 +1495,7 @@
   },
   {
     "id": 250,
-    "text": "E. 3, 4 dan 5�",
+    "text": "E. 3, 4 dan 5",
     "question_id": 50,
     "is_correct": true
   },
@@ -1525,7 +1525,7 @@
   },
   {
     "id": 255,
-    "text": "E. sakarin�",
+    "text": "E. sakarin",
     "question_id": 51,
     "is_correct": false
   },
@@ -1555,7 +1555,7 @@
   },
   {
     "id": 260,
-    "text": "E. pengecilan ukuran menggunakan grinder�",
+    "text": "E. pengecilan ukuran menggunakan grinder",
     "question_id": 52,
     "is_correct": false
   },
@@ -1585,7 +1585,7 @@
   },
   {
     "id": 265,
-    "text": "E. membutuhkan sinar matahari yang terik�",
+    "text": "E. membutuhkan sinar matahari yang terik",
     "question_id": 53,
     "is_correct": false
   },
@@ -1615,7 +1615,7 @@
   },
   {
     "id": 270,
-    "text": "E. memberikan penampilan menarik�",
+    "text": "E. memberikan penampilan menarik",
     "question_id": 54,
     "is_correct": false
   },
@@ -1645,7 +1645,7 @@
   },
   {
     "id": 275,
-    "text": "E. chopper�",
+    "text": "E. chopper",
     "question_id": 55,
     "is_correct": false
   },
@@ -1675,7 +1675,7 @@
   },
   {
     "id": 280,
-    "text": "E. gadung�",
+    "text": "E. gadung",
     "question_id": 56,
     "is_correct": false
   },
@@ -1705,7 +1705,7 @@
   },
   {
     "id": 285,
-    "text": "E. pengirisan dan penggilingan�",
+    "text": "E. pengirisan dan penggilingan",
     "question_id": 57,
     "is_correct": true
   },
@@ -1735,7 +1735,7 @@
   },
   {
     "id": 290,
-    "text": "E. 2 dan 5�",
+    "text": "E. 2 dan 5",
     "question_id": 58,
     "is_correct": true
   },
@@ -1765,7 +1765,7 @@
   },
   {
     "id": 295,
-    "text": "E. teksturnya yang padat�",
+    "text": "E. teksturnya yang padat",
     "question_id": 59,
     "is_correct": true
   },
@@ -1789,13 +1789,13 @@
   },
   {
     "id": 299,
-    "text": "D. stick (french fries)�",
+    "text": "D. stick (french fries)",
     "question_id": 60,
     "is_correct": false
   },
   {
     "id": 300,
-    "text": "E. tepung�",
+    "text": "E. tepung",
     "question_id": 60,
     "is_correct": true
   },
@@ -1825,7 +1825,7 @@
   },
   {
     "id": 305,
-    "text": "E. 5-1-3-2-4�",
+    "text": "E. 5-1-3-2-4",
     "question_id": 61,
     "is_correct": false
   },
@@ -1855,7 +1855,7 @@
   },
   {
     "id": 310,
-    "text": "E. menambah aroma�",
+    "text": "E. menambah aroma",
     "question_id": 62,
     "is_correct": false
   },
@@ -1885,7 +1885,7 @@
   },
   {
     "id": 315,
-    "text": "E. plastik transparan�",
+    "text": "E. plastik transparan",
     "question_id": 63,
     "is_correct": false
   },
@@ -1915,7 +1915,7 @@
   },
   {
     "id": 320,
-    "text": "E. wheat�",
+    "text": "E. wheat",
     "question_id": 64,
     "is_correct": false
   },
@@ -1945,8 +1945,8 @@
   },
   {
     "id": 325,
-    "text": "E. barley�",
-    "question_id": 66,
+    "text": "E. barley",
+    "question_id": 65,
     "is_correct": false
   },
   {
@@ -1975,7 +1975,7 @@
   },
   {
     "id": 330,
-    "text": "E. jagung brondong�",
+    "text": "E. jagung brondong",
     "question_id": 66,
     "is_correct": true
   },
@@ -2005,7 +2005,7 @@
   },
   {
     "id": 335,
-    "text": "E. wheat�",
+    "text": "E. wheat",
     "question_id": 67,
     "is_correct": false
   },
@@ -2035,7 +2035,7 @@
   },
   {
     "id": 340,
-    "text": "E. bagian atas kering, bagian sisi biji dan biji lunak, bagian ujung biji keras�",
+    "text": "E. bagian atas kering, bagian sisi biji dan biji lunak, bagian ujung biji keras",
     "question_id": 68,
     "is_correct": false
   },
@@ -2065,7 +2065,7 @@
   },
   {
     "id": 345,
-    "text": "E. 6-5-4-2-3-1�",
+    "text": "E. 6-5-4-2-3-1",
     "question_id": 69,
     "is_correct": false
   },
@@ -2095,7 +2095,7 @@
   },
   {
     "id": 350,
-    "text": "E. mixer�",
+    "text": "E. mixer",
     "question_id": 70,
     "is_correct": false
   },
@@ -2125,7 +2125,7 @@
   },
   {
     "id": 355,
-    "text": "E. 5�",
+    "text": "E. 5",
     "question_id": 71,
     "is_correct": false
   },
@@ -2155,7 +2155,7 @@
   },
   {
     "id": 360,
-    "text": "E. 3,4,5�",
+    "text": "E. 3,4,5",
     "question_id": 72,
     "is_correct": false
   },
@@ -2185,13 +2185,13 @@
   },
   {
     "id": 365,
-    "text": "E. durum winter�",
+    "text": "E. durum winter",
     "question_id": 73,
     "is_correct": false
   },
   {
     "id": 366,
-    "text": "A. amilopektin�",
+    "text": "A. amilopektin",
     "question_id": 74,
     "is_correct": false
   },
@@ -2215,13 +2215,13 @@
   },
   {
     "id": 370,
-    "text": "E. amilosa�",
+    "text": "E. amilosa",
     "question_id": 74,
     "is_correct": false
   },
   {
     "id": 371,
-    "text": "A. protein asam amino lisin�",
+    "text": "A. protein asam amino lisin",
     "question_id": 75,
     "is_correct": true
   },
@@ -2245,13 +2245,13 @@
   },
   {
     "id": 375,
-    "text": "E. protein yang mengandung vitamin B kompleks�",
+    "text": "E. protein yang mengandung vitamin B kompleks",
     "question_id": 75,
     "is_correct": false
   },
   {
     "id": 376,
-    "text": "A. lemak�",
+    "text": "A. lemak",
     "question_id": 76,
     "is_correct": false
   },
@@ -2275,13 +2275,13 @@
   },
   {
     "id": 380,
-    "text": "E. mineral�",
+    "text": "E. mineral",
     "question_id": 76,
     "is_correct": false
   },
   {
     "id": 381,
-    "text": "A. kacang merah�",
+    "text": "A. kacang merah",
     "question_id": 77,
     "is_correct": false
   },
@@ -2305,13 +2305,13 @@
   },
   {
     "id": 385,
-    "text": "E. kacang hijau�",
+    "text": "E. kacang hijau",
     "question_id": 77,
     "is_correct": true
   },
   {
     "id": 386,
-    "text": "A. blender�",
+    "text": "A. blender",
     "question_id": 78,
     "is_correct": false
   },
@@ -2335,13 +2335,13 @@
   },
   {
     "id": 390,
-    "text": "E. mixer�",
+    "text": "E. mixer",
     "question_id": 78,
     "is_correct": false
   },
   {
     "id": 391,
-    "text": "A. memperbesar luas permukaan untuk memudahkan proses ekstraksi�",
+    "text": "A. memperbesar luas permukaan untuk memudahkan proses ekstraksi",
     "question_id": 79,
     "is_correct": true
   },
@@ -2365,13 +2365,13 @@
   },
   {
     "id": 395,
-    "text": "E. memperbesar luas permukaan untuk tuhuan meningkatkan flavor�",
+    "text": "E. memperbesar luas permukaan untuk tuhuan meningkatkan flavor",
     "question_id": 79,
     "is_correct": false
   },
   {
     "id": 396,
-    "text": "A. 1,2,3�",
+    "text": "A. 1,2,3",
     "question_id": 80,
     "is_correct": false
   },
@@ -2389,19 +2389,19 @@
   },
   {
     "id": 399,
-    "text": "D. 2,3,5�",
+    "text": "D. 2,3,5",
     "question_id": 80,
     "is_correct": false
   },
   {
     "id": 400,
-    "text": "E. 2,5,6�",
+    "text": "E. 2,5,6",
     "question_id": 80,
     "is_correct": true
   },
   {
     "id": 401,
-    "text": "A. A dan 1 (disc mill dan sari kedelai)�",
+    "text": "A. A dan 1 (disc mill dan sari kedelai)",
     "question_id": 81,
     "is_correct": false
   },
@@ -2419,19 +2419,19 @@
   },
   {
     "id": 404,
-    "text": "D. B dan 2 (Disc mill dan sari kedelai)�",
+    "text": "D. B dan 2 (Disc mill dan sari kedelai)",
     "question_id": 81,
     "is_correct": false
   },
   {
     "id": 405,
-    "text": "E. C dan 3 (hammer mill dan selai kacang)�",
+    "text": "E. C dan 3 (hammer mill dan selai kacang)",
     "question_id": 81,
     "is_correct": false
   },
   {
     "id": 406,
-    "text": "A. 1�",
+    "text": "A. 1",
     "question_id": 82,
     "is_correct": false
   },
@@ -2449,19 +2449,19 @@
   },
   {
     "id": 409,
-    "text": "D. 4�",
+    "text": "D. 4",
     "question_id": 82,
     "is_correct": false
   },
   {
     "id": 410,
-    "text": "E. 5�",
+    "text": "E. 5",
     "question_id": 82,
     "is_correct": false
   },
   {
     "id": 411,
-    "text": "A. 3-1-4-5-6-2�",
+    "text": "A. 3-1-4-5-6-2",
     "question_id": 83,
     "is_correct": false
   },
@@ -2479,19 +2479,19 @@
   },
   {
     "id": 414,
-    "text": "D. 3-4-5-1-6-2�",
+    "text": "D. 3-4-5-1-6-2",
     "question_id": 83,
     "is_correct": false
   },
   {
     "id": 415,
-    "text": "E. 3-4-5-6-1-2�",
+    "text": "E. 3-4-5-6-1-2",
     "question_id": 83,
     "is_correct": false
   },
   {
     "id": 416,
-    "text": "A. selai, kacang goreng, kacang rebus, kacang oven, peyek�",
+    "text": "A. selai, kacang goreng, kacang rebus, kacang oven, peyek",
     "question_id": 84,
     "is_correct": true
   },
@@ -2509,19 +2509,19 @@
   },
   {
     "id": 419,
-    "text": "D. kecap�",
+    "text": "D. kecap",
     "question_id": 84,
     "is_correct": false
   },
   {
     "id": 420,
-    "text": "E. keripik�",
+    "text": "E. keripik",
     "question_id": 84,
     "is_correct": false
   },
   {
     "id": 421,
-    "text": "A. mengurangi kadar air kacang kedelai�",
+    "text": "A. mengurangi kadar air kacang kedelai",
     "question_id": 85,
     "is_correct": false
   },
@@ -2539,19 +2539,19 @@
   },
   {
     "id": 424,
-    "text": "D. memudahkan proses peragian�",
+    "text": "D. memudahkan proses peragian",
     "question_id": 85,
     "is_correct": false
   },
   {
     "id": 425,
-    "text": "E. mempercepat proses fermentasi�",
+    "text": "E. mempercepat proses fermentasi",
     "question_id": 85,
     "is_correct": true
   },
   {
     "id": 426,
-    "text": "A. menurunkan kadar air pada kacang sehingga selai yang dihasilkan lembek�",
+    "text": "A. menurunkan kadar air pada kacang sehingga selai yang dihasilkan lembek",
     "question_id": 86,
     "is_correct": false
   },
@@ -2569,19 +2569,19 @@
   },
   {
     "id": 429,
-    "text": "D. menaikkan kadar air pada kacang sehingga selai yang dihasilkan sangat lembek�",
+    "text": "D. menaikkan kadar air pada kacang sehingga selai yang dihasilkan sangat lembek",
     "question_id": 86,
     "is_correct": false
   },
   {
     "id": 430,
-    "text": "E. menurunkan kadar air pada kacang sehingga selai yang dihasilkan mempunyai daya oles yang kurang baik�",
+    "text": "E. menurunkan kadar air pada kacang sehingga selai yang dihasilkan mempunyai daya oles yang kurang baik",
     "question_id": 86,
     "is_correct": false
   },
   {
     "id": 431,
-    "text": "A. amilopektin�",
+    "text": "A. amilopektin",
     "question_id": 87,
     "is_correct": false
   },
@@ -2599,19 +2599,19 @@
   },
   {
     "id": 434,
-    "text": "D. vitamin�",
+    "text": "D. vitamin",
     "question_id": 87,
     "is_correct": false
   },
   {
     "id": 435,
-    "text": "E. air�",
+    "text": "E. air",
     "question_id": 87,
     "is_correct": false
   },
   {
     "id": 436,
-    "text": "A. sari buah menggumpal�",
+    "text": "A. sari buah menggumpal",
     "question_id": 88,
     "is_correct": false
   },
@@ -2629,19 +2629,19 @@
   },
   {
     "id": 439,
-    "text": "D. menjadi lebih awet�",
+    "text": "D. menjadi lebih awet",
     "question_id": 88,
     "is_correct": false
   },
   {
     "id": 440,
-    "text": "E. aroma lebih kuat�",
+    "text": "E. aroma lebih kuat",
     "question_id": 88,
     "is_correct": false
   },
   {
     "id": 441,
-    "text": "A. LTLT (Low Temperature Long Time)�",
+    "text": "A. LTLT (Low Temperature Long Time)",
     "question_id": 89,
     "is_correct": false
   },
@@ -2659,19 +2659,19 @@
   },
   {
     "id": 444,
-    "text": "D. Aseptic Processing�",
+    "text": "D. Aseptic Processing",
     "question_id": 89,
     "is_correct": false
   },
   {
     "id": 445,
-    "text": "E. Terminal Sterilization�",
+    "text": "E. Terminal Sterilization",
     "question_id": 89,
     "is_correct": false
   },
   {
     "id": 446,
-    "text": "A. LTLT (Low Temperature Long Time)�",
+    "text": "A. LTLT (Low Temperature Long Time)",
     "question_id": 90,
     "is_correct": false
   },
@@ -2689,19 +2689,19 @@
   },
   {
     "id": 449,
-    "text": "D. Aseptic Processing�",
+    "text": "D. Aseptic Processing",
     "question_id": 90,
     "is_correct": true
   },
   {
     "id": 450,
-    "text": "E. Terminal Sterilization�",
+    "text": "E. Terminal Sterilization",
     "question_id": 90,
     "is_correct": false
   },
   {
     "id": 451,
-    "text": "A. kegiatan mengukur dan menilai produk�",
+    "text": "A. kegiatan mengukur dan menilai produk",
     "question_id": 91,
     "is_correct": true
   },
@@ -2719,19 +2719,19 @@
   },
   {
     "id": 454,
-    "text": "D. kegiatan pengendalian mutu produk�",
+    "text": "D. kegiatan pengendalian mutu produk",
     "question_id": 91,
     "is_correct": false
   },
   {
     "id": 455,
-    "text": "E. kegiatan penilaian kandungan produk�",
+    "text": "E. kegiatan penilaian kandungan produk",
     "question_id": 91,
     "is_correct": false
   },
   {
     "id": 456,
-    "text": "A. menguji sensori produk olahan buah-buahan�",
+    "text": "A. menguji sensori produk olahan buah-buahan",
     "question_id": 92,
     "is_correct": false
   },
@@ -2749,19 +2749,19 @@
   },
   {
     "id": 459,
-    "text": "D. pengawasan mutu produk olahan buah-buahan�",
+    "text": "D. pengawasan mutu produk olahan buah-buahan",
     "question_id": 92,
     "is_correct": false
   },
   {
     "id": 460,
-    "text": "E. uji organoleptik produk akhir�",
+    "text": "E. uji organoleptik produk akhir",
     "question_id": 92,
     "is_correct": false
   },
   {
     "id": 461,
-    "text": "A. kesesuaian terhadap persyaratan yang telah ditentukan�",
+    "text": "A. kesesuaian terhadap persyaratan yang telah ditentukan",
     "question_id": 93,
     "is_correct": true
   },
@@ -2779,19 +2779,19 @@
   },
   {
     "id": 464,
-    "text": "D. menguji tingkat kesukaan konsumen terhadap produk�",
+    "text": "D. menguji tingkat kesukaan konsumen terhadap produk",
     "question_id": 93,
     "is_correct": false
   },
   {
     "id": 465,
-    "text": "E. mengidentifikasi produk yang dihasilkan�",
+    "text": "E. mengidentifikasi produk yang dihasilkan",
     "question_id": 93,
     "is_correct": false
   },
   {
     "id": 466,
-    "text": "A. tekstur keras, rasa asam dan berbau khas singkong�",
+    "text": "A. tekstur keras, rasa asam dan berbau khas singkong",
     "question_id": 94,
     "is_correct": false
   },
@@ -2809,19 +2809,19 @@
   },
   {
     "id": 469,
-    "text": "D. tekstur empuk, rasa manis dan beraroma khas singkong�",
+    "text": "D. tekstur empuk, rasa manis dan beraroma khas singkong",
     "question_id": 94,
     "is_correct": false
   },
   {
     "id": 470,
-    "text": "E. tekstur empuk, perpaduan rasa manis dan terdapat sedikit beraroma alkohol�",
+    "text": "E. tekstur empuk, perpaduan rasa manis dan terdapat sedikit beraroma alkohol",
     "question_id": 94,
     "is_correct": true
   },
   {
     "id": 471,
-    "text": "A. matang optomal, bentuk tidak cacat�",
+    "text": "A. matang optomal, bentuk tidak cacat",
     "question_id": 95,
     "is_correct": true
   },
@@ -2839,19 +2839,19 @@
   },
   {
     "id": 474,
-    "text": "D. mengkal, bentuk cacat�",
+    "text": "D. mengkal, bentuk cacat",
     "question_id": 95,
     "is_correct": false
   },
   {
     "id": 475,
-    "text": "E. matang belum sempurna, bentuk tidak cacat�",
+    "text": "E. matang belum sempurna, bentuk tidak cacat",
     "question_id": 95,
     "is_correct": false
   },
   {
     "id": 476,
-    "text": "A. limbah endapan/lumpur�",
+    "text": "A. limbah endapan/lumpur",
     "question_id": 96,
     "is_correct": false
   },
@@ -2869,19 +2869,19 @@
   },
   {
     "id": 479,
-    "text": "D. limbah teknologi�",
+    "text": "D. limbah teknologi",
     "question_id": 96,
     "is_correct": true
   },
   {
     "id": 480,
-    "text": "E. limbah cair�",
+    "text": "E. limbah cair",
     "question_id": 96,
     "is_correct": false
   },
   {
     "id": 481,
-    "text": "A. sianida�",
+    "text": "A. sianida",
     "question_id": 97,
     "is_correct": true
   },
@@ -2899,19 +2899,19 @@
   },
   {
     "id": 484,
-    "text": "D. amonia bebas�",
+    "text": "D. amonia bebas",
     "question_id": 97,
     "is_correct": false
   },
   {
     "id": 485,
-    "text": "E. fenol�",
+    "text": "E. fenol",
     "question_id": 97,
     "is_correct": false
   },
   {
     "id": 486,
-    "text": "A. 1-3-5-6�",
+    "text": "A. 1-3-5-6",
     "question_id": 98,
     "is_correct": false
   },
@@ -2929,19 +2929,19 @@
   },
   {
     "id": 489,
-    "text": "D. 2-4-7-8�",
+    "text": "D. 2-4-7-8",
     "question_id": 98,
     "is_correct": false
   },
   {
     "id": 490,
-    "text": "E. 2-5-6-8�",
+    "text": "E. 2-5-6-8",
     "question_id": 98,
     "is_correct": false
   },
   {
     "id": 491,
-    "text": "A. disk mill�",
+    "text": "A. disk mill",
     "question_id": 99,
     "is_correct": false
   },
@@ -2959,19 +2959,19 @@
   },
   {
     "id": 494,
-    "text": "D. hammer mill�",
+    "text": "D. hammer mill",
     "question_id": 99,
     "is_correct": true
   },
   {
     "id": 495,
-    "text": "E. roller mill�",
+    "text": "E. roller mill",
     "question_id": 99,
     "is_correct": false
   },
   {
     "id": 496,
-    "text": "A. protein�",
+    "text": "A. protein",
     "question_id": 100,
     "is_correct": false
   },
@@ -2989,13 +2989,13 @@
   },
   {
     "id": 499,
-    "text": "D. mineral�",
+    "text": "D. mineral",
     "question_id": 100,
     "is_correct": false
   },
   {
     "id": 500,
-    "text": "E. karbohidrat�",
+    "text": "E. karbohidrat",
     "question_id": 100,
     "is_correct": true
   }

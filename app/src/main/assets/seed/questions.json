@@ -2,7 +2,7 @@
   {
     "id": 1,
     "group": "One",
-    "text": "Suatu proses yang pada intinya memastikan kualitas dari semua faktor yang terlibat dalam kegiatan produksi merupakan pengertian dari�.",
+    "text": "Suatu proses yang pada intinya memastikan kualitas dari semua faktor yang terlibat dalam kegiatan produksi merupakan pengertian dari.",
     "img_url": null,
     "course_id": 1
   },
@@ -16,7 +16,7 @@
   {
     "id": 3,
     "group": "One",
-    "text": "Bahan baku nabati yang sering digunakan sebagai sumber energi dan karbohidrat serta dijadikan makanan pokok bagi manusia dan biasanya memiliki kulit biji yang cukup keras dan tidak dapat dikonsumsi. Bahan baku tersebut masuk kedalam komoditas�",
+    "text": "Bahan baku nabati yang sering digunakan sebagai sumber energi dan karbohidrat serta dijadikan makanan pokok bagi manusia dan biasanya memiliki kulit biji yang cukup keras dan tidak dapat dikonsumsi. Bahan baku tersebut masuk kedalam komoditas",
     "img_url": null,
     "course_id": 1
   },
@@ -30,8 +30,8 @@
   {
     "id": 5,
     "group": "One",
-    "text": "Diatas merupakan salah satu gambar umbi-umbian yang mengalami kerusakan, terjadi perubahan warna kebiru-biruan, coklat serta kehitaman. Hal tersebut merupakan salah satu faktor utama penyebab kerusakan diakibatkan oleh�",
-    "img_url": null,
+    "text": "Diatas merupakan salah satu gambar umbi-umbian yang mengalami kerusakan, terjadi perubahan warna kebiru-biruan, coklat serta kehitaman. Hal tersebut merupakan salah satu faktor utama penyebab kerusakan diakibatkan oleh",
+    "img_url": "5.jpg",
     "course_id": 1
   },
   {
@@ -73,7 +73,7 @@
     "id": 11,
     "group": "Two",
     "text": "Perhatikan gambar di bawah ini!Alat pada gambar dapat digunakan untuk memproduksi sari buah. Prinsip yang digunakan alat ini adalah...",
-    "img_url": null,
+    "img_url": "11.jpg",
     "course_id": 2
   },
   {
@@ -100,7 +100,7 @@
   {
     "id": 15,
     "group": "Two",
-    "text": "1) Memperpanjang masa simpan\n2) Mengawetkan\n3) Mencegah kerusakan buah\n4) Menstabilkan zat gizi\n5) Meningkatkan nilai jual\nBerdasarkan uraian diatas, manakah yang termasuk kedalam keuntungan yang umumnya didapatkan dari pengolahan buah-buahan�",
+    "text": "1) Memperpanjang masa simpan\n2) Mengawetkan\n3) Mencegah kerusakan buah\n4) Menstabilkan zat gizi\n5) Meningkatkan nilai jual\nBerdasarkan uraian diatas, manakah yang termasuk kedalam keuntungan yang umumnya didapatkan dari pengolahan buah-buahan",
     "img_url": null,
     "course_id": 2
   },
@@ -121,7 +121,7 @@
   {
     "id": 18,
     "group": "Two",
-    "text": "Gula yang digunakan dalam pembuatan sari buah adalah gula putih. Namun untuk sari buah asli atau yang ditambahkan gula dan tidak diencerkan maka tidak memerlukan gula selama proses pengolahannya. Kadar gula sari buah hanya 12 � 14 %. Fungsi penambahan gula pada pembuatan sari buah yang paling tepat adalah...",
+    "text": "Gula yang digunakan dalam pembuatan sari buah adalah gula putih. Namun untuk sari buah asli atau yang ditambahkan gula dan tidak diencerkan maka tidak memerlukan gula selama proses pengolahannya. Kadar gula sari buah hanya 12  14 %. Fungsi penambahan gula pada pembuatan sari buah yang paling tepat adalah...",
     "img_url": null,
     "course_id": 2
   },
@@ -142,21 +142,21 @@
   {
     "id": 21,
     "group": "Two",
-    "text": "Selai merupakan salah satu produk olahan pangan berbasis buah-buahan yang sudah dikenal dan diproduksi baik secara parsial ataupun masal relatif cukup lama. Substansi esensial yang terdapat pada selai ada tiga komponen�",
+    "text": "Selai merupakan salah satu produk olahan pangan berbasis buah-buahan yang sudah dikenal dan diproduksi baik secara parsial ataupun masal relatif cukup lama. Substansi esensial yang terdapat pada selai ada tiga komponen",
     "img_url": null,
     "course_id": 2
   },
   {
     "id": 22,
     "group": "Two",
-    "text": "Pisang untuk sale sebaiknya dari pisang yang mengandung kadar karbohidrat relatif tinggi dan pisang benar-benar masak atau pisang yang sudah siap dipanen kemudian diperam untuk beberapa saat. Secara modern sale dikeringkan dengan alat pengering yang dapat diatur suhu dan lama pengeringannya. Untuk mengawetkan sale pisang dapat digunakan bahan kimia seperti�.",
+    "text": "Pisang untuk sale sebaiknya dari pisang yang mengandung kadar karbohidrat relatif tinggi dan pisang benar-benar masak atau pisang yang sudah siap dipanen kemudian diperam untuk beberapa saat. Secara modern sale dikeringkan dengan alat pengering yang dapat diatur suhu dan lama pengeringannya. Untuk mengawetkan sale pisang dapat digunakan bahan kimia seperti.",
     "img_url": null,
     "course_id": 2
   },
   {
     "id": 23,
     "group": "Two",
-    "text": "Prinsip pengolahan pada sale pisang adalah�",
+    "text": "Prinsip pengolahan pada sale pisang adalah",
     "img_url": null,
     "course_id": 2
   },
@@ -164,13 +164,13 @@
     "id": 24,
     "group": "Two",
     "text": "Perhatikan diagram alir proses pengolahan selai berikut! Proses selanjutnya yang perlu dilakukan pada pengolahan selai buah adalah....",
-    "img_url": null,
+    "img_url": "24.png",
     "course_id": 2
   },
   {
     "id": 25,
     "group": "Two",
-    "text": "Penggunaan larutan CaCl2 atau kapur pada proses pengolahan manisan buah berguna sebagai�",
+    "text": "Penggunaan larutan CaCl2 atau kapur pada proses pengolahan manisan buah berguna sebagai",
     "img_url": null,
     "course_id": 2
   },
@@ -234,7 +234,7 @@
     "id": 34,
     "group": "Three",
     "text": "Perhatikan gambar di bawah ini! Prinsip kerja alat di tersebut adalah dengan menyerap kadar air serta perlu mengatur keseimbangan...",
-    "img_url": null,
+    "img_url": "34.png",
     "course_id": 3
   },
   {
@@ -247,35 +247,35 @@
   {
     "id": 36,
     "group": "Three",
-    "text": "Produk sayuran merupakan salah satu Perishable Food yang perlu dilakukan penanganan lebih lanjut salah satunya dengan metode fermentasi. Pada dasarnya, proses fermentasi sayuran menggunakan bakteri asam laktat, salah satu bakteri yang berperan dalam kelangsungan proses fermentasi sayuran tersebut adalah�.",
+    "text": "Produk sayuran merupakan salah satu Perishable Food yang perlu dilakukan penanganan lebih lanjut salah satunya dengan metode fermentasi. Pada dasarnya, proses fermentasi sayuran menggunakan bakteri asam laktat, salah satu bakteri yang berperan dalam kelangsungan proses fermentasi sayuran tersebut adalah.",
     "img_url": null,
     "course_id": 3
   },
   {
     "id": 37,
     "group": "Three",
-    "text": "Konsentrasi garam yang terlalu rendah dalam proses fermentasi akan mengakibatkan pelunakan jaringan pada sayuran akibat adanya aktivitas enzim. Enzim ini berfungsi untuk mendegradasi molekul pektin yang banyak ditemukan pada sel tanaman. Jenis enzim tersebut adalah �.",
+    "text": "Konsentrasi garam yang terlalu rendah dalam proses fermentasi akan mengakibatkan pelunakan jaringan pada sayuran akibat adanya aktivitas enzim. Enzim ini berfungsi untuk mendegradasi molekul pektin yang banyak ditemukan pada sel tanaman. Jenis enzim tersebut adalah .",
     "img_url": null,
     "course_id": 3
   },
   {
     "id": 38,
     "group": "Three",
-    "text": "Kerusakan Sauerkraut atau cacat yang paling sering terjadi dan menimbulkan pemasalahan pada sauerkraut adalah cacat warna yang dikenal secara umum dengan istilah sauerkraut jingga hal ini disebabkan oleh �",
+    "text": "Kerusakan Sauerkraut atau cacat yang paling sering terjadi dan menimbulkan pemasalahan pada sauerkraut adalah cacat warna yang dikenal secara umum dengan istilah sauerkraut jingga hal ini disebabkan oleh ",
     "img_url": null,
     "course_id": 3
   },
   {
     "id": 39,
     "group": "Three",
-    "text": "Dalam pembuatan pickle ada beberapa mikroorganisme yang digunakan, salah satunya yang berperan dalam pembentuk gas dan biasanya juga beperan pada masa akhir fermentasi merupakan jenis bakteri �",
+    "text": "Dalam pembuatan pickle ada beberapa mikroorganisme yang digunakan, salah satunya yang berperan dalam pembentuk gas dan biasanya juga beperan pada masa akhir fermentasi merupakan jenis bakteri ",
     "img_url": null,
     "course_id": 3
   },
   {
     "id": 40,
     "group": "Three",
-    "text": "Dalam pembuatan Pickle ada bahan tambah yang dapat digunakan seperti gula, cuka, rempah-rempah dll. Salah satunya berperan sebagai substrat pertumbuhan bakteri asam laktat jenis bahan tambahan yang digunakan yaitu �.",
+    "text": "Dalam pembuatan Pickle ada bahan tambah yang dapat digunakan seperti gula, cuka, rempah-rempah dll. Salah satunya berperan sebagai substrat pertumbuhan bakteri asam laktat jenis bahan tambahan yang digunakan yaitu .",
     "img_url": null,
     "course_id": 3
   },
@@ -289,7 +289,7 @@
   {
     "id": 42,
     "group": "Four",
-    "text": "Keripik merupakan produk makanan ringan yang memiliki bentuk asli dari bahan baku yang digunakan, sedangkan kerupuk merupakan makanan ringan yang diolah dengan bahan baku yang telah dihancurkan dalam bentuk adonan. Prinsip penggorengan keripik menggunakan metode � ",
+    "text": "Keripik merupakan produk makanan ringan yang memiliki bentuk asli dari bahan baku yang digunakan, sedangkan kerupuk merupakan makanan ringan yang diolah dengan bahan baku yang telah dihancurkan dalam bentuk adonan. Prinsip penggorengan keripik menggunakan metode  ",
     "img_url": null,
     "course_id": 4
   },
@@ -318,7 +318,7 @@
     "id": 46,
     "group": "Four",
     "text": "Perhatikan gambar berikut. Disajikan beberapa gambar umbi-umbian yaitu bengkoang, kubis, jahe, kentang dan ubi jalar. Dari gambar diatas  manakah yang termasuk ke dalam umbi akar adalah...",
-    "img_url": null,
+    "img_url": "46.png",
     "course_id": 4
   },
   {
@@ -345,7 +345,7 @@
   {
     "id": 50,
     "group": "Four",
-    "text": "Berikut adalah hal penting yang harus diperhatikan dalam pemilihan jenis kentang sebagai bahan baku produk keripik kentang :\n1.	Kulit umbi bebas dari kotoran (tanah atau debu)\n2.	Memiliki kandungan gula reduksi yang rendah\n3.	Memiliki kadar air yang rendah\n4.	Memiliki bentuk yang bulat sempurna\n5.	Memiliki kandungan pati yang tinggi\nDari pernyataan diatas, manakah yang paling tepat�.",
+    "text": "Berikut adalah hal penting yang harus diperhatikan dalam pemilihan jenis kentang sebagai bahan baku produk keripik kentang :\n1.	Kulit umbi bebas dari kotoran (tanah atau debu)\n2.	Memiliki kandungan gula reduksi yang rendah\n3.	Memiliki kadar air yang rendah\n4.	Memiliki bentuk yang bulat sempurna\n5.	Memiliki kandungan pati yang tinggi\nDari pernyataan diatas, manakah yang paling tepat.",
     "img_url": null,
     "course_id": 4
   },
@@ -373,7 +373,7 @@
   {
     "id": 54,
     "group": "Four",
-    "text": "Kentang merupakan salah satu komoditas yang sering diolah menjadi keripik. Pengecilan ukuran pada prose pembuatan keripik kentang bertujuan untuk ���",
+    "text": "Kentang merupakan salah satu komoditas yang sering diolah menjadi keripik. Pengecilan ukuran pada prose pembuatan keripik kentang bertujuan untuk ",
     "img_url": null,
     "course_id": 4
   },
@@ -387,42 +387,42 @@
   {
     "id": 56,
     "group": "Four",
-    "text": "Penggunaan peralatan atau mesin pengecilan ukuran tergantung pada karakteristik bahan yang akan dilakukan pengecilan ukuran. Umbi yang lebih tepat dilakukan pengecilan ukuran menggunakan rotary knife cutter adalah ���",
+    "text": "Penggunaan peralatan atau mesin pengecilan ukuran tergantung pada karakteristik bahan yang akan dilakukan pengecilan ukuran. Umbi yang lebih tepat dilakukan pengecilan ukuran menggunakan rotary knife cutter adalah ",
     "img_url": null,
     "course_id": 4
   },
   {
     "id": 57,
     "group": "Four",
-    "text": "Tita akan membuat kue menggunakan tepung umbi ungu. Sebelum membuat cake, Tita melakukan proses pembuatan tepung. Proses pengecilan ukuran apa saja yang diterapkan dalam proses penepungan ��..",
+    "text": "Tita akan membuat kue menggunakan tepung umbi ungu. Sebelum membuat cake, Tita melakukan proses pembuatan tepung. Proses pengecilan ukuran apa saja yang diterapkan dalam proses penepungan ..",
     "img_url": null,
     "course_id": 4
   },
   {
     "id": 58,
     "group": "Four",
-    "text": "Perhatikan gambar alat pengolahan di bawah ini! Peralatan pengolahan yang berfungsi sebagai pencampur ditunjukan oleh nomor �����",
-    "img_url": null,
+    "text": "Perhatikan gambar alat pengolahan di bawah ini! Peralatan pengolahan yang berfungsi sebagai pencampur ditunjukan oleh nomor ",
+    "img_url": "58.png",
     "course_id": 4
   },
   {
     "id": 59,
     "group": "Four",
-    "text": "Kentang memiliki banyak sekali varietas/ jenis. Kentang yang banyak ditemui adalah kentang putih, hitam, merah, dan kuning. Kentang yang banyak dipilih untuk diolah menjadi keripik adalah kentang kuning, karena�.",
+    "text": "Kentang memiliki banyak sekali varietas/ jenis. Kentang yang banyak ditemui adalah kentang putih, hitam, merah, dan kuning. Kentang yang banyak dipilih untuk diolah menjadi keripik adalah kentang kuning, karena.",
     "img_url": null,
     "course_id": 4
   },
   {
     "id": 60,
     "group": "Four",
-    "text": "Gambar alat di atas merupakan alat yang cocok digunakan dalam pengolahan kentang, yaitu�",
-    "img_url": null,
+    "text": "Gambar alat di atas merupakan alat yang cocok digunakan dalam pengolahan kentang, yaitu",
+    "img_url": "60.jpg",
     "course_id": 4
   },
   {
     "id": 61,
     "group": "Four",
-    "text": "1.	Iris kentang tersebut dengan ketebalan � 2 mm dan rendam dalam air bersih.\n2.	Kupas kentang dengan pisau, kemudian rendam dalam air bersih.\n3.	Goreng irisan kentang sampai masak ditAndai seluruh permukaan kentang mengembang warnanya kekuningan.\n4.	Irisan kentang direndam dalam larutan CaCl2 0,1% selama 30 menit\n5.	Panaskan minyak makan/goreng di atas kompor sampai panas, biasanya ditandai dengan tidak adanya pletikan-pletikan air dalam minyak atau suhu minyak mencapai � 200�C.\nDari uraian prosedur pengolahan keripik kentang diatas, urutan yang paling benar dari pengolahan keripik kentang adalah�.",
+    "text": "1.	Iris kentang tersebut dengan ketebalan  2 mm dan rendam dalam air bersih.\n2.	Kupas kentang dengan pisau, kemudian rendam dalam air bersih.\n3.	Goreng irisan kentang sampai masak ditAndai seluruh permukaan kentang mengembang warnanya kekuningan.\n4.	Irisan kentang direndam dalam larutan CaCl2 0,1% selama 30 menit\n5.	Panaskan minyak makan/goreng di atas kompor sampai panas, biasanya ditandai dengan tidak adanya pletikan-pletikan air dalam minyak atau suhu minyak mencapai  200C.\nDari uraian prosedur pengolahan keripik kentang diatas, urutan yang paling benar dari pengolahan keripik kentang adalah.",
     "img_url": null,
     "course_id": 4
   },
@@ -436,63 +436,63 @@
   {
     "id": 63,
     "group": "Four",
-    "text": "Kemasan merupakan salah satu keutamaan dalam memproduksi suatu produk untuk melindungi produk. Kemasan yang cocok digunakan untuk produk olahan keripik kentang adalah�",
+    "text": "Kemasan merupakan salah satu keutamaan dalam memproduksi suatu produk untuk melindungi produk. Kemasan yang cocok digunakan untuk produk olahan keripik kentang adalah",
     "img_url": null,
     "course_id": 4
   },
   {
     "id": 64,
     "group": "Five",
-    "text": "Perhatikan gambar di bawah ini! Berdasarkan gambar tersebut, jenis serealia yang dimaksud adalah �",
-    "img_url": null,
+    "text": "Perhatikan gambar di bawah ini! Berdasarkan gambar tersebut, jenis serealia yang dimaksud adalah ",
+    "img_url": "64.jpg",
     "course_id": 5
   },
   {
     "id": 65,
     "group": "Five",
-    "text": "Bihun, tape, kue basah, bubur sumsum merupakan beberapa produk yang dibuat dengan menggunakan bahan baku serealia. Jenis serealia yang digunakan untuk membuat produk tersebut adalah �?",
+    "text": "Bihun, tape, kue basah, bubur sumsum merupakan beberapa produk yang dibuat dengan menggunakan bahan baku serealia. Jenis serealia yang digunakan untuk membuat produk tersebut adalah ?",
     "img_url": null,
     "course_id": 5
   },
   {
     "id": 66,
     "group": "Five",
-    "text": "Berikut merupakan ciri-ciri fisik jagung :\n-	bentuk agak meruncing\n-	ukuran kecil\n-	wara putih kekuning-kuningan\n-	tongkol berukuran kecil\nBerdasarkan ciri-ciri tersebut, karakteristik fisik jagung yang dimaksud adalah �",
+    "text": "Berikut merupakan ciri-ciri fisik jagung :\n-	bentuk agak meruncing\n-	ukuran kecil\n-	wara putih kekuning-kuningan\n-	tongkol berukuran kecil\nBerdasarkan ciri-ciri tersebut, karakteristik fisik jagung yang dimaksud adalah ",
     "img_url": null,
     "course_id": 5
   },
   {
     "id": 67,
     "group": "Five",
-    "text": "Berikut hasil analisis kimia serealia :\n-	mengandung pati 85 � 95%\n-	gula 0,6 � 1,1%\n-	larut dalam air dan alcohol\n-	kandungan mineral yang banyak terkandung (K, Mg, Cl, Ca, Si)\nBerdasarkan karakteristik kimia tersebut, jenis serealia yang dimaksud adalah �",
+    "text": "Berikut hasil analisis kimia serealia :\n-	mengandung pati 85  95%\n-	gula 0,6  1,1%\n-	larut dalam air dan alcohol\n-	kandungan mineral yang banyak terkandung (K, Mg, Cl, Ca, Si)\nBerdasarkan karakteristik kimia tersebut, jenis serealia yang dimaksud adalah ",
     "img_url": null,
     "course_id": 5
   },
   {
     "id": 68,
     "group": "Five",
-    "text": "Perhatikan gambar di bawah ini! Sifat mekanis kinestetis dari jenis jagung pada gambar diatas adalah �",
-    "img_url": null,
+    "text": "Perhatikan gambar di bawah ini! Sifat mekanis kinestetis dari jenis jagung pada gambar diatas adalah ",
+    "img_url": "68.jpg",
     "course_id": 5
   },
   {
     "id": 69,
     "group": "Five",
-    "text": "Pada saat pembuatan cornflakes terdapat tahap pengovenan. Prosedur penggunaan oven :\n1)	Atur suhu yang sesuai\n2)	Atur waktu yang sesuai\n3)	Nyalakan power on/off oven\n4)	Setelah suhu tercapai, masukan adonan roti\n5)	Tekan tombol on pada timer\n6)	Sumber listrik dan regulator gas dipasang\nUrutan langkah penggunaan oven yang benar sesuai pernyataan diatas adalah ��..",
+    "text": "Pada saat pembuatan cornflakes terdapat tahap pengovenan. Prosedur penggunaan oven :\n1)	Atur suhu yang sesuai\n2)	Atur waktu yang sesuai\n3)	Nyalakan power on/off oven\n4)	Setelah suhu tercapai, masukan adonan roti\n5)	Tekan tombol on pada timer\n6)	Sumber listrik dan regulator gas dipasang\nUrutan langkah penggunaan oven yang benar sesuai pernyataan diatas adalah ..",
     "img_url": null,
     "course_id": 5
   },
   {
     "id": 70,
     "group": "Five",
-    "text": "Alat skala industri yang tepat di gunakan untuk menghancurkan bahan dengan keras dan tekstur yang kasar seperti serealia adalah�",
+    "text": "Alat skala industri yang tepat di gunakan untuk menghancurkan bahan dengan keras dan tekstur yang kasar seperti serealia adalah",
     "img_url": null,
     "course_id": 5
   },
   {
     "id": 71,
     "group": "Five",
-    "text": "Berikut adalah pasangan produk dan alat pengecilan ukuran yang diterapkan :\n1. Selai gandum - crushing\n2. Gandum -crushing\n3. Tepung gandum- grinding\n4. Sari kedelai-cutting\n5. Soybar-slicing\nAlat dan produk yang dihasilkan secara tepat dari pernyataan diatas  adalah�",
+    "text": "Berikut adalah pasangan produk dan alat pengecilan ukuran yang diterapkan :\n1. Selai gandum - crushing\n2. Gandum -crushing\n3. Tepung gandum- grinding\n4. Sari kedelai-cutting\n5. Soybar-slicing\nAlat dan produk yang dihasilkan secara tepat dari pernyataan diatas  adalah",
     "img_url": null,
     "course_id": 5
   },
@@ -513,7 +513,7 @@
   {
     "id": 74,
     "group": "Five",
-    "text": "Yang berperan dalam menentukan kekenyalan makanan yang terbuat dari bahan terigu adalah�.",
+    "text": "Yang berperan dalam menentukan kekenyalan makanan yang terbuat dari bahan terigu adalah.",
     "img_url": null,
     "course_id": 5
   },
@@ -527,7 +527,7 @@
   {
     "id": 76,
     "group": "Six",
-    "text": "Kacang-kacangan dilihat dari kandungan gizinya termasuk sumber�.",
+    "text": "Kacang-kacangan dilihat dari kandungan gizinya termasuk sumber.",
     "img_url": null,
     "course_id": 6
   },
@@ -548,28 +548,28 @@
   {
     "id": 79,
     "group": "Six",
-    "text": "Perhatikan gambar berikut ini! Pengecilan ukuran pada produk di atas bertujuan untuk�",
-    "img_url": null,
+    "text": "Perhatikan gambar berikut ini! Pengecilan ukuran pada produk di atas bertujuan untuk",
+    "img_url": "79.jpg",
     "course_id": 6
   },
   {
     "id": 80,
     "group": "Six",
-    "text": "Perhatikan macam-macam kacang di bawah ini !\n1.	Kacang almond\n2.	Kacang hijau\n3.	Kacang koro\n4.	Kacang mede\n5.	Kacang tanah\n6.	Kacang kedelai\nYang termasuk ke dalam kacang-kacangan bernilai ekonomis rendah yang sering dilakukan pengecilan ukuran untuk pembuatan suatu produk adalah pada nomor�",
+    "text": "Perhatikan macam-macam kacang di bawah ini !\n1.	Kacang almond\n2.	Kacang hijau\n3.	Kacang koro\n4.	Kacang mede\n5.	Kacang tanah\n6.	Kacang kedelai\nYang termasuk ke dalam kacang-kacangan bernilai ekonomis rendah yang sering dilakukan pengecilan ukuran untuk pembuatan suatu produk adalah pada nomor",
     "img_url": null,
     "course_id": 6
   },
   {
     "id": 81,
     "group": "Six",
-    "text": "Perhatikan gambar di bawah ini! Pasangan nama alat dan produk yang dihasilkan masing-masing alat adalah�",
-    "img_url": null,
+    "text": "Perhatikan gambar di bawah ini! Pasangan nama alat dan produk yang dihasilkan masing-masing alat adalah",
+    "img_url": "81.jpg",
     "course_id": 6
   },
   {
     "id": 82,
     "group": "Six",
-    "text": "Berikut adalah pasangan produk dan pengecilan ukuran yang diterapkan :\n1. selai kacang- crushing\n2. tahu-crushing\n3. tepung kacang hijau- grinding\n4. sari kedelai-cutting\n5. soybar-slicing\nJenis pengecilan ukuran dan produk yang dihasilkan yang tepat adalah�",
+    "text": "Berikut adalah pasangan produk dan pengecilan ukuran yang diterapkan :\n1. selai kacang- crushing\n2. tahu-crushing\n3. tepung kacang hijau- grinding\n4. sari kedelai-cutting\n5. soybar-slicing\nJenis pengecilan ukuran dan produk yang dihasilkan yang tepat adalah",
     "img_url": null,
     "course_id": 6
   },
@@ -584,7 +584,7 @@
     "id": 84,
     "group": "Six",
     "text": "Berdasarkan gambar di atas, olahan yang dapat dihasilkan dari jenis kacang tersebut adalah...",
-    "img_url": null,
+    "img_url": "84.jpg",
     "course_id": 6
   },
   {
@@ -597,14 +597,14 @@
   {
     "id": 86,
     "group": "Six",
-    "text": "Rani mempunyai usaha pembuatan selai kacang. Rani menggoreng kacang tanah yang akan digunakan. Tujuan dari penggorengan adalah�",
+    "text": "Rani mempunyai usaha pembuatan selai kacang. Rani menggoreng kacang tanah yang akan digunakan. Tujuan dari penggorengan adalah",
     "img_url": null,
     "course_id": 6
   },
   {
     "id": 87,
     "group": "Seven",
-    "text": "Nanas merupakan salah satu jenis buah-buahan. Pengolahan pada nanas bertujuan untuk memperpanjang umur simpan. Salah satu bentuk olahannya yaitu selai. Hal terpenting dalam nanas yang berpengaruh pada pembuatan selai nanas adalah�� ",
+    "text": "Nanas merupakan salah satu jenis buah-buahan. Pengolahan pada nanas bertujuan untuk memperpanjang umur simpan. Salah satu bentuk olahannya yaitu selai. Hal terpenting dalam nanas yang berpengaruh pada pembuatan selai nanas adalah ",
     "img_url": null,
     "course_id": 7
   },
@@ -618,14 +618,14 @@
   {
     "id": 89,
     "group": "Seven",
-    "text": "Sebuah perusahan industri pangan akan membuat sari buah apel dalam kemasan tertapack. Tahapan proses produksi sari buah melalui proses pasteurisasi. Metode pasteurisasi yang cocok untuk digunakan perusahaan tersebut adalah�.",
+    "text": "Sebuah perusahan industri pangan akan membuat sari buah apel dalam kemasan tertapack. Tahapan proses produksi sari buah melalui proses pasteurisasi. Metode pasteurisasi yang cocok untuk digunakan perusahaan tersebut adalah.",
     "img_url": null,
     "course_id": 7
   },
   {
     "id": 90,
     "group": "Seven",
-    "text": "PT. X merupakan perusahaan yang memproduksi selai dalam jar. Proses produksi selai tersebut melalui proses sterilisasi karena akan dikemas dalam jar. Metode yang digunakan oleh perusahaan tersebut adalah��",
+    "text": "PT. X merupakan perusahaan yang memproduksi selai dalam jar. Proses produksi selai tersebut melalui proses sterilisasi karena akan dikemas dalam jar. Metode yang digunakan oleh perusahaan tersebut adalah",
     "img_url": null,
     "course_id": 7
   },
@@ -668,7 +668,7 @@
     "id": 96,
     "group": "Seven",
     "text": "Perhatikan gambar di bawah ini! Berdasarkan pengelompokkan utama limbah yang dihasilkan oleh industri pangan, limbah di atas termasuk ke dalam ....",
-    "img_url": null,
+    "img_url": "96.jpg",
     "course_id": 7
   },
   {
@@ -689,7 +689,7 @@
     "id": 99,
     "group": "Seven",
     "text": "Perhatikan gambar di bawah ini! Mesin di atas digunakan pada proses pengecilan ukuran primer limbah, mesin di atas disebut dengan ....",
-    "img_url": null,
+    "img_url": "99.jpg",
     "course_id": 7
   },
   {

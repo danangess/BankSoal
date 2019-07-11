@@ -16,19 +16,24 @@ import javax.inject.Inject
 import dagger.android.DispatchingAndroidInjector
 import android.support.v4.view.GravityCompat
 import android.databinding.DataBindingUtil
+import android.graphics.drawable.Drawable
 import android.os.Handler
 import android.support.v4.widget.DrawerLayout
+import android.util.Log
+import android.widget.FrameLayout
+import android.widget.ImageView
 import com.example.banksoal.BR
 import com.example.banksoal.R
 import com.example.banksoal.databinding.NavHeaderMainBinding
 import com.example.banksoal.ui.about.AboutFragment
-import com.example.banksoal.ui.competences.CompetencesFragment
 import com.example.banksoal.ui.course.CourseFragment
 import com.example.banksoal.ui.main.fragment.MainFragment
 
 class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNavigator, HasSupportFragmentInjector {
 
     companion object {
+        const val TAG = "Main"
+
         fun newIntent(context: Context): Intent {
             return Intent(context, MainActivity::class.java)
         }
@@ -47,9 +52,11 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
         super.onCreate(savedInstanceState)
         mMainViewModel.setNavigator(this)
         mMainViewModel.loadUserData()
+//        loadBackground()
         showMainFragment()
         setupNavMenu()
         mMainViewModel.isLoading.set(false)
+//        loadProfilePicture()
     }
 
     override fun onBackPressed() {
@@ -134,6 +141,36 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
                     false
                 }
             }
+        }
+    }
+
+    private fun loadProfilePicture() {
+        try {
+            val ppImageView = findViewById<ImageView>(R.id.iv_profile_pic)
+            ppImageView.visibility = android.view.View.VISIBLE
+            val baseImageLocation = "images/"
+            val fileName = "iconloading.jpg"
+            val location = baseImageLocation + fileName
+            val ims = this.assets.open(location)
+            val drawable = Drawable.createFromStream(ims, null)
+            ppImageView.setImageDrawable(drawable)
+        } catch (ex: Exception) {
+            Log.e(TAG, ex.message)
+        }
+    }
+
+    private fun loadBackground() {
+        try {
+            val frameLayout = findViewById<FrameLayout>(R.id.contentFragment)
+            val baseImageLocation = "images/"
+            val fileName = "iconloading.jpg"
+            val location = baseImageLocation + fileName
+            val ims = this.assets.open(location)
+            val drawable = Drawable.createFromStream(ims, null)
+            frameLayout.background = drawable
+            frameLayout.setBackgroundDrawable(drawable)
+        } catch (ex: Exception) {
+            Log.e(TAG, ex.message)
         }
     }
 

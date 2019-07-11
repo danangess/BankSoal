@@ -2,20 +2,30 @@ package com.example.banksoal.ui.quiz
 
 import android.content.Context
 import android.graphics.Color
+import android.graphics.drawable.Drawable
+import android.util.Log
 import com.example.banksoal.R
 import com.mindorks.placeholderview.annotations.Layout
 import com.mindorks.placeholderview.annotations.NonReusable
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import com.example.banksoal.data.model.QuestionData
 import com.example.banksoal.data.model.db.Option
 import com.mindorks.placeholderview.annotations.View
 import com.mindorks.placeholderview.annotations.Click
 import com.mindorks.placeholderview.annotations.Resolve
+import java.lang.Exception
 
 @NonReusable
 @Layout(R.layout.card_layout)
 class QuestionCard(private val context: Context, private var questionData: QuestionData) {
+    companion object {
+        const val TAG = "QuestionCard"
+    }
+
+    @View(R.id.iVQuiz)
+    private lateinit var mPictureImageView: ImageView
 
     @View(R.id.tvQuestion)
     private lateinit var mQuestionTextView: TextView
@@ -67,6 +77,22 @@ class QuestionCard(private val context: Context, private var questionData: Quest
 
     @Resolve
     private fun onResolved() {
+        if (!questionData.question.imgUrl.isNullOrEmpty()) {
+            try {
+                mPictureImageView.visibility = android.view.View.VISIBLE
+                val baseImageLocation = "images/quiz/"
+                val fileName = questionData.question.imgUrl!!
+                val location = baseImageLocation + fileName
+                val ims = context.assets.open(location)
+                val drawable = Drawable.createFromStream(ims, null)
+                mPictureImageView.setImageDrawable(drawable)
+            } catch (ex: Exception) {
+                Log.e(TAG, ex.message)
+            }
+        } else {
+            mPictureImageView.visibility = android.view.View.GONE
+        }
+
         mQuestionTextView.text = questionData.question.text
 //        if (questionData.showCorrectOption) {
 //            showCorrectOptions()

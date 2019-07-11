@@ -43,19 +43,24 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="✓"
-                        android:textSize="36sp" />
+                <ImageView android:id="@+id/iVQuiz"
+                           android:contentDescription="@string/quiz_pict"
+                           android:layout_width="match_parent"
+                           android:layout_height="300dp" />
 
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="-6dp"
-                        android:text="✓"
-                        android:textAllCaps="true"
-                        android:textSize="14sp" />
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="✓"-->
+                <!--android:textSize="36sp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="-6dp"-->
+                <!--android:text="✓"-->
+                <!--android:textAllCaps="true"-->
+                <!--android:textSize="14sp" />-->
 
                 <LinearLayout
                         android:layout_width="wrap_content"

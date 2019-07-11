@@ -1,44 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Course 1",
-    "competences": "[\"Satu\", \"Dua\", \"Tiga\"]",
+    "name": "1. Pengendalian Mutu",
+    "competences": "[\"3.1. Menerapkan pengendalian mutu bahan baku pengolahan nabati\"]",
     "description": "Course One"
   },
   {
     "id": 2,
-    "name": "Course 2",
-    "competences": "[\"One\", \"Two\", \"Three\"]",
+    "name": "2. Buah-buahan",
+    "competences": "[\"3.2. Mengidentifikasi buah segar untuk satuan produksi\", \"3.3 Menganalisis kebutuhan alat serta cara penggunaannya\", \"3.4. Menerapkan proses pengecualian ukuran buah\", \"3.5. Menerapkan pengolahan hasil buah-buahan\"]",
     "description": "Course Two"
   },
   {
     "id": 3,
-    "name": "Course 3",
-    "competences": "[\"Setunggal\", \"Kali\", \"Tigo\"]",
+    "name": "3. Sayur-sayuran",
+    "competences": "[\"3.6. Mengidentifikasi sayur segar untuk satuan produksi\", \"3.7. Menganalisis kebutuhan alat serta cara penggunaannya\", \"3.8. Menerapkan proses fermentasi sayuran\", \"3.9. Menerapkan pengolahan hasil sayuran\"]",
     "description": "Course Three"
   },
   {
     "id": 4,
-    "name": "Course 4",
-    "competences": "[\"Setunggal\", \"Kali\", \"Tigo\"]",
+    "name": "4. Umbi-umbian",
+    "competences": "[\"3.13 Mengidentifikasi umbi-umbian untuk satuan produksi\", \"3.14 Menganalis kebutuhan alat serta cara penggunaannya\", \"3.15 Menerapkan proses pengecuilan ukuran umbi-umbian\", \"3.16 Menerapkan pengolahan hasil umbi-umbian\"]",
     "description": "Course Three"
   },
   {
     "id": 5,
-    "name": "Course 5",
-    "competences": "[\"Setunggal\", \"Kali\", \"Tigo\"]",
+    "name": "5. Serealia",
+    "competences": "[\"3.17. Mengidentifikasi serealia untuk satuan produksi\", \"3.18. Menganalisis kebutuhan alat serta cara penggunaannya\", \"3.19. Menerapkan proses pengecilan ukuran\", \"3.20. Menerapkan pengolahan hasil serealia\"]",
     "description": "Course Three"
   },
   {
     "id": 6,
-    "name": "Course 6",
-    "competences": "[\"Setunggal\", \"Kali\", \"Tigo\"]",
+    "name": "6. Kacang-kacangan",
+    "competences": "[\"3.21. Mengidentifikasi kacang-kacangan untuk satuan produksi\", \"3.22. Menganalisis kebutuhan alat serta cara penggunaannya\", \"3.23. Menerapakan proses pengecilan ukuran\", \"3.24. Menerapkan pengolahan hasil kacang-kacangan\"]",
     "description": "Course Three"
   },
   {
     "id": 7,
-    "name": "Course 7",
-    "competences": "[\"Setunggal\", \"Kali\", \"Tigo\"]",
+    "name": "7. Analisis dan evaluasi produk dan limbah olahan nabati",
+    "competences": "[\"3.25. Menganalisis produksi olahan nabati\", \"3.26. Mengevaluasi produk olahan nabati\", \"3.27. Mengevaluasi limbah olahan nabati\"]",
     "description": "Course Three"
   }
 ]
