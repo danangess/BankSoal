@@ -16,5 +16,29 @@
     "name": "Course 3",
     "competences": "[\"Setunggal\", \"Kali\", \"Tigo\"]",
     "description": "Course Three"
+  },
+  {
+    "id": 4,
+    "name": "Course 4",
+    "competences": "[\"Setunggal\", \"Kali\", \"Tigo\"]",
+    "description": "Course Three"
+  },
+  {
+    "id": 5,
+    "name": "Course 5",
+    "competences": "[\"Setunggal\", \"Kali\", \"Tigo\"]",
+    "description": "Course Three"
+  },
+  {
+    "id": 6,
+    "name": "Course 6",
+    "competences": "[\"Setunggal\", \"Kali\", \"Tigo\"]",
+    "description": "Course Three"
+  },
+  {
+    "id": 7,
+    "name": "Course 7",
+    "competences": "[\"Setunggal\", \"Kali\", \"Tigo\"]",
+    "description": "Course Three"
   }
 ]

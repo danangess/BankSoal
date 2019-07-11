@@ -1,92 +1,3002 @@
 [
   {
     "id": 1,
-    "text": "1",
+    "text": "A. mutu produk",
     "question_id": 1,
-    "is_correct": true
+    "is_correct": false
   },
   {
     "id": 2,
-    "text": "2",
+    "text": "B. kualitas bahan baku",
     "question_id": 1,
     "is_correct": false
   },
   {
     "id": 3,
-    "text": "3",
+    "text": "C. pengawasan produk",
     "question_id": 1,
     "is_correct": false
   },
   {
     "id": 4,
-    "text": "1",
-    "question_id": 2,
+    "text": "D. pengendalian mutu",
+    "question_id": 1,
     "is_correct": true
   },
   {
     "id": 5,
-    "text": "2",
-    "question_id": 2,
+    "text": "E. kerusakan produk",
+    "question_id": 1,
     "is_correct": false
   },
   {
     "id": 6,
-    "text": "3",
+    "text": "A. biologi",
     "question_id": 2,
     "is_correct": false
   },
   {
     "id": 7,
-    "text": "1",
-    "question_id": 3,
+    "text": "B. kimiawi",
+    "question_id": 2,
     "is_correct": false
   },
   {
     "id": 8,
-    "text": "2",
-    "question_id": 3,
+    "text": "C. fisik",
+    "question_id": 2,
     "is_correct": true
   },
   {
     "id": 9,
-    "text": "3",
-    "question_id": 3,
+    "text": "D. penanganan",
+    "question_id": 2,
     "is_correct": false
   },
   {
     "id": 10,
-    "text": "1",
-    "question_id": 4,
-    "is_correct": true
+    "text": "E. mikrobiologi",
+    "question_id": 2,
+    "is_correct": false
   },
   {
     "id": 11,
-    "text": "2",
-    "question_id": 4,
+    "text": "A. komoditas kacang-kacangan",
+    "question_id": 3,
     "is_correct": false
   },
   {
     "id": 12,
-    "text": "3",
-    "question_id": 4,
+    "text": "B. komoditas umbi-umbian",
+    "question_id": 3,
     "is_correct": false
   },
   {
     "id": 13,
-    "text": "1",
-    "question_id": 5,
+    "text": "C. komoditas buah-buahan",
+    "question_id": 3,
     "is_correct": false
   },
   {
     "id": 14,
-    "text": "2",
+    "text": "D. komoditas sayuran",
+    "question_id": 3,
+    "is_correct": false
+  },
+  {
+    "id": 15,
+    "text": "E. komoditas serealia",
+    "question_id": 3,
+    "is_correct": true
+  },
+  {
+    "id": 16,
+    "text": "A. selai kacang hijau, susu kedelai, sambal pecel",
+    "question_id": 4,
+    "is_correct": true
+  },
+  {
+    "id": 17,
+    "text": "B. bubur kacang hijau, oncom, tahu",
+    "question_id": 4,
+    "is_correct": false
+  },
+  {
+    "id": 18,
+    "text": "C. kecap, tahu, tempe",
+    "question_id": 4,
+    "is_correct": false
+  },
+  {
+    "id": 19,
+    "text": "D. oncom, tauco, selai kacang",
+    "question_id": 4,
+    "is_correct": true
+  },
+  {
+    "id": 20,
+    "text": "E. rempeyek, susu kedelai, kecap ",
+    "question_id": 4,
+    "is_correct": false
+  },
+  {
+    "id": 21,
+    "text": "A. bakteri",
+    "question_id": 5,
+    "is_correct": false
+  },
+  {
+    "id": 22,
+    "text": "B. enzim",
     "question_id": 5,
     "is_correct": true
   },
   {
-    "id": 15,
-    "text": "3",
+    "id": 23,
+    "text": "C. koefisien gesekan",
     "question_id": 5,
     "is_correct": false
+  },
+  {
+    "id": 24,
+    "text": "D. temperatur",
+    "question_id": 5,
+    "is_correct": false
+  },
+  {
+    "id": 25,
+    "text": "E. kapang",
+    "question_id": 5,
+    "is_correct": false
+  },
+  {
+    "id": 26,
+    "text": "A. pisang, alpukat, nanas",
+    "question_id": 6,
+    "is_correct": false
+  },
+  {
+    "id": 27,
+    "text": "B. pisang, pepaya, nangka",
+    "question_id": 6,
+    "is_correct": true
+  },
+  {
+    "id": 28,
+    "text": "C. jeruk, markisa, alpukat",
+    "question_id": 6,
+    "is_correct": false
+  },
+  {
+    "id": 29,
+    "text": "D. pisang, pepaya, anggur",
+    "question_id": 6,
+    "is_correct": false
+  },
+  {
+    "id": 30,
+    "text": "E. anggur, nanas, jeruk ",
+    "question_id": 6,
+    "is_correct": false
+  },
+  {
+    "id": 31,
+    "text": "A. tertutup rapat",
+    "question_id": 7,
+    "is_correct": false
+  },
+  {
+    "id": 32,
+    "text": "B. setengah tertutup",
+    "question_id": 7,
+    "is_correct": false
+  },
+  {
+    "id": 33,
+    "text": "C. terbuka",
+    "question_id": 7,
+    "is_correct": false
+  },
+  {
+    "id": 34,
+    "text": "D. tertutup degan lubang udara",
+    "question_id": 7,
+    "is_correct": true
+  },
+  {
+    "id": 35,
+    "text": "E. terbuka pada siang hari dan tertutup pada malam hari ",
+    "question_id": 7,
+    "is_correct": false
+  },
+  {
+    "id": 36,
+    "text": "A. konversi protopektin menjadi pektin",
+    "question_id": 8,
+    "is_correct": true
+  },
+  {
+    "id": 37,
+    "text": "B. konversi pati menjadi glukosa",
+    "question_id": 8,
+    "is_correct": false
+  },
+  {
+    "id": 38,
+    "text": "C. polimerisasi tanin ",
+    "question_id": 8,
+    "is_correct": false
+  },
+  {
+    "id": 39,
+    "text": "D. kenaikan tekanan turgor",
+    "question_id": 8,
+    "is_correct": false
+  },
+  {
+    "id": 40,
+    "text": "E. perubahan suhu penyimpanan ",
+    "question_id": 8,
+    "is_correct": false
+  },
+  {
+    "id": 41,
+    "text": "A. fenoloksidase, lipase, polifenoloksidase, fenolase",
+    "question_id": 8,
+    "is_correct": false
+  },
+  {
+    "id": 42,
+    "text": "B. fenolase, polifenolase, protease, polifenol oksidase",
+    "question_id": 9,
+    "is_correct": false
+  },
+  {
+    "id": 43,
+    "text": "C. fenolase, polifenolase, fenol oksidase, polifenoloksidase",
+    "question_id": 9,
+    "is_correct": true
+  },
+  {
+    "id": 44,
+    "text": "D. fenolase, polifenolase, fenol oksidase, fenolik",
+    "question_id": 9,
+    "is_correct": false
+  },
+  {
+    "id": 45,
+    "text": "E. fenoftalen, fenolase, tanin ",
+    "question_id": 9,
+    "is_correct": false
+  },
+  {
+    "id": 46,
+    "text": "A. blanching, perendaman dalam larutan garam 1 %, Sulfitasi",
+    "question_id": 10,
+    "is_correct": true
+  },
+  {
+    "id": 47,
+    "text": "B. blanching, perendaman dalam larutan garam 1 %, Netralisasi ",
+    "question_id": 10,
+    "is_correct": false
+  },
+  {
+    "id": 48,
+    "text": "C. blanching, perendaman dalam larutan garam 1 %, evaporasi",
+    "question_id": 10,
+    "is_correct": false
+  },
+  {
+    "id": 49,
+    "text": "D. blanching, perendaman dalam larutan garam 1 %, kristalisasi",
+    "question_id": 10,
+    "is_correct": false
+  },
+  {
+    "id": 50,
+    "text": "E. blanching, perendaman dalam larutan garam 1 %, Pasteurisasi ",
+    "question_id": 10,
+    "is_correct": false
+  },
+  {
+    "id": 51,
+    "text": "A. pengupasan",
+    "question_id": 11,
+    "is_correct": false
+  },
+  {
+    "id": 52,
+    "text": "B. pemanasan",
+    "question_id": 11,
+    "is_correct": false
+  },
+  {
+    "id": 53,
+    "text": "C. pendinginan ",
+    "question_id": 11,
+    "is_correct": false
+  },
+  {
+    "id": 54,
+    "text": "D. pencampuran",
+    "question_id": 11,
+    "is_correct": false
+  },
+  {
+    "id": 55,
+    "text": "E. penghancuran",
+    "question_id": 11,
+    "is_correct": true
+  },
+  {
+    "id": 56,
+    "text": "A. Deep frying",
+    "question_id": 12,
+    "is_correct": false
+  },
+  {
+    "id": 57,
+    "text": "B. Spray frying",
+    "question_id": 12,
+    "is_correct": false
+  },
+  {
+    "id": 58,
+    "text": "C. Vacuum frying",
+    "question_id": 12,
+    "is_correct": true
+  },
+  {
+    "id": 59,
+    "text": "D. konduksi",
+    "question_id": 12,
+    "is_correct": false
+  },
+  {
+    "id": 60,
+    "text": "E. konveksi",
+    "question_id": 12,
+    "is_correct": false
+  },
+  {
+    "id": 61,
+    "text": "A. blender",
+    "question_id": 13,
+    "is_correct": false
+  },
+  {
+    "id": 62,
+    "text": "B. autoclave",
+    "question_id": 13,
+    "is_correct": false
+  },
+  {
+    "id": 63,
+    "text": "C. refractometer",
+    "question_id": 13,
+    "is_correct": true
+  },
+  {
+    "id": 64,
+    "text": "D. Steam jaketeed katle",
+    "question_id": 13,
+    "is_correct": false
+  },
+  {
+    "id": 65,
+    "text": "E. thermometer",
+    "question_id": 13,
+    "is_correct": false
+  },
+  {
+    "id": 66,
+    "text": "A. Relatif masih besar",
+    "question_id": 14,
+    "is_correct": true
+  },
+  {
+    "id": 67,
+    "text": "B. tipis",
+    "question_id": 14,
+    "is_correct": false
+  },
+  {
+    "id": 68,
+    "text": "C. Sangat kecil",
+    "question_id": 14,
+    "is_correct": false
+  },
+  {
+    "id": 69,
+    "text": "D. homogen",
+    "question_id": 14,
+    "is_correct": false
+  },
+  {
+    "id": 70,
+    "text": "E. Ekstrem",
+    "question_id": 14,
+    "is_correct": false
+  },
+  {
+    "id": 71,
+    "text": "A. 1, 2, 3, 4",
+    "question_id": 15,
+    "is_correct": false
+  },
+  {
+    "id": 72,
+    "text": "B. 1, 2, 3, 5",
+    "question_id": 15,
+    "is_correct": false
+  },
+  {
+    "id": 73,
+    "text": "C. 1, 2, 4, 5",
+    "question_id": 15,
+    "is_correct": true
+  },
+  {
+    "id": 74,
+    "text": "D. 1, 3, 4, 5",
+    "question_id": 15,
+    "is_correct": false
+  },
+  {
+    "id": 75,
+    "text": "E. 2, 3, 4, 5",
+    "question_id": 15,
+    "is_correct": false
+  },
+  {
+    "id": 76,
+    "text": "A. 10-15 %, hal ini tergantung tingkat kesukaan konsumen, dengan pH (derajat keasaman) mencapai 3-5",
+    "question_id": 16,
+    "is_correct": true
+  },
+  {
+    "id": 77,
+    "text": "B. 10-15 %, hal ini tergantung tingkat kesukaan konsumen, dengan pH (derajat keasaman) mencapai 3-4",
+    "question_id": 16,
+    "is_correct": true
+  },
+  {
+    "id": 78,
+    "text": "C. 10-20 %, hal ini tergantung tingkat kesukaan konsumen, dengan pH (derajat keasaman) mencapai 3-4",
+    "question_id": 16,
+    "is_correct": false
+  },
+  {
+    "id": 79,
+    "text": "D. 10-20  %, hal ini tergantung tingkat kesukaan konsumen, dengan pH (derajat keasaman) mencapai 3-5",
+    "question_id": 16,
+    "is_correct": false
+  },
+  {
+    "id": 80,
+    "text": "E. 10-15 %, hal ini tergantung tingkat kesukaan konsumen, dengan pH (derajat keasaman) mencapai 4-5",
+    "question_id": 16,
+    "is_correct": false
+  },
+  {
+    "id": 81,
+    "text": "A. Buah yang muda",
+    "question_id": 17,
+    "is_correct": false
+  },
+  {
+    "id": 82,
+    "text": "B. Buah yang tua",
+    "question_id": 17,
+    "is_correct": false
+  },
+  {
+    "id": 83,
+    "text": "C. Buah yang mengkal (masak optimal)",
+    "question_id": 17,
+    "is_correct": true
+  },
+  {
+    "id": 84,
+    "text": "D. Semua buah bisa dilakukan pengolahan",
+    "question_id": 17,
+    "is_correct": false
+  },
+  {
+    "id": 85,
+    "text": "E. Bentuk buahnya yang bagus",
+    "question_id": 17,
+    "is_correct": false
+  },
+  {
+    "id": 86,
+    "text": "A. pengawet",
+    "question_id": 18,
+    "is_correct": false
+  },
+  {
+    "id": 87,
+    "text": "B. Sumber makanan  untuk mikroorganisme",
+    "question_id": 18,
+    "is_correct": false
+  },
+  {
+    "id": 88,
+    "text": "C. Pembentuk warna sari buah",
+    "question_id": 14,
+    "is_correct": false
+  },
+  {
+    "id": 89,
+    "text": "D. Penambah rasa manis",
+    "question_id": 18,
+    "is_correct": true
+  },
+  {
+    "id": 90,
+    "text": "E. penstabil",
+    "question_id": 18,
+    "is_correct": false
+  },
+  {
+    "id": 91,
+    "text": "A. gum arab, karagenan, asam sitrat dan CMC (Carboxymethyl Cellulose)",
+    "question_id": 19,
+    "is_correct": false
+  },
+  {
+    "id": 92,
+    "text": "B. karagenan, CMC (Carboxymethyl Cellulose), MSG dan pektin ",
+    "question_id": 19,
+    "is_correct": false
+  },
+  {
+    "id": 93,
+    "text": "C. gum arab, CMC (Carboxymethyl Cellulose), karagenan dan gelatin ",
+    "question_id": 19,
+    "is_correct": true
+  },
+  {
+    "id": 94,
+    "text": "D. gelatin, CMC (Carboxymethyl Cellulose), asam sitrat dan karagenan ",
+    "question_id": 19,
+    "is_correct": false
+  },
+  {
+    "id": 95,
+    "text": "E. pektin, gula dan gum arab",
+    "question_id": 19,
+    "is_correct": false
+  },
+  {
+    "id": 96,
+    "text": "A. 1-5-3-7-2-4-8-6-9",
+    "question_id": 20,
+    "is_correct": false
+  },
+  {
+    "id": 97,
+    "text": "B. 1-5-3-7-2-4-6-9-8",
+    "question_id": 20,
+    "is_correct": false
+  },
+  {
+    "id": 98,
+    "text": "C. 5-1-3-7-2-4-6-9-8",
+    "question_id": 20,
+    "is_correct": false
+  },
+  {
+    "id": 99,
+    "text": "D. 5-1-3-7-2-4-8-6-9",
+    "question_id": 20,
+    "is_correct": true
+  },
+  {
+    "id": 100,
+    "text": "E. 5-1-7-3-4-2-8-6-9",
+    "question_id": 20,
+    "is_correct": false
+  },
+  {
+    "id": 101,
+    "text": "A. pektin, gula, dan asam ",
+    "question_id": 21,
+    "is_correct": true
+  },
+  {
+    "id": 102,
+    "text": "B.  buah, air, gula ",
+    "question_id": 21,
+    "is_correct": false
+  },
+  {
+    "id": 103,
+    "text": "C. asam sitrat, natrium benzoate, gula ",
+    "question_id": 21,
+    "is_correct": false
+  },
+  {
+    "id": 104,
+    "text": "D. natrium benzoat, pektin, gula ",
+    "question_id": 21,
+    "is_correct": false
+  },
+  {
+    "id": 105,
+    "text": "E. air, pektin, dan asam ",
+    "question_id": 21,
+    "is_correct": false
+  },
+  {
+    "id": 106,
+    "text": "A. Natrium benzoat ",
+    "question_id": 22,
+    "is_correct": false
+  },
+  {
+    "id": 107,
+    "text": "B.  Natrium sulfit ",
+    "question_id": 22,
+    "is_correct": false
+  },
+  {
+    "id": 108,
+    "text": "C. belerang ",
+    "question_id": 22,
+    "is_correct": false
+  },
+  {
+    "id": 109,
+    "text": "D. natrium bisulfit dan belerang ",
+    "question_id": 22,
+    "is_correct": true
+  },
+  {
+    "id": 110,
+    "text": "E. Natrium benzoat dan belerang ",
+    "question_id": 22,
+    "is_correct": false
+  },
+  {
+    "id": 111,
+    "text": "A. pengeringan dan perendaman ",
+    "question_id": 23,
+    "is_correct": false
+  },
+  {
+    "id": 112,
+    "text": "B.  pengeringan dan pengawetan ",
+    "question_id": 23,
+    "is_correct": false
+  },
+  {
+    "id": 113,
+    "text": "C. penggaraman dan pengawetan ",
+    "question_id": 23,
+    "is_correct": false
+  },
+  {
+    "id": 114,
+    "text": "D. penggulaan dan pengeringan ",
+    "question_id": 23,
+    "is_correct": true
+  },
+  {
+    "id": 115,
+    "text": "E. perendaman dan pengasapan",
+    "question_id": 23,
+    "is_correct": false
+  },
+  {
+    "id": 116,
+    "text": "A.pemasakan-penggulaan-pencampuran-  pengemasan-pasteurisasi-pendinginan",
+    "question_id": 24,
+    "is_correct": false
+  },
+  {
+    "id": 117,
+    "text": "B.  pencampuran-penggulaan-pemasakan-pengemasan- pasteurisasi-pendinginan ",
+    "question_id": 24,
+    "is_correct": false
+  },
+  {
+    "id": 118,
+    "text": "C.penggulaan-pencampuran-pemasakan-pengemasan pasteurisasi-pendinginan",
+    "question_id": 24,
+    "is_correct": false
+  },
+  {
+    "id": 119,
+    "text": "D.pencampuran-pemasakan-pengemasan-pasteurisasi-pendinginan",
+    "question_id": 24,
+    "is_correct": true
+  },
+  {
+    "id": 120,
+    "text": "E. penggulaan-pemasakan-pencampuran-pengemasan- pasteurisasi-pendinginan ",
+    "question_id": 24,
+    "is_correct": false
+  },
+  {
+    "id": 121,
+    "text": "A. Mengurangi aroma khas pada buah ",
+    "question_id": 25,
+    "is_correct": false
+  },
+  {
+    "id": 122,
+    "text": "B.  pengawetan ",
+    "question_id": 25,
+    "is_correct": false
+  },
+  {
+    "id": 123,
+    "text": "C. Mempercepat penyerapan ",
+    "question_id": 25,
+    "is_correct": false
+  },
+  {
+    "id": 124,
+    "text": "D. Membuang getah dan mengurangi rasa asam pada buah",
+    "question_id": 25,
+    "is_correct": false
+  },
+  {
+    "id": 125,
+    "text": "E. Memperkokoh jaringan buah, agar teksturnya menjadi keras ",
+    "question_id": 25,
+    "is_correct": true
+  },
+  {
+    "id": 126,
+    "text": "A. 1,2,3 ",
+    "question_id": 26,
+    "is_correct": false
+  },
+  {
+    "id": 127,
+    "text": "B.  1,3,5",
+    "question_id": 26,
+    "is_correct": false
+  },
+  {
+    "id": 128,
+    "text": "C. 1,4,5 ",
+    "question_id": 26,
+    "is_correct": false
+  },
+  {
+    "id": 129,
+    "text": "D. 2,3,5 ",
+    "question_id": 26,
+    "is_correct": false
+  },
+  {
+    "id": 130,
+    "text": "E. 2,4,5 ",
+    "question_id": 26,
+    "is_correct": true
+  },
+  {
+    "id": 131,
+    "text": "A. Bayam, kangkung dan seledri ",
+    "question_id": 27,
+    "is_correct": false
+  },
+  {
+    "id": 132,
+    "text": "B.  Tomat, timun dan brokoli ",
+    "question_id": 27,
+    "is_correct": false
+  },
+  {
+    "id": 133,
+    "text": "C. Jagung, kentang dan buncis ",
+    "question_id": 27,
+    "is_correct": true
+  },
+  {
+    "id": 134,
+    "text": "D. Kentang, wortel dan bawang merah ",
+    "question_id": 27,
+    "is_correct": false
+  },
+  {
+    "id": 135,
+    "text": "E. Ubi jalar, kentang dan labu siam ",
+    "question_id": 27,
+    "is_correct": false
+  },
+  {
+    "id": 136,
+    "text": "A. pada pH basa antosianin berwarna merah, pada pH netral antosianin berwarna ungu, dan pH asam antosianin berwarna biru.",
+    "question_id": 28,
+    "is_correct": false
+  },
+  {
+    "id": 137,
+    "text": "B.  pada pH basa antosianin berwarna ungu, pada pH netral antosianin berwarna biru, dan pH asam antosianin berwarna merah.",
+    "question_id": 28,
+    "is_correct": false
+  },
+  {
+    "id": 138,
+    "text": "C. pada pH basa antosianin berwarna biru, pada pH netral antosianin berwarna merah, dan pH asam antosianin berwarna ungu. ",
+    "question_id": 28,
+    "is_correct": false
+  },
+  {
+    "id": 139,
+    "text": "D. pada pH basa antosianin berwarna biru, pada pH netral antosianin berwarna ungu, dan pH asam antosianin berwarna merah.",
+    "question_id": 28,
+    "is_correct": true
+  },
+  {
+    "id": 140,
+    "text": "E. pada pH basa, netral dan asam antosianin berwarna merah. ",
+    "question_id": 28,
+    "is_correct": false
+  },
+  {
+    "id": 141,
+    "text": "A. menangkal radikal bebas ",
+    "question_id": 21,
+    "is_correct": false
+  },
+  {
+    "id": 142,
+    "text": "B.  bermanfat bagi pembekuan tulang ",
+    "question_id": 29,
+    "is_correct": false
+  },
+  {
+    "id": 143,
+    "text": "C. penghambat proses penuaan sel-sel dalam tubuh",
+    "question_id": 29,
+    "is_correct": true
+  },
+  {
+    "id": 144,
+    "text": "D. bermanfaat bagi pembekuan darah",
+    "question_id": 29,
+    "is_correct": false
+  },
+  {
+    "id": 145,
+    "text": "E. menjaga kesehatan mata ",
+    "question_id": 29,
+    "is_correct": false
+  },
+  {
+    "id": 146,
+    "text": "A. pagi hari ",
+    "question_id": 30,
+    "is_correct": false
+  },
+  {
+    "id": 147,
+    "text": "B.  pagi dan sore ",
+    "question_id": 30,
+    "is_correct": true
+  },
+  {
+    "id": 148,
+    "text": "C. pagi dan siang ",
+    "question_id": 30,
+    "is_correct": false
+  },
+  {
+    "id": 149,
+    "text": "D. siang dan sore ",
+    "question_id": 30,
+    "is_correct": false
+  },
+  {
+    "id": 150,
+    "text": "E. sore dan malam ",
+    "question_id": 30,
+    "is_correct": false
+  },
+  {
+    "id": 151,
+    "text": "A. piknometer ",
+    "question_id": 31,
+    "is_correct": false
+  },
+  {
+    "id": 152,
+    "text": "B.  tenderometer",
+    "question_id": 31,
+    "is_correct": false
+  },
+  {
+    "id": 153,
+    "text": "C. viskometer",
+    "question_id": 31,
+    "is_correct": false
+  },
+  {
+    "id": 154,
+    "text": "D. penetrometer ",
+    "question_id": 31,
+    "is_correct": true
+  },
+  {
+    "id": 155,
+    "text": "E. elastometer ",
+    "question_id": 31,
+    "is_correct": false
+  },
+  {
+    "id": 156,
+    "text": "A. spektrofotometer",
+    "question_id": 32,
+    "is_correct": false
+  },
+  {
+    "id": 157,
+    "text": "B.  deep fryer ",
+    "question_id": 32,
+    "is_correct": false
+  },
+  {
+    "id": 158,
+    "text": "C. centrifuge spinner ",
+    "question_id": 32,
+    "is_correct": true
+  },
+  {
+    "id": 159,
+    "text": "D. refraktometer ",
+    "question_id": 32,
+    "is_correct": false
+  },
+  {
+    "id": 160,
+    "text": "E. oven listrik",
+    "question_id": 32,
+    "is_correct": false
+  },
+  {
+    "id": 161,
+    "text": "A. lemak rendah ",
+    "question_id": 33,
+    "is_correct": false
+  },
+  {
+    "id": 162,
+    "text": "B.  protein tinggi ",
+    "question_id": 33,
+    "is_correct": false
+  },
+  {
+    "id": 163,
+    "text": "C. zat warna (pigmen) tinggi",
+    "question_id": 33,
+    "is_correct": false
+  },
+  {
+    "id": 164,
+    "text": "D. glukosa tinggi ",
+    "question_id": 33,
+    "is_correct": true
+  },
+  {
+    "id": 165,
+    "text": "E. asam organik rendah ",
+    "question_id": 33,
+    "is_correct": false
+  },
+  {
+    "id": 166,
+    "text": "A. suhu dan tekanan ",
+    "question_id": 34,
+    "is_correct": true
+  },
+  {
+    "id": 167,
+    "text": "B.  tekanan dan volume gas ",
+    "question_id": 34,
+    "is_correct": false
+  },
+  {
+    "id": 168,
+    "text": "C. suhu dan volume gas ",
+    "question_id": 34,
+    "is_correct": false
+  },
+  {
+    "id": 169,
+    "text": "D. suhu dan kelembaban",
+    "question_id": 34,
+    "is_correct": false
+  },
+  {
+    "id": 170,
+    "text": "E. tekanan dan waktu ",
+    "question_id": 34,
+    "is_correct": false
+  },
+  {
+    "id": 171,
+    "text": "A. menggunakan radiasi gelombang mikro ",
+    "question_id": 35,
+    "is_correct": true
+  },
+  {
+    "id": 172,
+    "text": "B.  elemen pemanas mengubah energi listrik menjadi panas ",
+    "question_id": 35,
+    "is_correct": false
+  },
+  {
+    "id": 173,
+    "text": "C. menyebabkan daya listrik besar ",
+    "question_id": 35,
+    "is_correct": false
+  },
+  {
+    "id": 174,
+    "text": "D. membutuhkan waktu yang lebih lama ",
+    "question_id": 35,
+    "is_correct": false
+  },
+  {
+    "id": 175,
+    "text": "E. memiliki prinsip pengeringan",
+    "question_id": 35,
+    "is_correct": false
+  },
+  {
+    "id": 176,
+    "text": "A. fseudomas ",
+    "question_id": 36,
+    "is_correct": false
+  },
+  {
+    "id": 177,
+    "text": "B. achromabacter ",
+    "question_id": 36,
+    "is_correct": false
+  },
+  {
+    "id": 178,
+    "text": "C. escherihia ",
+    "question_id": 36,
+    "is_correct": false
+  },
+  {
+    "id": 179,
+    "text": "D. Lactobacillus mesenteroides ",
+    "question_id": 36,
+    "is_correct": true
+  },
+  {
+    "id": 180,
+    "text": "E. flavobacterium",
+    "question_id": 36,
+    "is_correct": false
+  },
+  {
+    "id": 181,
+    "text": "A. enzim amilase ",
+    "question_id": 37,
+    "is_correct": false
+  },
+  {
+    "id": 182,
+    "text": "B.  enzim bromelin ",
+    "question_id": 37,
+    "is_correct": false
+  },
+  {
+    "id": 183,
+    "text": "C. enzim pektinolitik",
+    "question_id": 37,
+    "is_correct": true
+  },
+  {
+    "id": 184,
+    "text": "D. enzim pepsin ",
+    "question_id": 37,
+    "is_correct": false
+  },
+  {
+    "id": 185,
+    "text": "E. enzim papain",
+    "question_id": 37,
+    "is_correct": false
+  },
+  {
+    "id": 186,
+    "text": "A. khamir berpigmen ",
+    "question_id": 38,
+    "is_correct": true
+  },
+  {
+    "id": 187,
+    "text": "B.  asam laktat ",
+    "question_id": 38,
+    "is_correct": false
+  },
+  {
+    "id": 188,
+    "text": "C. khamir aerobic ",
+    "question_id": 38,
+    "is_correct": false
+  },
+  {
+    "id": 189,
+    "text": "D. pH terlalu rendah ",
+    "question_id": 38,
+    "is_correct": false
+  },
+  {
+    "id": 190,
+    "text": "E. konsentrasi garam terlalu rendah",
+    "question_id": 38,
+    "is_correct": false
+  },
+  {
+    "id": 191,
+    "text": "A. leuconostoc mesenteroides",
+    "question_id": 39,
+    "is_correct": false
+  },
+  {
+    "id": 192,
+    "text": "B.  streptococcus faecalis",
+    "question_id": 39,
+    "is_correct": false
+  },
+  {
+    "id": 193,
+    "text": "C. pediococcus cerevisiae",
+    "question_id": 39,
+    "is_correct": false
+  },
+  {
+    "id": 194,
+    "text": "D. flavobacterium",
+    "question_id": 39,
+    "is_correct": false
+  },
+  {
+    "id": 195,
+    "text": "E. lactobacillus brevis ",
+    "question_id": 39,
+    "is_correct": true
+  },
+  {
+    "id": 196,
+    "text": "A. garam",
+    "question_id": 40,
+    "is_correct": false
+  },
+  {
+    "id": 197,
+    "text": "B.  gula",
+    "question_id": 40,
+    "is_correct": false
+  },
+  {
+    "id": 198,
+    "text": "C. cuka ",
+    "question_id": 40,
+    "is_correct": false
+  },
+  {
+    "id": 199,
+    "text": "D. kayu manis ",
+    "question_id": 40,
+    "is_correct": false
+  },
+  {
+    "id": 200,
+    "text": "E. rempah-rempah�",
+    "question_id": 40,
+    "is_correct": false
+  },
+  {
+    "id": 201,
+    "text": "A. untuk memudahkan pengupasan kulit",
+    "question_id": 41,
+    "is_correct": true
+  },
+  {
+    "id": 202,
+    "text": "B.  membuat warna buah menjadi lebih merah",
+    "question_id": 41,
+    "is_correct": false
+  },
+  {
+    "id": 203,
+    "text": "C. memperbaiki penampilan saus tomat ",
+    "question_id": 41,
+    "is_correct": false
+  },
+  {
+    "id": 204,
+    "text": "D. mempermudah pada proses pembuatan saos ",
+    "question_id": 41,
+    "is_correct": false
+  },
+  {
+    "id": 205,
+    "text": "E. mengurangi rendemen�",
+    "question_id": 40,
+    "is_correct": false
+  },
+  {
+    "id": 206,
+    "text": "A. deep frying",
+    "question_id": 42,
+    "is_correct": true
+  },
+  {
+    "id": 207,
+    "text": "B.  spray frying",
+    "question_id": 42,
+    "is_correct": false
+  },
+  {
+    "id": 208,
+    "text": "C. vacuum frying ",
+    "question_id": 42,
+    "is_correct": false
+  },
+  {
+    "id": 209,
+    "text": "D. konduksi ",
+    "question_id": 42,
+    "is_correct": false
+  },
+  {
+    "id": 210,
+    "text": "E. konveksi�",
+    "question_id": 42,
+    "is_correct": false
+  },
+  {
+    "id": 211,
+    "text": "A. asam, gula, dan rempah",
+    "question_id": 43,
+    "is_correct": true
+  },
+  {
+    "id": 212,
+    "text": "B.  gula, garam dan tomat",
+    "question_id": 43,
+    "is_correct": false
+  },
+  {
+    "id": 213,
+    "text": "C. gula, rempah dan tomat",
+    "question_id": 43,
+    "is_correct": false
+  },
+  {
+    "id": 214,
+    "text": "D. gula, rempah dan tomat ",
+    "question_id": 43,
+    "is_correct": false
+  },
+  {
+    "id": 215,
+    "text": "E. garam, asam dan gula�",
+    "question_id": 43,
+    "is_correct": false
+  },
+  {
+    "id": 216,
+    "text": "A. saos tomat",
+    "question_id": 44,
+    "is_correct": false
+  },
+  {
+    "id": 217,
+    "text": "B.  keripik sayuran",
+    "question_id": 44,
+    "is_correct": false
+  },
+  {
+    "id": 218,
+    "text": "C. mie sayuran ",
+    "question_id": 44,
+    "is_correct": false
+  },
+  {
+    "id": 219,
+    "text": "D. kimchi ",
+    "question_id": 44,
+    "is_correct": false
+  },
+  {
+    "id": 220,
+    "text": "E. pickle�",
+    "question_id": 40,
+    "is_correct": true
+  },
+  {
+    "id": 221,
+    "text": "A. garam",
+    "question_id": 45,
+    "is_correct": false
+  },
+  {
+    "id": 222,
+    "text": "B.  soda alum",
+    "question_id": 45,
+    "is_correct": false
+  },
+  {
+    "id": 223,
+    "text": "C. kalsium ",
+    "question_id": 45,
+    "is_correct": false
+  },
+  {
+    "id": 224,
+    "text": "D. gula ",
+    "question_id": 45,
+    "is_correct": false
+  },
+  {
+    "id": 225,
+    "text": "E. kalium�",
+    "question_id": 45,
+    "is_correct": false
+  },
+  {
+    "id": 226,
+    "text": "A. gambar 1, 2 dan 3",
+    "question_id": 46,
+    "is_correct": false
+  },
+  {
+    "id": 227,
+    "text": "B.  gambar 1, 2, 5",
+    "question_id": 46,
+    "is_correct": false
+  },
+  {
+    "id": 228,
+    "text": "C. gambar 1, 3 dan 4",
+    "question_id": 46,
+    "is_correct": true
+  },
+  {
+    "id": 229,
+    "text": "D. gambar 2, 4 dan 5 ",
+    "question_id": 46,
+    "is_correct": false
+  },
+  {
+    "id": 230,
+    "text": "E. gambar 3,4 dan 5�",
+    "question_id": 46,
+    "is_correct": false
+  },
+  {
+    "id": 231,
+    "text": "A. bawang bombay",
+    "question_id": 47,
+    "is_correct": false
+  },
+  {
+    "id": 232,
+    "text": "B.  jahe",
+    "question_id": 47,
+    "is_correct": false
+  },
+  {
+    "id": 233,
+    "text": "C. bawang putih ",
+    "question_id": 47,
+    "is_correct": true
+  },
+  {
+    "id": 234,
+    "text": "D. bawang merah ",
+    "question_id": 47,
+    "is_correct": false
+  },
+  {
+    "id": 235,
+    "text": "E. kencur�",
+    "question_id": 47,
+    "is_correct": false
+  },
+  {
+    "id": 236,
+    "text": "A. ubi kayu",
+    "question_id": 48,
+    "is_correct": false
+  },
+  {
+    "id": 237,
+    "text": "B.  gadung",
+    "question_id": 48,
+    "is_correct": true
+  },
+  {
+    "id": 238,
+    "text": "C. talas",
+    "question_id": 48,
+    "is_correct": false
+  },
+  {
+    "id": 239,
+    "text": "D. irut ",
+    "question_id": 48,
+    "is_correct": false
+  },
+  {
+    "id": 240,
+    "text": "E. kimpul�",
+    "question_id": 40,
+    "is_correct": false
+  },
+  {
+    "id": 241,
+    "text": "A. ubi jalar dan singkong",
+    "question_id": 49,
+    "is_correct": false
+  },
+  {
+    "id": 242,
+    "text": "B.  ubi jalar dan gadung",
+    "question_id": 49,
+    "is_correct": true
+  },
+  {
+    "id": 243,
+    "text": "C. singkong dan gadung ",
+    "question_id": 49,
+    "is_correct": false
+  },
+  {
+    "id": 244,
+    "text": "D. singkong dan kentang ",
+    "question_id": 49,
+    "is_correct": false
+  },
+  {
+    "id": 245,
+    "text": "E. kentang dan talas�",
+    "question_id": 49,
+    "is_correct": false
+  },
+  {
+    "id": 246,
+    "text": "A. 1, 2 dan 3",
+    "question_id": 50,
+    "is_correct": false
+  },
+  {
+    "id": 247,
+    "text": "B.  1, 2 dan 5",
+    "question_id": 50,
+    "is_correct": false
+  },
+  {
+    "id": 248,
+    "text": "C. 1, 4 dan 5 ",
+    "question_id": 50,
+    "is_correct": false
+  },
+  {
+    "id": 249,
+    "text": "D. 2, 3 dan 4 ",
+    "question_id": 50,
+    "is_correct": false
+  },
+  {
+    "id": 250,
+    "text": "E. 3, 4 dan 5�",
+    "question_id": 50,
+    "is_correct": true
+  },
+  {
+    "id": 251,
+    "text": "A. oligosakarida",
+    "question_id": 51,
+    "is_correct": true
+  },
+  {
+    "id": 252,
+    "text": "B.  disakarida",
+    "question_id": 51,
+    "is_correct": false
+  },
+  {
+    "id": 253,
+    "text": "C. polisakarida",
+    "question_id": 51,
+    "is_correct": false
+  },
+  {
+    "id": 254,
+    "text": "D. monosakarida",
+    "question_id": 51,
+    "is_correct": false
+  },
+  {
+    "id": 255,
+    "text": "E. sakarin�",
+    "question_id": 51,
+    "is_correct": false
+  },
+  {
+    "id": 256,
+    "text": "A. pengeringan menggunakan oven",
+    "question_id": 52,
+    "is_correct": false
+  },
+  {
+    "id": 257,
+    "text": "B. penggorengan menggunakan deep fryer",
+    "question_id": 52,
+    "is_correct": true
+  },
+  {
+    "id": 258,
+    "text": "C. penggorengan menggunakan vacuum fryer",
+    "question_id": 52,
+    "is_correct": false
+  },
+  {
+    "id": 259,
+    "text": "D. pemanasan menggunakan dandang kukus",
+    "question_id": 52,
+    "is_correct": false
+  },
+  {
+    "id": 260,
+    "text": "E. pengecilan ukuran menggunakan grinder�",
+    "question_id": 52,
+    "is_correct": false
+  },
+  {
+    "id": 261,
+    "text": "A. membutuhkan tempat yang luas",
+    "question_id": 53,
+    "is_correct": false
+  },
+  {
+    "id": 262,
+    "text": "B.  biaya murah",
+    "question_id": 53,
+    "is_correct": true
+  },
+  {
+    "id": 263,
+    "text": "C. hanya dapat dilakukan pada siang hari",
+    "question_id": 53,
+    "is_correct": false
+  },
+  {
+    "id": 264,
+    "text": "D. waktu yang lama",
+    "question_id": 53,
+    "is_correct": false
+  },
+  {
+    "id": 265,
+    "text": "E. membutuhkan sinar matahari yang terik�",
+    "question_id": 53,
+    "is_correct": false
+  },
+  {
+    "id": 266,
+    "text": "A. menghindari kontaminasi",
+    "question_id": 54,
+    "is_correct": false
+  },
+  {
+    "id": 267,
+    "text": "B.  mencegah browning",
+    "question_id": 54,
+    "is_correct": false
+  },
+  {
+    "id": 268,
+    "text": "C. memperluas bidang permukaan kentang",
+    "question_id": 54,
+    "is_correct": true
+  },
+  {
+    "id": 269,
+    "text": "D. mempermudah penggorengan",
+    "question_id": 54,
+    "is_correct": false
+  },
+  {
+    "id": 270,
+    "text": "E. memberikan penampilan menarik�",
+    "question_id": 54,
+    "is_correct": false
+  },
+  {
+    "id": 271,
+    "text": "A. slicer",
+    "question_id": 55,
+    "is_correct": true
+  },
+  {
+    "id": 272,
+    "text": "B.  cutter",
+    "question_id": 55,
+    "is_correct": false
+  },
+  {
+    "id": 273,
+    "text": "C. peeler",
+    "question_id": 55,
+    "is_correct": false
+  },
+  {
+    "id": 274,
+    "text": "D. grinder",
+    "question_id": 55,
+    "is_correct": false
+  },
+  {
+    "id": 275,
+    "text": "E. chopper�",
+    "question_id": 55,
+    "is_correct": false
+  },
+  {
+    "id": 276,
+    "text": "A. ubi jalar",
+    "question_id": 56,
+    "is_correct": false
+  },
+  {
+    "id": 277,
+    "text": "B.  kentang",
+    "question_id": 56,
+    "is_correct": false
+  },
+  {
+    "id": 278,
+    "text": "C. bengkuang",
+    "question_id": 56,
+    "is_correct": false
+  },
+  {
+    "id": 279,
+    "text": "D. singkong",
+    "question_id": 56,
+    "is_correct": true
+  },
+  {
+    "id": 280,
+    "text": "E. gadung�",
+    "question_id": 56,
+    "is_correct": false
+  },
+  {
+    "id": 281,
+    "text": "A. pemotongan dan pengirisan",
+    "question_id": 57,
+    "is_correct": false
+  },
+  {
+    "id": 282,
+    "text": "B.  pengirisan dan pencacahan",
+    "question_id": 57,
+    "is_correct": false
+  },
+  {
+    "id": 283,
+    "text": "C. pencacahan dan pemotongan",
+    "question_id": 57,
+    "is_correct": false
+  },
+  {
+    "id": 284,
+    "text": "D. pemotongan dan grinding",
+    "question_id": 57,
+    "is_correct": false
+  },
+  {
+    "id": 285,
+    "text": "E. pengirisan dan penggilingan�",
+    "question_id": 57,
+    "is_correct": true
+  },
+  {
+    "id": 286,
+    "text": "A. 1 dan 2",
+    "question_id": 58,
+    "is_correct": false
+  },
+  {
+    "id": 287,
+    "text": "B.  1 dan 3",
+    "question_id": 58,
+    "is_correct": false
+  },
+  {
+    "id": 288,
+    "text": "C. 1 dan 4",
+    "question_id": 58,
+    "is_correct": false
+  },
+  {
+    "id": 289,
+    "text": "D. 2 dan 4",
+    "question_id": 58,
+    "is_correct": false
+  },
+  {
+    "id": 290,
+    "text": "E. 2 dan 5�",
+    "question_id": 58,
+    "is_correct": true
+  },
+  {
+    "id": 291,
+    "text": "A. harganya lebih murah",
+    "question_id": 59,
+    "is_correct": false
+  },
+  {
+    "id": 292,
+    "text": "B.  mudah didapatkan",
+    "question_id": 59,
+    "is_correct": false
+  },
+  {
+    "id": 293,
+    "text": "C. rasanya yang hambar",
+    "question_id": 59,
+    "is_correct": false
+  },
+  {
+    "id": 294,
+    "text": "D. teksturnya yang lembut",
+    "question_id": 59,
+    "is_correct": false
+  },
+  {
+    "id": 295,
+    "text": "E. teksturnya yang padat�",
+    "question_id": 59,
+    "is_correct": true
+  },
+  {
+    "id": 296,
+    "text": "A. donat",
+    "question_id": 60,
+    "is_correct": false
+  },
+  {
+    "id": 297,
+    "text": "B.  keripik",
+    "question_id": 60,
+    "is_correct": false
+  },
+  {
+    "id": 298,
+    "text": "C. lumpur",
+    "question_id": 60,
+    "is_correct": false
+  },
+  {
+    "id": 299,
+    "text": "D. stick (french fries)�",
+    "question_id": 60,
+    "is_correct": false
+  },
+  {
+    "id": 300,
+    "text": "E. tepung�",
+    "question_id": 60,
+    "is_correct": true
+  },
+  {
+    "id": 301,
+    "text": "A. 1-4-5-2-3",
+    "question_id": 61,
+    "is_correct": false
+  },
+  {
+    "id": 302,
+    "text": "B. 2-1-4-3-5",
+    "question_id": 61,
+    "is_correct": false
+  },
+  {
+    "id": 303,
+    "text": "C. 2-1-4-5-3",
+    "question_id": 61,
+    "is_correct": true
+  },
+  {
+    "id": 304,
+    "text": "D. 4-1-5-1-3",
+    "question_id": 61,
+    "is_correct": false
+  },
+  {
+    "id": 305,
+    "text": "E. 5-1-3-2-4�",
+    "question_id": 61,
+    "is_correct": false
+  },
+  {
+    "id": 306,
+    "text": "A. menambah cita rasa",
+    "question_id": 62,
+    "is_correct": false
+  },
+  {
+    "id": 307,
+    "text": "B.  memperbaiki tekstur",
+    "question_id": 62,
+    "is_correct": false
+  },
+  {
+    "id": 308,
+    "text": "C. mengembangkan adonan",
+    "question_id": 62,
+    "is_correct": true
+  },
+  {
+    "id": 309,
+    "text": "D. meningkatkan gizi",
+    "question_id": 62,
+    "is_correct": false
+  },
+  {
+    "id": 310,
+    "text": "E. menambah aroma�",
+    "question_id": 62,
+    "is_correct": false
+  },
+  {
+    "id": 311,
+    "text": "A. bambu",
+    "question_id": 63,
+    "is_correct": false
+  },
+  {
+    "id": 312,
+    "text": "B.  botol",
+    "question_id": 63,
+    "is_correct": false
+  },
+  {
+    "id": 313,
+    "text": "C. kertas",
+    "question_id": 63,
+    "is_correct": false
+  },
+  {
+    "id": 314,
+    "text": "D. plastik lapis alumunium foil",
+    "question_id": 63,
+    "is_correct": true
+  },
+  {
+    "id": 315,
+    "text": "E. plastik transparan�",
+    "question_id": 63,
+    "is_correct": false
+  },
+  {
+    "id": 316,
+    "text": "A. rye",
+    "question_id": 64,
+    "is_correct": false
+  },
+  {
+    "id": 317,
+    "text": "B.  oat",
+    "question_id": 64,
+    "is_correct": true
+  },
+  {
+    "id": 318,
+    "text": "C. barley",
+    "question_id": 64,
+    "is_correct": false
+  },
+  {
+    "id": 319,
+    "text": "D. sorgum",
+    "question_id": 64,
+    "is_correct": false
+  },
+  {
+    "id": 320,
+    "text": "E. wheat�",
+    "question_id": 64,
+    "is_correct": false
+  },
+  {
+    "id": 321,
+    "text": "A. beras",
+    "question_id": 65,
+    "is_correct": true
+  },
+  {
+    "id": 322,
+    "text": "B. gandum",
+    "question_id": 65,
+    "is_correct": false
+  },
+  {
+    "id": 323,
+    "text": "C. beras ketan",
+    "question_id": 65,
+    "is_correct": false
+  },
+  {
+    "id": 324,
+    "text": "D. sorgum",
+    "question_id": 65,
+    "is_correct": false
+  },
+  {
+    "id": 325,
+    "text": "E. barley�",
+    "question_id": 66,
+    "is_correct": false
+  },
+  {
+    "id": 326,
+    "text": "A. jagung manis",
+    "question_id": 66,
+    "is_correct": false
+  },
+  {
+    "id": 327,
+    "text": "B. jagung mutiara",
+    "question_id": 66,
+    "is_correct": false
+  },
+  {
+    "id": 328,
+    "text": "C. jagung gigi kuda",
+    "question_id": 66,
+    "is_correct": false
+  },
+  {
+    "id": 329,
+    "text": "D. jagung pod",
+    "question_id": 66,
+    "is_correct": false
+  },
+  {
+    "id": 330,
+    "text": "E. jagung brondong�",
+    "question_id": 66,
+    "is_correct": true
+  },
+  {
+    "id": 331,
+    "text": "A. gandum",
+    "question_id": 67,
+    "is_correct": false
+  },
+  {
+    "id": 332,
+    "text": "B. sorgum",
+    "question_id": 67,
+    "is_correct": false
+  },
+  {
+    "id": 333,
+    "text": "C. beras",
+    "question_id": 67,
+    "is_correct": true
+  },
+  {
+    "id": 334,
+    "text": "D. beras ketan",
+    "question_id": 67,
+    "is_correct": false
+  },
+  {
+    "id": 335,
+    "text": "E. wheat�",
+    "question_id": 67,
+    "is_correct": false
+  },
+  {
+    "id": 336,
+    "text": "A. biji kering, bagian sisi biji keras, bagian tengah sampai ke ujung biji lunak",
+    "question_id": 68,
+    "is_correct": true
+  },
+  {
+    "id": 337,
+    "text": "B. bagian atas biji mengkerut, permukaan biji bagian atas licin dan bulat",
+    "question_id": 68,
+    "is_correct": false
+  },
+  {
+    "id": 338,
+    "text": "C. biji secara keseluruhan licin",
+    "question_id": 68,
+    "is_correct": false
+  },
+  {
+    "id": 339,
+    "text": "D. sisi biji tipis dan keras, ujung biji keras, biji keras dan tipis",
+    "question_id": 68,
+    "is_correct": false
+  },
+  {
+    "id": 340,
+    "text": "E. bagian atas kering, bagian sisi biji dan biji lunak, bagian ujung biji keras�",
+    "question_id": 68,
+    "is_correct": false
+  },
+  {
+    "id": 341,
+    "text": "A. 6-3-1-2-4-5",
+    "question_id": 69,
+    "is_correct": true
+  },
+  {
+    "id": 342,
+    "text": "B. 6-3-2-1-4-5",
+    "question_id": 69,
+    "is_correct": false
+  },
+  {
+    "id": 343,
+    "text": "C. 6-3-5-1-2-4",
+    "question_id": 69,
+    "is_correct": false
+  },
+  {
+    "id": 344,
+    "text": "D. 6-4-3-1-2-5",
+    "question_id": 69,
+    "is_correct": false
+  },
+  {
+    "id": 345,
+    "text": "E. 6-5-4-2-3-1�",
+    "question_id": 69,
+    "is_correct": false
+  },
+  {
+    "id": 346,
+    "text": "A. pisau",
+    "question_id": 70,
+    "is_correct": false
+  },
+  {
+    "id": 347,
+    "text": "B. crushing rolls",
+    "question_id": 70,
+    "is_correct": true
+  },
+  {
+    "id": 348,
+    "text": "C. hammer mill",
+    "question_id": 70,
+    "is_correct": false
+  },
+  {
+    "id": 349,
+    "text": "D. attrition mill",
+    "question_id": 70,
+    "is_correct": false
+  },
+  {
+    "id": 350,
+    "text": "E. mixer�",
+    "question_id": 70,
+    "is_correct": false
+  },
+  {
+    "id": 351,
+    "text": "A. 1",
+    "question_id": 71,
+    "is_correct": false
+  },
+  {
+    "id": 352,
+    "text": "B. 2",
+    "question_id": 71,
+    "is_correct": false
+  },
+  {
+    "id": 353,
+    "text": "C. 3",
+    "question_id": 71,
+    "is_correct": true
+  },
+  {
+    "id": 354,
+    "text": "D. 4",
+    "question_id": 71,
+    "is_correct": false
+  },
+  {
+    "id": 355,
+    "text": "E. 5�",
+    "question_id": 71,
+    "is_correct": false
+  },
+  {
+    "id": 356,
+    "text": "A. 1,2,3",
+    "question_id": 72,
+    "is_correct": false
+  },
+  {
+    "id": 357,
+    "text": "B. 1,2,4",
+    "question_id": 72,
+    "is_correct": false
+  },
+  {
+    "id": 358,
+    "text": "C. 1,3,4",
+    "question_id": 72,
+    "is_correct": false
+  },
+  {
+    "id": 359,
+    "text": "D. 2,3,5",
+    "question_id": 72,
+    "is_correct": true
+  },
+  {
+    "id": 360,
+    "text": "E. 3,4,5�",
+    "question_id": 72,
+    "is_correct": false
+  },
+  {
+    "id": 361,
+    "text": "A. hard wheat",
+    "question_id": 73,
+    "is_correct": false
+  },
+  {
+    "id": 362,
+    "text": "B. soft wheat",
+    "question_id": 73,
+    "is_correct": true
+  },
+  {
+    "id": 363,
+    "text": "C. tepung protein tinggi",
+    "question_id": 73,
+    "is_correct": false
+  },
+  {
+    "id": 364,
+    "text": "D. hard winter",
+    "question_id": 73,
+    "is_correct": false
+  },
+  {
+    "id": 365,
+    "text": "E. durum winter�",
+    "question_id": 73,
+    "is_correct": false
+  },
+  {
+    "id": 366,
+    "text": "A. amilopektin�",
+    "question_id": 74,
+    "is_correct": false
+  },
+  {
+    "id": 367,
+    "text": "B. prolamin",
+    "question_id": 74,
+    "is_correct": false
+  },
+  {
+    "id": 368,
+    "text": "C. gluten",
+    "question_id": 74,
+    "is_correct": true
+  },
+  {
+    "id": 369,
+    "text": "D. globulin",
+    "question_id": 74,
+    "is_correct": false
+  },
+  {
+    "id": 370,
+    "text": "E. amilosa�",
+    "question_id": 74,
+    "is_correct": false
+  },
+  {
+    "id": 371,
+    "text": "A. protein asam amino lisin�",
+    "question_id": 75,
+    "is_correct": true
+  },
+  {
+    "id": 372,
+    "text": "B. protein asam amino essential",
+    "question_id": 75,
+    "is_correct": false
+  },
+  {
+    "id": 373,
+    "text": "C. protein asam amino sistein",
+    "question_id": 75,
+    "is_correct": false
+  },
+  {
+    "id": 374,
+    "text": "D. protein yang mengandung karbohidrat, serat dan lemak",
+    "question_id": 75,
+    "is_correct": false
+  },
+  {
+    "id": 375,
+    "text": "E. protein yang mengandung vitamin B kompleks�",
+    "question_id": 75,
+    "is_correct": false
+  },
+  {
+    "id": 376,
+    "text": "A. lemak�",
+    "question_id": 76,
+    "is_correct": false
+  },
+  {
+    "id": 377,
+    "text": "B. protein",
+    "question_id": 76,
+    "is_correct": true
+  },
+  {
+    "id": 378,
+    "text": "C. karbohidrat",
+    "question_id": 76,
+    "is_correct": false
+  },
+  {
+    "id": 379,
+    "text": "D. vitamin",
+    "question_id": 76,
+    "is_correct": false
+  },
+  {
+    "id": 380,
+    "text": "E. mineral�",
+    "question_id": 76,
+    "is_correct": false
+  },
+  {
+    "id": 381,
+    "text": "A. kacang merah�",
+    "question_id": 77,
+    "is_correct": false
+  },
+  {
+    "id": 382,
+    "text": "B. kacang kedelai",
+    "question_id": 77,
+    "is_correct": false
+  },
+  {
+    "id": 383,
+    "text": "C. kacang koro",
+    "question_id": 77,
+    "is_correct": false
+  },
+  {
+    "id": 384,
+    "text": "D. kacang polong",
+    "question_id": 77,
+    "is_correct": false
+  },
+  {
+    "id": 385,
+    "text": "E. kacang hijau�",
+    "question_id": 77,
+    "is_correct": true
+  },
+  {
+    "id": 386,
+    "text": "A. blender�",
+    "question_id": 78,
+    "is_correct": false
+  },
+  {
+    "id": 387,
+    "text": "B. grinder",
+    "question_id": 78,
+    "is_correct": true
+  },
+  {
+    "id": 388,
+    "text": "C. slicer",
+    "question_id": 78,
+    "is_correct": false
+  },
+  {
+    "id": 389,
+    "text": "D. parutan",
+    "question_id": 78,
+    "is_correct": false
+  },
+  {
+    "id": 390,
+    "text": "E. mixer�",
+    "question_id": 78,
+    "is_correct": false
+  },
+  {
+    "id": 391,
+    "text": "A. memperbesar luas permukaan untuk memudahkan proses ekstraksi�",
+    "question_id": 79,
+    "is_correct": true
+  },
+  {
+    "id": 392,
+    "text": "B. memperbesar luas permukaan untuk tujuan memudahkan proses emulsifikasi",
+    "question_id": 79,
+    "is_correct": false
+  },
+  {
+    "id": 393,
+    "text": "C. memperbesar luas permukaan untuk tujuan memudahkan proses homogenisasi",
+    "question_id": 79,
+    "is_correct": false
+  },
+  {
+    "id": 394,
+    "text": "D. memperbesar luas permukaan untuk tujuan mengingkatkan penyerapan panas ketika dididihkan",
+    "question_id": 79,
+    "is_correct": false
+  },
+  {
+    "id": 395,
+    "text": "E. memperbesar luas permukaan untuk tuhuan meningkatkan flavor�",
+    "question_id": 79,
+    "is_correct": false
+  },
+  {
+    "id": 396,
+    "text": "A. 1,2,3�",
+    "question_id": 80,
+    "is_correct": false
+  },
+  {
+    "id": 397,
+    "text": "B. 1,2,4",
+    "question_id": 80,
+    "is_correct": false
+  },
+  {
+    "id": 398,
+    "text": "C. 2,3,4",
+    "question_id": 80,
+    "is_correct": false
+  },
+  {
+    "id": 399,
+    "text": "D. 2,3,5�",
+    "question_id": 80,
+    "is_correct": false
+  },
+  {
+    "id": 400,
+    "text": "E. 2,5,6�",
+    "question_id": 80,
+    "is_correct": true
+  },
+  {
+    "id": 401,
+    "text": "A. A dan 1 (disc mill dan sari kedelai)�",
+    "question_id": 81,
+    "is_correct": false
+  },
+  {
+    "id": 402,
+    "text": "B. A dan 2 (hammer mill dan bumbu kacang)",
+    "question_id": 81,
+    "is_correct": false
+  },
+  {
+    "id": 403,
+    "text": "C. B dan 3 (Grinder dan selai kacang)",
+    "question_id": 81,
+    "is_correct": true
+  },
+  {
+    "id": 404,
+    "text": "D. B dan 2 (Disc mill dan sari kedelai)�",
+    "question_id": 81,
+    "is_correct": false
+  },
+  {
+    "id": 405,
+    "text": "E. C dan 3 (hammer mill dan selai kacang)�",
+    "question_id": 81,
+    "is_correct": false
+  },
+  {
+    "id": 406,
+    "text": "A. 1�",
+    "question_id": 82,
+    "is_correct": false
+  },
+  {
+    "id": 407,
+    "text": "B. 2",
+    "question_id": 82,
+    "is_correct": false
+  },
+  {
+    "id": 408,
+    "text": "C. 3",
+    "question_id": 82,
+    "is_correct": true
+  },
+  {
+    "id": 409,
+    "text": "D. 4�",
+    "question_id": 82,
+    "is_correct": false
+  },
+  {
+    "id": 410,
+    "text": "E. 5�",
+    "question_id": 82,
+    "is_correct": false
+  },
+  {
+    "id": 411,
+    "text": "A. 3-1-4-5-6-2�",
+    "question_id": 83,
+    "is_correct": false
+  },
+  {
+    "id": 412,
+    "text": "B. 3-1-5-4-6-2",
+    "question_id": 83,
+    "is_correct": true
+  },
+  {
+    "id": 413,
+    "text": "C. 3-1-6-5-4-2",
+    "question_id": 83,
+    "is_correct": false
+  },
+  {
+    "id": 414,
+    "text": "D. 3-4-5-1-6-2�",
+    "question_id": 83,
+    "is_correct": false
+  },
+  {
+    "id": 415,
+    "text": "E. 3-4-5-6-1-2�",
+    "question_id": 83,
+    "is_correct": false
+  },
+  {
+    "id": 416,
+    "text": "A. selai, kacang goreng, kacang rebus, kacang oven, peyek�",
+    "question_id": 84,
+    "is_correct": true
+  },
+  {
+    "id": 417,
+    "text": "B. bubur kacang hijau, bolu kacang hijau, puding kacang hijau, tepung kacang hijau",
+    "question_id": 84,
+    "is_correct": false
+  },
+  {
+    "id": 418,
+    "text": "C. kacang mete goreng toping coklat",
+    "question_id": 84,
+    "is_correct": false
+  },
+  {
+    "id": 419,
+    "text": "D. kecap�",
+    "question_id": 84,
+    "is_correct": false
+  },
+  {
+    "id": 420,
+    "text": "E. keripik�",
+    "question_id": 84,
+    "is_correct": false
+  },
+  {
+    "id": 421,
+    "text": "A. mengurangi kadar air kacang kedelai�",
+    "question_id": 85,
+    "is_correct": false
+  },
+  {
+    "id": 422,
+    "text": "B. meningkatkan kecerahan warna pada kedelai",
+    "question_id": 85,
+    "is_correct": false
+  },
+  {
+    "id": 423,
+    "text": "C. menurunkan derajat keasaman kedelai",
+    "question_id": 85,
+    "is_correct": false
+  },
+  {
+    "id": 424,
+    "text": "D. memudahkan proses peragian�",
+    "question_id": 85,
+    "is_correct": false
+  },
+  {
+    "id": 425,
+    "text": "E. mempercepat proses fermentasi�",
+    "question_id": 85,
+    "is_correct": true
+  },
+  {
+    "id": 426,
+    "text": "A. menurunkan kadar air pada kacang sehingga selai yang dihasilkan lembek�",
+    "question_id": 86,
+    "is_correct": false
+  },
+  {
+    "id": 427,
+    "text": "B. menurunkan kadar air pada kacang sehingga selai yang dihasilkan mempunyai daya oles yang baik",
+    "question_id": 86,
+    "is_correct": true
+  },
+  {
+    "id": 428,
+    "text": "C. menaikkan kadar air pada kacang sehingga selai yang dihasilkan mempunyai dayabokes yang baik",
+    "question_id": 86,
+    "is_correct": false
+  },
+  {
+    "id": 429,
+    "text": "D. menaikkan kadar air pada kacang sehingga selai yang dihasilkan sangat lembek�",
+    "question_id": 86,
+    "is_correct": false
+  },
+  {
+    "id": 430,
+    "text": "E. menurunkan kadar air pada kacang sehingga selai yang dihasilkan mempunyai daya oles yang kurang baik�",
+    "question_id": 86,
+    "is_correct": false
+  },
+  {
+    "id": 431,
+    "text": "A. amilopektin�",
+    "question_id": 87,
+    "is_correct": false
+  },
+  {
+    "id": 432,
+    "text": "B. amilosa",
+    "question_id": 87,
+    "is_correct": false
+  },
+  {
+    "id": 433,
+    "text": "C. pektin",
+    "question_id": 87,
+    "is_correct": true
+  },
+  {
+    "id": 434,
+    "text": "D. vitamin�",
+    "question_id": 87,
+    "is_correct": false
+  },
+  {
+    "id": 435,
+    "text": "E. air�",
+    "question_id": 87,
+    "is_correct": false
+  },
+  {
+    "id": 436,
+    "text": "A. sari buah menggumpal�",
+    "question_id": 88,
+    "is_correct": false
+  },
+  {
+    "id": 437,
+    "text": "B. warna menjadi lebih menarik",
+    "question_id": 88,
+    "is_correct": false
+  },
+  {
+    "id": 438,
+    "text": "C. larutan menjadi lebih menarik",
+    "question_id": 88,
+    "is_correct": true
+  },
+  {
+    "id": 439,
+    "text": "D. menjadi lebih awet�",
+    "question_id": 88,
+    "is_correct": false
+  },
+  {
+    "id": 440,
+    "text": "E. aroma lebih kuat�",
+    "question_id": 88,
+    "is_correct": false
+  },
+  {
+    "id": 441,
+    "text": "A. LTLT (Low Temperature Long Time)�",
+    "question_id": 89,
+    "is_correct": false
+  },
+  {
+    "id": 442,
+    "text": "B. HTST (High Temperature Short Time)",
+    "question_id": 89,
+    "is_correct": false
+  },
+  {
+    "id": 443,
+    "text": "C. UHT (Ultra High Temperature)",
+    "question_id": 89,
+    "is_correct": true
+  },
+  {
+    "id": 444,
+    "text": "D. Aseptic Processing�",
+    "question_id": 89,
+    "is_correct": false
+  },
+  {
+    "id": 445,
+    "text": "E. Terminal Sterilization�",
+    "question_id": 89,
+    "is_correct": false
+  },
+  {
+    "id": 446,
+    "text": "A. LTLT (Low Temperature Long Time)�",
+    "question_id": 90,
+    "is_correct": false
+  },
+  {
+    "id": 447,
+    "text": "B. HTST (High Temperature Short Time)",
+    "question_id": 90,
+    "is_correct": false
+  },
+  {
+    "id": 448,
+    "text": "C. UHT (Ultra High Temperature)",
+    "question_id": 90,
+    "is_correct": false
+  },
+  {
+    "id": 449,
+    "text": "D. Aseptic Processing�",
+    "question_id": 90,
+    "is_correct": true
+  },
+  {
+    "id": 450,
+    "text": "E. Terminal Sterilization�",
+    "question_id": 90,
+    "is_correct": false
+  },
+  {
+    "id": 451,
+    "text": "A. kegiatan mengukur dan menilai produk�",
+    "question_id": 91,
+    "is_correct": true
+  },
+  {
+    "id": 452,
+    "text": "B. kegiatan menguji daya terima produk",
+    "question_id": 91,
+    "is_correct": false
+  },
+  {
+    "id": 453,
+    "text": "C. kegiatan menguji kesukaan produk",
+    "question_id": 91,
+    "is_correct": false
+  },
+  {
+    "id": 454,
+    "text": "D. kegiatan pengendalian mutu produk�",
+    "question_id": 91,
+    "is_correct": false
+  },
+  {
+    "id": 455,
+    "text": "E. kegiatan penilaian kandungan produk�",
+    "question_id": 91,
+    "is_correct": false
+  },
+  {
+    "id": 456,
+    "text": "A. menguji sensori produk olahan buah-buahan�",
+    "question_id": 92,
+    "is_correct": false
+  },
+  {
+    "id": 457,
+    "text": "B. pengendalian mutu produk olahan buah-buahan",
+    "question_id": 92,
+    "is_correct": false
+  },
+  {
+    "id": 458,
+    "text": "C. evaluasi produk olahan buah-buahan",
+    "question_id": 92,
+    "is_correct": true
+  },
+  {
+    "id": 459,
+    "text": "D. pengawasan mutu produk olahan buah-buahan�",
+    "question_id": 92,
+    "is_correct": false
+  },
+  {
+    "id": 460,
+    "text": "E. uji organoleptik produk akhir�",
+    "question_id": 92,
+    "is_correct": false
+  },
+  {
+    "id": 461,
+    "text": "A. kesesuaian terhadap persyaratan yang telah ditentukan�",
+    "question_id": 93,
+    "is_correct": true
+  },
+  {
+    "id": 462,
+    "text": "B. serangkaian tindakan untuk menerapkan sistem uji pada setiap rantai proses produksi",
+    "question_id": 93,
+    "is_correct": false
+  },
+  {
+    "id": 463,
+    "text": "C. mengidentifikasi produk yang tidak sesuai",
+    "question_id": 93,
+    "is_correct": false
+  },
+  {
+    "id": 464,
+    "text": "D. menguji tingkat kesukaan konsumen terhadap produk�",
+    "question_id": 93,
+    "is_correct": false
+  },
+  {
+    "id": 465,
+    "text": "E. mengidentifikasi produk yang dihasilkan�",
+    "question_id": 93,
+    "is_correct": false
+  },
+  {
+    "id": 466,
+    "text": "A. tekstur keras, rasa asam dan berbau khas singkong�",
+    "question_id": 94,
+    "is_correct": false
+  },
+  {
+    "id": 467,
+    "text": "B. tekstur empuk, rasa asam dan berbau khas singkong",
+    "question_id": 94,
+    "is_correct": false
+  },
+  {
+    "id": 468,
+    "text": "C. tekstur keras, perpaduan rasa asam dan rasa manis, serta beraroma alkohol",
+    "question_id": 94,
+    "is_correct": false
+  },
+  {
+    "id": 469,
+    "text": "D. tekstur empuk, rasa manis dan beraroma khas singkong�",
+    "question_id": 94,
+    "is_correct": false
+  },
+  {
+    "id": 470,
+    "text": "E. tekstur empuk, perpaduan rasa manis dan terdapat sedikit beraroma alkohol�",
+    "question_id": 94,
+    "is_correct": true
+  },
+  {
+    "id": 471,
+    "text": "A. matang optomal, bentuk tidak cacat�",
+    "question_id": 95,
+    "is_correct": true
+  },
+  {
+    "id": 472,
+    "text": "B. matang optimal, bentuk cacat",
+    "question_id": 95,
+    "is_correct": false
+  },
+  {
+    "id": 473,
+    "text": "C. mengkal, bentuk tidak cacat",
+    "question_id": 95,
+    "is_correct": false
+  },
+  {
+    "id": 474,
+    "text": "D. mengkal, bentuk cacat�",
+    "question_id": 95,
+    "is_correct": false
+  },
+  {
+    "id": 475,
+    "text": "E. matang belum sempurna, bentuk tidak cacat�",
+    "question_id": 95,
+    "is_correct": false
+  },
+  {
+    "id": 476,
+    "text": "A. limbah endapan/lumpur�",
+    "question_id": 96,
+    "is_correct": false
+  },
+  {
+    "id": 477,
+    "text": "B. limbah padat",
+    "question_id": 96,
+    "is_correct": false
+  },
+  {
+    "id": 478,
+    "text": "C. limbah kemasan",
+    "question_id": 96,
+    "is_correct": false
+  },
+  {
+    "id": 479,
+    "text": "D. limbah teknologi�",
+    "question_id": 96,
+    "is_correct": true
+  },
+  {
+    "id": 480,
+    "text": "E. limbah cair�",
+    "question_id": 96,
+    "is_correct": false
+  },
+  {
+    "id": 481,
+    "text": "A. sianida�",
+    "question_id": 97,
+    "is_correct": true
+  },
+  {
+    "id": 482,
+    "text": "B. sulfida",
+    "question_id": 97,
+    "is_correct": false
+  },
+  {
+    "id": 483,
+    "text": "C. pestisida",
+    "question_id": 97,
+    "is_correct": false
+  },
+  {
+    "id": 484,
+    "text": "D. amonia bebas�",
+    "question_id": 97,
+    "is_correct": false
+  },
+  {
+    "id": 485,
+    "text": "E. fenol�",
+    "question_id": 97,
+    "is_correct": false
+  },
+  {
+    "id": 486,
+    "text": "A. 1-3-5-6�",
+    "question_id": 98,
+    "is_correct": false
+  },
+  {
+    "id": 487,
+    "text": "B. 1-4-6-7",
+    "question_id": 98,
+    "is_correct": false
+  },
+  {
+    "id": 488,
+    "text": "C. 2-4-6-7",
+    "question_id": 98,
+    "is_correct": true
+  },
+  {
+    "id": 489,
+    "text": "D. 2-4-7-8�",
+    "question_id": 98,
+    "is_correct": false
+  },
+  {
+    "id": 490,
+    "text": "E. 2-5-6-8�",
+    "question_id": 98,
+    "is_correct": false
+  },
+  {
+    "id": 491,
+    "text": "A. disk mill�",
+    "question_id": 99,
+    "is_correct": false
+  },
+  {
+    "id": 492,
+    "text": "B. grinder",
+    "question_id": 99,
+    "is_correct": false
+  },
+  {
+    "id": 493,
+    "text": "C. wet pulper",
+    "question_id": 99,
+    "is_correct": false
+  },
+  {
+    "id": 494,
+    "text": "D. hammer mill�",
+    "question_id": 99,
+    "is_correct": true
+  },
+  {
+    "id": 495,
+    "text": "E. roller mill�",
+    "question_id": 99,
+    "is_correct": false
+  },
+  {
+    "id": 496,
+    "text": "A. protein�",
+    "question_id": 100,
+    "is_correct": false
+  },
+  {
+    "id": 497,
+    "text": "B. gula",
+    "question_id": 100,
+    "is_correct": false
+  },
+  {
+    "id": 498,
+    "text": "C. air",
+    "question_id": 100,
+    "is_correct": false
+  },
+  {
+    "id": 499,
+    "text": "D. mineral�",
+    "question_id": 100,
+    "is_correct": false
+  },
+  {
+    "id": 500,
+    "text": "E. karbohidrat�",
+    "question_id": 100,
+    "is_correct": true
   }
 ]
