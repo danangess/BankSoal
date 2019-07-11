@@ -11,7 +11,6 @@ import com.example.banksoal.databinding.ActivityQuizBinding
 import com.example.banksoal.ui.base.BaseActivity
 import com.example.banksoal.ui.main.MainActivity
 import com.mindorks.placeholderview.SwipePlaceHolderView
-import com.mindorks.placeholderview.listeners.ItemRemovedListener
 import javax.inject.Inject
 
 class QuizActivity : BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNavigator {
@@ -24,6 +23,8 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNav
             return Intent(context, QuizActivity::class.java)
         }
     }
+
+    private var questionIndex: Int = 0
 
     @Inject
     lateinit var mQuizViewModel: QuizViewModel
@@ -41,16 +42,23 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNav
     override fun loadQuizData() {
         val swipePlaceHolderView = findViewById<SwipePlaceHolderView>(R.id.quizContainer)
         swipePlaceHolderView.disableTouchSwipe()
+        val questions = mQuizViewModel.getQuestionCardData().value!!
+        swipePlaceHolderView.addView(QuestionCard(this, questions[0]))
         swipePlaceHolderView.addItemRemoveListener {
+            mQuizViewModel.isLoading.set(true)
             mQuizViewModel.updateResult()
+            questionIndex += 1
+            if (questions.size > questionIndex) {
+                swipePlaceHolderView.addView(QuestionCard(this, questions[questionIndex]))
+            }
+            mQuizViewModel.isLoading.set(false)
         }
-        mQuizViewModel.getQuestionCardData().value!!.forEach { question ->
-            swipePlaceHolderView.addView(
-                QuestionCard(
-                    question
-                )
-            )
-        }
+//
+//        mQuizViewModel.getQuestionCardData().value!!.forEach { question ->
+//            swipePlaceHolderView.addView(
+//                QuestionCard(this, question)
+//            )
+//        }
     }
 
     override fun answer() {
@@ -69,6 +77,7 @@ class QuizActivity : BaseActivity<ActivityQuizBinding, QuizViewModel>(), QuizNav
         super.onCreate(savedInstanceState)
         mQuizViewModel.setNavigator(this)
         setupQuiz()
+        mQuizViewModel.isLoading.set(false)
     }
 
     override fun onBackPressed() {

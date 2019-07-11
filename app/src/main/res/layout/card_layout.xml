@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xxmlns:android="http://schemas.android.com/apk/res/android"
-                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:xxmlns="http://schemas.android.com/tools"
+                                    xxmlns:android="http://schemas.android.com/apk/res/android"
                                     android:id="@+id/card_layout"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="match_parent"
                                     android:layout_gravity="center"
                                     android:gravity="center_horizontal"
                                     card_view:cardBackgroundColor="@color/white"
                                     card_view:cardCornerRadius="4dp"
                                     card_view:cardElevation="4dp"
-                                    card_view:cardUseCompatPadding="true"
-                                    xmlns:android="http://schemas.android.com/apk/res/android"
-                                    xmlns:xxmlns="http://schemas.android.com/tools">
+                                    card_view:cardUseCompatPadding="true">
 
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="bottom"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="20dp"
@@ -31,10 +31,10 @@
                 android:gravity="center">
 
             <!--<com.androidnetworking.widget.ANImageView-->
-                    <!--android:id="@+id/iv_pic"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="150dp"-->
-                    <!--android:scaleType="centerCrop" />-->
+            <!--android:id="@+id/iv_pic"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:scaleType="centerCrop" />-->
 
             <LinearLayout
                     android:layout_width="match_parent"
@@ -99,6 +99,22 @@
 
         <Button
                 android:id="@+id/btnOption3"
+                android:background="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:minHeight="44dp" />
+
+        <Button
+                android:id="@+id/btnOption4"
+                android:background="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:minHeight="44dp" />
+
+        <Button
+                android:id="@+id/btnOption5"
                 android:background="@color/light_gray"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

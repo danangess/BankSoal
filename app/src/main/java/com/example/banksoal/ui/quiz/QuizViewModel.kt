@@ -22,7 +22,7 @@ class QuizViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvid
 
     private val questionCardData: MutableLiveData<List<QuestionData>> = MutableLiveData()
     private val questionDataList = ObservableArrayList<QuestionData>()
-    private val mIsComplete = ObservableField<Boolean>()
+    private val mIsComplete = ObservableField<Boolean>(false)
 
     var result = ObservableField<String>("Benar = 0\nSalah = 0")
 
