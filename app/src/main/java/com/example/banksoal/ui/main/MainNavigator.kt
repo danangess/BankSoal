@@ -11,5 +11,7 @@ interface MainNavigator {
 
 //    fun showCompetencesFragment()
 
+    fun showUserGuideFragment()
+
     fun showMainFragment()
 }

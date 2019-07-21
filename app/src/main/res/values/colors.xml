@@ -6,6 +6,8 @@
     <color name="transparent">#00000000</color>
     <color name="black_effective">#2a2a2a</color>
 
+    <color name="colorPrimaryTransparent">#59008577</color>
+
     <!--<color name="colorPrimary">@color/blue_black_light</color>-->
     <!--<color name="colorPrimaryDark">@color/black</color>-->
     <!--<color name="colorAccent">#FF4081</color>-->

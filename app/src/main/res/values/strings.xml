@@ -46,4 +46,14 @@
     <string name="quiz_pict">Gambar Soal</string>
     <string name="about_app">Aplikasi ini merupakan kumpulan dari butir-butir soal sehingga menjadi bank soal untuk mata pelajaran Produksi Pengolahan Hasil Nabati yang dapat digunakan peserta didik SMK dengan program keahlian Agribisnis Pengolahan Hasil Pertanian (APHP).</string>
     <string name="profile_creator">Profil pembuat:\nNama: Nita Septa Dilla\nNIM: 1505406\nJurusan: Pendidikan Teknologi Agroindustri\nKontak: nitasd@student.upi.edu</string>
+    <string name="user_guide">Petunjuk Penggunaan</string>
+    <string-array name="user_guide">
+        <item>1. Buatlah akun dengan meng-klik register, setelah itu mengisi data dan login.</item>
+        <item>2. Setelah login, di bagian kanan halaman utama geser ke arah kanan dan pilih ada beberapa menu</item>
+        <item>3. Untuk mulai berlatih soal, silahkan pilih menu Kompetensi Dasar</item>
+        <item>4. Klik menu Kompetensi Dasar dan terdapat tujuh pilihan sub-bab</item>
+        <item>5. Pilih sub-bab yang akan dicoba untuk berlatih soal.</item>
+        <item>6. Setelah memilih sub-bab, silakan menjawab soal dengan pilihan A/B/C/D/E.</item>
+        <item>7. Selamat berlatih soal!</item>
+    </string-array>
 </resources>

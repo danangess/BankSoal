@@ -145,7 +145,8 @@ class QuestionCard(private val context: Context, private var questionData: Quest
 
     private fun setButtonColor(button: Button?) {
         setAllButtonDefaultColor()
-        button?.setBackgroundColor(Color.LTGRAY)
+        val color = context.resources.getColor(R.color.colorPrimaryTransparent)
+        button?.setBackgroundColor(color)
     }
 
     private fun setAllButtonDefaultColor() {

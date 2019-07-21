@@ -16,6 +16,7 @@ import com.example.banksoal.ui.quiz.QuizActivity
 import com.example.banksoal.ui.quiz.QuizActivityModule
 import com.example.banksoal.ui.signup.SignupFragmentProvider
 import com.example.banksoal.ui.splash.SplashActivityModule
+import com.example.banksoal.ui.user_guide.UserGuideFragmentProvider
 
 @Module
 abstract class ActivityBuilder {
@@ -33,7 +34,8 @@ abstract class ActivityBuilder {
             MainFragmentProvider::class,
             CourseFragmentProvider::class,
             CompetencesFragmentProvider::class,
-            AboutFragmentProvider::class
+            AboutFragmentProvider::class,
+            UserGuideFragmentProvider::class
         ]
     )
     abstract fun bindMainActivity(): MainActivity
