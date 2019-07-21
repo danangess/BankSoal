@@ -28,6 +28,7 @@ import com.example.banksoal.databinding.NavHeaderMainBinding
 import com.example.banksoal.ui.about.AboutFragment
 import com.example.banksoal.ui.course.CourseFragment
 import com.example.banksoal.ui.main.fragment.MainFragment
+import com.example.banksoal.ui.user_guide.UserGuideFragment
 
 class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNavigator, HasSupportFragmentInjector {
 
@@ -129,6 +130,10 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
                     showCourseFragment()
                     true
                 }
+                R.id.navItemUserGuid -> {
+                    showUserGuideFragment()
+                    true
+                }
                 R.id.navItemAbout -> {
                     showAboutFragment()
                     true
@@ -201,6 +206,15 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
 //            .add(R.id.clRootView, CompetencesFragment.newFragment(), CompetencesFragment.TAG)
 //            .commit()
 //    }
+
+    override fun showUserGuideFragment() {
+        unlockDrawer()
+        supportFragmentManager
+            .beginTransaction()
+            .disallowAddToBackStack()
+            .replace(R.id.contentFragment, UserGuideFragment.newFragment(), UserGuideFragment.TAG)
+            .commit()
+    }
 
     override fun showAboutFragment() {
         lockDrawer()

@@ -12,6 +12,12 @@
                 android:icon="@drawable/ic_star"
                 android:title="@string/course" />
         <item
+                android:id="@+id/navItemUserGuid"
+                android:checked="true"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/user_guide"
+        />
+        <item
                 android:id="@+id/navItemAbout"
                 android:checked="true"
                 android:icon="@drawable/ic_info_24px"

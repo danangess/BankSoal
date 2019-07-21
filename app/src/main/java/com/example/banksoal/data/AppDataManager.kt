@@ -1,6 +1,7 @@
 package com.example.banksoal.data
 
 import android.content.Context
+import com.example.banksoal.R
 import com.example.banksoal.data.local.db.*
 import com.example.banksoal.data.local.prefs.PreferencesHelper
 import com.example.banksoal.data.model.*
@@ -28,6 +29,12 @@ constructor(
     override val userRepository: UserRepository,
     private val mGson: Gson
 ) : DataManager {
+
+    override fun getUserGuide(): Observable<List<String>> {
+        val userGuides = mContext.resources.getStringArray(R.array.user_guide)
+        return Observable.fromArray(userGuides.toList())
+    }
+
     override fun doSignUp(firstName: String, lastName: String, userName: String, password: String): Single<Boolean> {
         val user = User()
         user.username = userName

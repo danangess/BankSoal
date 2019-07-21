@@ -46,6 +46,8 @@
         </LinearLayout>
 
         <TextView android:text="@{viewModel.competencesStringify}"
+                  android:textStyle="bold"
+                  android:background="@color/colorPrimaryTransparent"
                   android:textColor="@color/black"
                   android:layout_margin="15dp"
                   android:padding="10dp"

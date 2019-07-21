@@ -13,6 +13,8 @@ interface DataManager {
     val questionRepository: QuestionRepository
     val optionRepository: OptionRepository
 
+    fun getUserGuide(): Observable<List<String>>
+
     fun getCourseData(): Observable<List<CourseData>>
 
     fun getCourse(courseId: Long): Single<CourseData>
