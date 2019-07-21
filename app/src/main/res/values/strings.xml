@@ -44,4 +44,6 @@
     <string name="finish">Selesai</string>
     <string name="app_title">Bank Soal Produksi Pengolahan Hasil Nabati</string>
     <string name="quiz_pict">Gambar Soal</string>
+    <string name="about_app">Aplikasi ini merupakan kumpulan dari butir-butir soal sehingga menjadi bank soal untuk mata pelajaran Produksi Pengolahan Hasil Nabati yang dapat digunakan peserta didik SMK dengan program keahlian Agribisnis Pengolahan Hasil Pertanian (APHP).</string>
+    <string name="profile_creator">Profil pembuat:\nNama: Nita Septa Dilla\nNIM: 1505406\nJurusan: Pendidikan Teknologi Agroindustri\nKontak: nitasd@student.upi.edu</string>
 </resources>
