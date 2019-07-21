@@ -46,46 +46,43 @@
                     android:textSize="20sp" />
         </LinearLayout>
 
-        <TextView
-                style="@style/TextStyle.Heading"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:autoLink="web"
-                android:padding="20dp"
-                android:text="Project Information"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
+        <!--<TextView-->
+        <!--style="@style/TextStyle.Heading"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:autoLink="web"-->
+        <!--android:padding="20dp"-->
+        <!--android:text="Project Information"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="20sp" />-->
+
+        <ImageView
+                android:id="@+id/iVPp"
+                android:contentDescription="@string/profile_creator"
+                android:src="@drawable/creator"
+                android:layout_height="300dp"
+                android:layout_width="wrap_content" />
 
         <TextView
-                android:id="@+id/tvLink"
+                android:id="@+id/tvAboutApp"
                 style="@style/TextStyle.Title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:autoLink="web"
                 android:padding="10dp"
-                android:text="Link"
+                android:text="@string/about_app"
                 android:textColor="@color/white" />
 
         <TextView
-                android:id="@+id/tvRepo"
+                android:id="@+id/tvProfileCreator"
                 style="@style/TextStyle.Title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autoLink="web"
                 android:padding="10dp"
-                android:text="Repo"
-                android:textColor="@color/white" />
-
-        <TextView
-                android:id="@+id/tvBlog"
-                style="@style/TextStyle.Title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:padding="10dp"
-                android:text="Blog"
+                android:text="@string/profile_creator"
                 android:textColor="@color/white" />
 
     </LinearLayout>
