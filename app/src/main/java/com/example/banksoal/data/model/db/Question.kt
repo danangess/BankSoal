@@ -25,7 +25,7 @@ class Question {
     @Expose
     @SerializedName("group")
     @ColumnInfo(name = "group")
-    lateinit var Group: String
+    lateinit var group: String
 
     @Expose
     @SerializedName("img_url")
@@ -39,7 +39,7 @@ class Question {
     lateinit var text: String
 
     @Expose
-    @SerializedName("explanation")
+    @SerializedName("respond")
     @ColumnInfo(name = "explanation")
     var explanation: String? = null
 

@@ -16,7 +16,6 @@ import javax.inject.Inject
 import javax.inject.Singleton
 import com.example.banksoal.data.model.db.Question
 import com.example.banksoal.ext.loadJSONFromAsset
-import io.reactivex.ObservableSource
 
 @Singleton
 class AppDataManager
@@ -84,7 +83,7 @@ constructor(
     override fun getQuestionGroupData(courseId: Long): Observable<List<String>> {
         return questionRepository.getAllByCourseId(courseId)
             .flatMap { t: List<Question> -> Observable.fromIterable(t) }
-            .map { t: Question -> t.Group }
+            .map { t: Question -> t.group }
             .distinct()
             .toList()
             .toObservable()

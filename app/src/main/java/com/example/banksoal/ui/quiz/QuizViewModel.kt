@@ -16,11 +16,12 @@ class QuizViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvid
     }
 
     private val mQuestionCardData: MutableLiveData<QuestionData> = MutableLiveData()
-//    private val mIsComplete = ObservableField(false)
+    //    private val mIsComplete = ObservableField(false)
 //    private val mIsAnswered = ObservableField(false)
     private val mExplanation = ObservableField<String>()
     private val mCourseId = ObservableField<Long>()
     private val mNumber = ObservableField<Int>()
+    private var mQuestionId: Long = -1
 
     private val mAnswerVisible = ObservableField(View.GONE)
     private val mNextVisible = ObservableField(View.GONE)
@@ -41,7 +42,7 @@ class QuizViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvid
                 .subscribe({ questionData ->
                     mQuestionCardData.value = questionData
                     getNavigator().loadQuizData(questionData)
-                    onQuizLoaded()
+                    onQuizLoaded(questionData.question.id)
                 }, {
                     setComplete()
 //                    getNavigator().handleError(t)
@@ -56,10 +57,14 @@ class QuizViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvid
     }
 
     fun answer() {
+        if (isAnswerSelected()) {
 //        mIsAnswered.set(true)
-        mAnswerVisible.set(View.GONE)
-        getNavigator().answer()
-        updateResult()
+            mAnswerVisible.set(View.GONE)
+            getNavigator().answer()
+            updateResult()
+        } else {
+            getNavigator().handleError(Throwable("Jawaban belom dipilih"))
+        }
     }
 
     fun next() {
@@ -122,7 +127,8 @@ class QuizViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvid
         mFinishVisible.set(View.VISIBLE)
     }
 
-    private fun onQuizLoaded() {
+    private fun onQuizLoaded(questionId: Long) {
+        mQuestionId = questionId
         mExplanation.set(null)
 //        mIsAnswered.set(false)
         mAnswerVisible.set(View.VISIBLE)
@@ -134,5 +140,9 @@ class QuizViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvid
         mAnswerVisible.set(View.GONE)
         mNextVisible.set(View.VISIBLE)
         loadExplanation()
+    }
+
+    private fun isAnswerSelected(): Boolean {
+        return answer.containsKey(mQuestionId)
     }
 }
