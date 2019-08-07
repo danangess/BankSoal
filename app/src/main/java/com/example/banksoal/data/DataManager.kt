@@ -23,6 +23,10 @@ interface DataManager {
 
     fun getQuestionData(courseId: Long): Observable<List<QuestionData>>
 
+    fun getQuestionData(courseId: Long, number: Int): Observable<QuestionData>
+
+    fun getExplanation(courseId: Long, number: Int): Observable<String>
+
 //    fun getQuestionData(courseId: Long, group: String): Observable<List<QuestionData>>
 
     fun seedDatabaseUsers(): Observable<Boolean>

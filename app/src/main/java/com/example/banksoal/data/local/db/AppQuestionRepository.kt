@@ -10,7 +10,8 @@ import javax.inject.Singleton
 @Singleton
 class AppQuestionRepository
 @Inject
-constructor(private val appDatabase: AppDatabase) : AppBaseRepository<QuestionDao, Question, Long>(appDatabase.questionDao), QuestionRepository {
+constructor(private val appDatabase: AppDatabase) :
+    AppBaseRepository<QuestionDao, Question, Long>(appDatabase.questionDao), QuestionRepository {
     override fun remove(tKey: Long): Single<Boolean> {
         return Single.fromCallable {
             appDatabase.questionDao.delete(tKey)
@@ -21,6 +22,12 @@ constructor(private val appDatabase: AppDatabase) : AppBaseRepository<QuestionDa
     override fun getAllByCourseId(courseId: Long): Observable<List<Question>> {
         return Observable.fromCallable {
             appDatabase.questionDao.loadAllByCourseId(courseId)
+        }
+    }
+
+    override fun getAllByCourseId(courseId: Long, number: Int): Observable<Question> {
+        return Observable.fromCallable {
+            appDatabase.questionDao.loadAllByCourseId(courseId, number)
         }
     }
 }

@@ -16,6 +16,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 import com.example.banksoal.data.model.db.Question
 import com.example.banksoal.ext.loadJSONFromAsset
+import io.reactivex.ObservableSource
 
 @Singleton
 class AppDataManager
@@ -101,6 +102,27 @@ constructor(
                 )
             }.toList()
             .toObservable()
+    }
+
+    override fun getQuestionData(courseId: Long, number: Int): Observable<QuestionData> {
+        return questionRepository.getAllByCourseId(courseId, number)
+            .flatMap { question ->
+                Observable.zip(
+                    optionRepository.getAllByQuestionId(questionId = question.id),
+                    Observable.just(question),
+                    BiFunction<List<Option>, Question, QuestionData> { o, q -> QuestionData(q, o) }
+                )
+            }
+    }
+
+    override fun getExplanation(courseId: Long, number: Int): Observable<String> {
+        return questionRepository.getAllByCourseId(courseId, number)
+            .flatMap { t: Question ->
+                if (t.explanation.isNullOrEmpty())
+                    Observable.just("Lorem ipsum")
+                else
+                    Observable.just(t.explanation)
+            }
     }
 
 //    override fun getQuestionData(courseId: Long, group: String): Observable<List<QuestionData>> {

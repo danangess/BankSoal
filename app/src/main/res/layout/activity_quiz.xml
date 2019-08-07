@@ -61,19 +61,35 @@
 
                         <LinearLayout android:orientation="vertical"
                                       android:layout_width="match_parent"
-                                      android:layout_height="match_parent">
+                                      android:layout_height="wrap_content">
 
                             <com.mindorks.placeholderview.SwipePlaceHolderView
                                     android:id="@+id/quizContainer"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content" />
 
+                            <TextView android:id="@+id/tvExplanation"
+                                      android:textStyle="italic"
+                                      android:textSize="18sp"
+                                      android:layout_margin="10dp"
+                                      android:text="@{viewModel.explanation}"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content" />
+
                             <Button android:id="@+id/btnAnswer"
                                     style="@style/Button.Primary"
                                     android:layout_gravity="center_horizontal"
                                     android:onClick="@{() -> viewModel.answer()}"
-                                    android:visibility="@{viewModel.isComplete ? View.GONE : View.VISIBLE}"
+                                    android:visibility="@{viewModel.answerVisibility, default=gone}"
                                     android:text="@string/answer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            <Button android:id="@+id/btnNext"
+                                    style="@style/Button.Primary"
+                                    android:layout_gravity="center_horizontal"
+                                    android:onClick="@{() -> viewModel.next()}"
+                                    android:visibility="@{viewModel.nextVisibility, default=gone}"
+                                    android:text="@string/next"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content" />
 
@@ -90,7 +106,7 @@
                                     style="@style/Button.Primary"
                                     android:layout_gravity="center_horizontal"
                                     android:onClick="@{() -> viewModel.finish()}"
-                                    android:visibility="@{viewModel.isComplete ? View.VISIBLE : View.GONE}"
+                                    android:visibility="@{viewModel.finishVisibility, default=gone}"
                                     android:text="@string/finish"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content" />

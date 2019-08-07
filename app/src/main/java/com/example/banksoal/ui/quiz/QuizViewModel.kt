@@ -1,90 +1,138 @@
 package com.example.banksoal.ui.quiz
 
-import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
-import android.databinding.ObservableArrayList
 import android.databinding.ObservableField
-import android.databinding.ObservableList
+import android.view.View
 import com.example.banksoal.data.DataManager
 import com.example.banksoal.data.model.QuestionData
 import com.example.banksoal.ui.base.BaseViewModel
 import com.example.banksoal.utils.rx.SchedulerProvider
-import java.util.*
 
 class QuizViewModel(dataManager: DataManager, schedulerProvider: SchedulerProvider) :
     BaseViewModel<QuizNavigator>(dataManager, schedulerProvider) {
 
     companion object {
         var answer: MutableMap<Long, Boolean> = mutableMapOf()
-//        var correctCount: Int = 0
-//        var inCorrectCount: Int = 0
     }
 
-    private val questionCardData: MutableLiveData<List<QuestionData>> = MutableLiveData()
-    private val questionDataList = ObservableArrayList<QuestionData>()
-    private val mIsComplete = ObservableField<Boolean>(false)
+    private val mQuestionCardData: MutableLiveData<QuestionData> = MutableLiveData()
+//    private val mIsComplete = ObservableField(false)
+//    private val mIsAnswered = ObservableField(false)
+    private val mExplanation = ObservableField<String>()
+    private val mCourseId = ObservableField<Long>()
+    private val mNumber = ObservableField<Int>()
 
-    var result = ObservableField<String>("Benar = 0\nSalah = 0")
+    private val mAnswerVisible = ObservableField(View.GONE)
+    private val mNextVisible = ObservableField(View.GONE)
+    private val mFinishVisible = ObservableField(View.GONE)
 
-    fun loadQuizData(courseId: Long) {
-        answer = mutableMapOf()
+    var result = ObservableField("Benar = 0\nSalah = 0")
+
+    fun loadQuizData(courseId: Long, number: Int = 1) {
+        mCourseId.set(courseId)
+        mNumber.set(number)
+
+//        answer = mutableMapOf()
         compositeDisposable.add(
             dataManager
-                .getQuestionData(courseId)
+                .getQuestionData(courseId, number)
                 .subscribeOn(schedulerProvider.io())
                 .observeOn(schedulerProvider.ui())
-                .subscribe({ questionList ->
-                    if (questionList != null) {
-                        questionCardData.value = questionList
-                        getNavigator().loadQuizData()
-                    }
-                }, { t ->
-                    getNavigator().handleError(t)
+                .subscribe({ questionData ->
+                    mQuestionCardData.value = questionData
+                    getNavigator().loadQuizData(questionData)
+                    onQuizLoaded()
+                }, {
+                    setComplete()
+//                    getNavigator().handleError(t)
                 })
         )
     }
 
+    fun loadNextQuizData() {
+        val courseId = mCourseId.get()!!
+        val number = mNumber.get()!!
+        loadQuizData(courseId, number + 1)
+    }
+
     fun answer() {
+//        mIsAnswered.set(true)
+        mAnswerVisible.set(View.GONE)
         getNavigator().answer()
+        updateResult()
+    }
+
+    fun next() {
+        getNavigator().next()
     }
 
     fun finish() {
         getNavigator().onFinish()
     }
 
-    fun getQuestionCardData(): LiveData<List<QuestionData>> {
-        return questionCardData
+    fun getExplanation(): ObservableField<String> {
+        return mExplanation
     }
 
-    fun getQuestionDataList(): ObservableList<QuestionData> {
-        return questionDataList
+    fun getAnswerVisibility(): ObservableField<Int> {
+        return mAnswerVisible
     }
 
-    fun getIsComplete(): ObservableField<Boolean> {
-        return mIsComplete
+    fun getNextVisibility(): ObservableField<Int> {
+        return mNextVisible
     }
 
-    fun setQuestionDataList(questionCardDatas: List<QuestionData>) {
-//        action = ACTION_ADD_ALL;
-        questionDataList.clear()
-        questionDataList.addAll(questionCardDatas)
+    fun getFinishVisibility(): ObservableField<Int> {
+        return mFinishVisible
     }
 
-    fun updateResult() {
-        if (questionCardData.value != null) {
-            var correctCount = answer.filter { entry: Map.Entry<Long, Boolean> -> entry.value }.size
-            var inCorrectCount = answer.filter { entry: Map.Entry<Long, Boolean> -> !entry.value }.size
+    private fun updateResult() {
+        onQuizAnswered()
+        val questionDataExist = mQuestionCardData.value != null
+//        val isAnswered = mIsAnswered.get()!!
+        if (questionDataExist) {
+            val correctCount = answer.filter { entry: Map.Entry<Long, Boolean> -> entry.value }.size
+            val inCorrectCount = answer.filter { entry: Map.Entry<Long, Boolean> -> !entry.value }.size
             this.result.set(
                 "Benar = $correctCount\n" +
                         "Salah = $inCorrectCount"
             )
-
-            val totalQuiz = questionCardData.value!!.size
-            if (totalQuiz == (correctCount + inCorrectCount)) {
-                mIsComplete.set(true)
-            } else {
-                mIsComplete.set(false)
-            }
         }
+    }
+
+    private fun loadExplanation() {
+        val courseId = mCourseId.get()!!
+        val number = mNumber.get()!!
+        compositeDisposable.add(
+            dataManager.getExplanation(courseId, number)
+                .subscribeOn(schedulerProvider.io())
+                .observeOn(schedulerProvider.ui())
+                .subscribe { t: String? ->
+                    mExplanation.set(t)
+                }
+        )
+    }
+
+    private fun setComplete() {
+        mExplanation.set(null)
+//        mIsAnswered.set(true)
+//        mIsComplete.set(true)
+        mAnswerVisible.set(View.GONE)
+        mNextVisible.set(View.GONE)
+        mFinishVisible.set(View.VISIBLE)
+    }
+
+    private fun onQuizLoaded() {
+        mExplanation.set(null)
+//        mIsAnswered.set(false)
+        mAnswerVisible.set(View.VISIBLE)
+        mNextVisible.set(View.GONE)
+    }
+
+    private fun onQuizAnswered() {
+//        mIsAnswered.set(true)
+        mAnswerVisible.set(View.GONE)
+        mNextVisible.set(View.VISIBLE)
+        loadExplanation()
     }
 }
