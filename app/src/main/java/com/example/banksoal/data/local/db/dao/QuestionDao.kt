@@ -6,11 +6,14 @@ import com.example.banksoal.data.model.db.Question
 
 @Dao
 interface QuestionDao : BaseDao<Question> {
-    @Query("SELECT * FROM questions")
+    @Query("SELECT * FROM questions ORDER BY id")
     override fun loadAll(): List<Question>
 
-    @Query("SELECT * FROM questions WHERE course_id = :courseId")
+    @Query("SELECT * FROM questions WHERE course_id = :courseId ORDER BY id")
     fun loadAllByCourseId(courseId: Long): List<Question>
+
+    @Query("SELECT * FROM questions WHERE course_id = :courseId ORDER BY id LIMIT 1 OFFSET :number - 1")
+    fun loadAllByCourseId(courseId: Long, number: Int): Question
 
     @Query("DELETE FROM questions WHERE id = :id")
     fun delete(id: Long)

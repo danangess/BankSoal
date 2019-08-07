@@ -39,6 +39,11 @@ class Question {
     lateinit var text: String
 
     @Expose
+    @SerializedName("explanation")
+    @ColumnInfo(name = "explanation")
+    var explanation: String? = null
+
+    @Expose
     @SerializedName("course_id")
     @ColumnInfo(name = "course_id", index = true)
     var courseId: Long = 0
