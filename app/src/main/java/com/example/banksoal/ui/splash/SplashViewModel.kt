@@ -24,10 +24,11 @@ class SplashViewModel(dataManager: DataManager, schedulerProvider: SchedulerProv
     }
 
     fun decideNextActivity() {
-        if (dataManager.preferencesHelper.loginMode == DataManager.LoggedInMode.LOGOUT) {
-            getNavigator().openLoginActivity()
-        } else {
-            getNavigator().openMainActivity()
-        }
+        getNavigator().openMainActivity()
+//        if (dataManager.preferencesHelper.loginMode == DataManager.LoggedInMode.LOGOUT) {
+//            getNavigator().openLoginActivity()
+//        } else {
+//            getNavigator().openMainActivity()
+//        }
     }
 }

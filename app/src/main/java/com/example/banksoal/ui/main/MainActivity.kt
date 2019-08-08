@@ -138,10 +138,6 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainNav
                     showAboutFragment()
                     true
                 }
-                R.id.navItemLogout -> {
-                    mMainViewModel.logout()
-                    true
-                }
                 else -> {
                     false
                 }

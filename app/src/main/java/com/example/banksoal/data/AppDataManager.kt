@@ -32,7 +32,8 @@ constructor(
 
     override fun getUserGuide(): Observable<List<String>> {
         val userGuides = mContext.resources.getStringArray(R.array.user_guide)
-        return Observable.fromArray(userGuides.toList())
+        val userGuidesWithNumber = userGuides.mapIndexed { index, s -> "${index + 1}. $s" }
+        return Observable.fromArray(userGuidesWithNumber)
     }
 
     override fun doSignUp(firstName: String, lastName: String, userName: String, password: String): Single<Boolean> {

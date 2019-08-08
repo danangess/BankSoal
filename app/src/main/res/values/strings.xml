@@ -49,12 +49,11 @@
     <string name="user_guide">Petunjuk Penggunaan</string>
     <string name="next">Lanjut</string>
     <string-array name="user_guide">
-        <item>1. Buatlah akun dengan meng-klik register, setelah itu mengisi data dan login.</item>
-        <item>2. Setelah login, di bagian kanan halaman utama geser ke arah kanan dan pilih ada beberapa menu</item>
-        <item>3. Untuk mulai berlatih soal, silahkan pilih menu Kompetensi Dasar</item>
-        <item>4. Klik menu Kompetensi Dasar dan terdapat tujuh pilihan sub-bab</item>
-        <item>5. Pilih sub-bab yang akan dicoba untuk berlatih soal.</item>
-        <item>6. Setelah memilih sub-bab, silakan menjawab soal dengan pilihan A/B/C/D/E.</item>
-        <item>7. Selamat berlatih soal!</item>
+        <!--<item>Di bagian kanan halaman utama geser ke arah kanan dan pilih ada beberapa menu</item>-->
+        <item>Untuk mulai berlatih soal, silahkan pilih menu Kompetensi Dasar</item>
+        <item>Klik menu Kompetensi Dasar dan terdapat tujuh pilihan sub-bab</item>
+        <item>Pilih sub-bab yang akan dicoba untuk berlatih soal.</item>
+        <item>Setelah memilih sub-bab, silakan menjawab soal dengan pilihan A/B/C/D/E.</item>
+        <item>Selamat berlatih soal!</item>
     </string-array>
 </resources>
